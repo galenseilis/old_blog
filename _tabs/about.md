@@ -14,7 +14,7 @@ University of Northern British Columbia (2020--2022)
 
 | Person                 | Role              |
 |------------------------|-------------------|
-| Dr. Alex Aravind       | Former Supervisor |
+| (Dr. Alex Aravind)     |(Former Supervisor)|
 | Dr. Edward Dobrowolski | Supervisor        |
 | Dr. Brent Murray       | Committee Member  |
 | Dr. Mohammad El Smaily | Committee Member  |
@@ -65,9 +65,6 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 - [Practical Approaches to Faster and Leaner Python](https://www.youtube.com/watch?v=W8VMOp8QCdE)
 - [A Gentle Introduction to Geometric Deep Learning](https://video.unbc.ca/media/IWSS+February+11th+2022/0_xzlj7fi4/28597)
 - [A Gentle Introduction to L-Systems](https://iwss.opened.ca/wp-content/uploads/sites/3318/2021/02/GSeilis-w21.pdf)
-
-# Media
-- [Are nonparametric statistics useless?](https://www.youtube.com/watch?v=qee6b7vl2O0)
 
 # Publications
 - Research and Knowledge Translation Newsletter: The Importance of Partial Pooling with Northern Health Data
