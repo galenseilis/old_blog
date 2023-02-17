@@ -14,11 +14,11 @@ University of Northern British Columbia (2020--2022)
 
 | Person                 | Role              |
 |------------------------|-------------------|
-| (Dr. Alex Aravind)     |(Former Supervisor)|
-| Dr. Edward Dobrowolski | Supervisor        |
-| Dr. Brent Murray       | Committee Member  |
-| Dr. Mohammad El Smaily | Committee Member  |
-| Dr. Anne Condon        | External Examiner |
+| ([Dr. Alex Aravind](https://scholar.google.ca/citations?user=F6DrkCEAAAAJ))     |(Former Supervisor)|
+| [Dr. Edward Dobrowolski](https://www.researchgate.net/scientific-contributions/Edward-Dobrowolski-2054966210) | Supervisor        |
+| [Dr. Brent Murray](https://www.researchgate.net/profile/Brent-Murray-2)       | Committee Member  |
+| [Dr. Mohammad El Smaily](https://smaily.opened.ca/) | Committee Member  |
+| [Dr. Anne Condon](https://www.cs.ubc.ca/~condon/)        | External Examiner |
 
 - Course project: [Literature Review: Synthetic Circuit Design](https://github.com/galenseilis/CPSC791-Advanced-Special-Topics-I/blob/main/literature_review.pdf)
 - Course project: [Modelling Simple Genetic Circuit Gates with Differential Equations](https://github.com/galenseilis/CPSC791-Advanced-Special-Topics-I/blob/main/project.pdf)
