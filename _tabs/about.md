@@ -69,7 +69,7 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 # Publications
 - Research and Knowledge Translation Newsletter: The Importance of Partial Pooling with Northern Health Data
 - Research and Knowledge Translation Newsletter: [Project: Advanced Analytics](https://www.northernhealth.ca/sites/northern_health/files/health-professionals/research/documents/knowledge-translation-newsletter-seven.pdf)
-```
+```latex
 @mastersthesis{seilisthesis2022,
   author  = "Galen Seilis",
   title   = "ConAction: Efficient Implementations and Applications of Functions Inspired by the Trinity of Covariation",
