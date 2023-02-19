@@ -6,7 +6,7 @@ categories: [art,painting,oil-painting,wet-on-wet-technique]
 tags: [chatgpt,bob-ross,painting,art,wet-on-wet-technique,oil-painting]
 ---
 
-Summer 2022 I tried painting for the first time since I was a child. It began with listening Bob Ross on YouTube because it was relaxing background. Over time drifted from *listening* to *watching*, and I started paying attention to *how* the painting was made. For a couple of weeks I watched these videos before bed, but I reached a point where I thought "*I got to at least try this*". And I did. I went into a craft shop, bought some canvas and paint, and followed along with Bob. Even though I am not very skilled, I'm glad I tried painting because I have discoverd the joy in it (as the name of the TV show was titled). You can take this journey too by starting to watch his videos. His first show is linked below, but you can find the others on YouTube as well.
+Summer 2022 I tried painting for the first time since I was a child. It began with listening Bob Ross on YouTube because it was relaxing background. Over time drifted from *listening* to *watching*, and I started paying attention to *how* the painting was made. For a couple of weeks I watched these videos before bed, but I reached a point where I thought "*I got to at least try this*". And I did. I went into a craft shop, bought some canvas and paint, and followed along with Bob. Even though I am not very skilled, I'm glad I tried painting because I have discovered the joy in it (as the name of the TV show was titled). You can take this journey too by starting to watch his videos. His first show is linked below, but you can find the others on YouTube as well.
 
 {% include embed/youtube.html id='oh5p5f5_-7A' %}
 
