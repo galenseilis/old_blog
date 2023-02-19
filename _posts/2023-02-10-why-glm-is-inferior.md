@@ -3,9 +3,14 @@ layout: post
 title:  "Why GLM is Inferior - by ChatGPT"
 date:   2023-02-10 20:39:22 -0800
 categories: jekyll update
+tags: [chatgpt,linearity,linear-model,general-linear-model,additivity,homogeneity-of-scaling,data-analysis,regression-tests,overfitting,outliers,decision-trees,random-forests,neural-networks,deep-learning]
 ---
 
-This post is a tongue-and-cheek response to [Professor writes a love song to statistics](https://www.youtube.com/watch?v=YvO_FFno_wA). I decided to ask a non-linear model to rebut this musical march against violations of [additivity](https://en.wikipedia.org/wiki/Additive_function) and [homogeneity of scaling](https://en.wikipedia.org/wiki/Homogeneous_function). What more timely non-linear model to ask than [ChatGPT](https://openai.com/blog/chatgpt/)?
+This post is a tongue-and-cheek response to [Professor writes a love song to statistics](https://www.youtube.com/watch?v=YvO_FFno_wA). 
+
+{% include embed/youtube.html id='YvO_FFno_wA' %}
+
+I decided to ask a non-linear model to rebut this musical march against violations of [additivity](https://en.wikipedia.org/wiki/Additive_function) and [homogeneity of scaling](https://en.wikipedia.org/wiki/Homogeneous_function). What more timely non-linear model to ask than [ChatGPT](https://openai.com/blog/chatgpt/)?
 
 I asked ChatGPT:
 > Write me a song about how general linear models are not the best. Please end it with "It is easy to see that this song was crap, but I'd like to see a GLM do better than that."
