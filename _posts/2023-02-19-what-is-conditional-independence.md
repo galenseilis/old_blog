@@ -13,5 +13,6 @@ math: true
 Marginal or unconditional independence can be thought of as conditional independence between two variables given an empty set, denoted $(X \perp Y \vert \emptyset)$. 
 
 There are some general properties of conditional independence:
-- Symmetry: $(X \perp\!\!\!\!\perp Y \vert Z)_P \implies (Y \perp\!\!\!\!\perp X \vert Z)_P$
+- Symmetry: $(X \mathrel{\unicode{x2AEB}} Y \vert Z)_P \implies (Y \mathrel{\unicode{x2AEB}} X \vert Z)_P$
+- Decomposition: $(X \mathrel{\unicode{x2AEB}} YW \vert Z)_P \implies (X \mathrel{\unicode{x2AEB}} Y \vert ZW)_P$
 
