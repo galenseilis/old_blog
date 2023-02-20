@@ -1,6 +1,6 @@
 ---
 title: Notes On Order Theory
-date: 2023-02-19 23:09:34
+date: 2023-02-19 20:09:34
 categories: [math,order-theory]
 tags: [math,order-theory,partial-orders,reflexivity,transitivity,antisymmtry,asymmetry,cartesian-product,binary-relation,relation,python,latex,directed-acyclic-graph,strict-partial-order,comparability,comparable-pairs,incomparable-pairs,comparability-graph,incomparability-graph,cocomparability-graph,cover-graph,cover-digraph,cover-diagram]
 math: true
