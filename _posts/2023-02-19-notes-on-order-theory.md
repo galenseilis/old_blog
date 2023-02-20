@@ -167,3 +167,8 @@ nx.draw(g, pos=pos, labels={i:i for i in g.nodes()}, node_color=(0.5,)*3)
 plt.savefig('example_cover_relation_diagram.png', dpi=300, transparent=True)
 plt.close()
 ```
+
+# References
+- [Lectures: Introduction to Order Theory, Fall 2020](https://www.youtube.com/playlist?list=PL5rqYzyihIQ0nzfnsEKxxedCpbNQoifgg)
+- [Introduction to Order Theorie](https://page.math.tu-berlin.de/~felsner/Lehre/dsIII20-21.html)
+- [Introduction to order theory](https://piotrmicek.staff.tcs.uj.edu.pl/introduction-to-order-theory-2020/)
