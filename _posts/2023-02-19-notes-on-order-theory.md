@@ -144,3 +144,26 @@ flowchart TB
 
 
 > **Definition** A cover diagram is a drawing of the directed graph representing a cover relation such that the edges are cover pairs $(x,y)$. Edges are drawn in such a way that $x$ is below $y$ (in the graph embedding) ad the edge is $y$-monotone.
+
+> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its cover diagram would look like:
+![](/assets/images/example_cover_relation_diagram.png)
+
+> The previous example was plotted using the following Python script:
+```python
+import matplotlib.pyplot as plt
+import networkx as nx
+g = nx.Graph()
+g.add_edge('a', 'c')
+g.add_edge('a', 'e')
+g.add_edge('b', 'c')
+g.add_edge('b', 'd')
+g.add_edge('d', 'e')
+pos = {'a':(0,1),
+       'b':(1,0),
+       'c':(0,3),
+       'd':(2,2),
+       'e':(1,4)}
+nx.draw(g, pos=pos, labels={i:i for i in g.nodes()}, node_color=(0.5,)*3)
+plt.savefig('example_cover_relation_diagram.png', dpi=300, transparent=True)
+plt.close()
+```
