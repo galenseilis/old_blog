@@ -21,7 +21,7 @@ mermaid: true
 Let us consider an example of a partial order and some of the ways we can represent them.
 
 > **Example**
-> Let $X = \{a, b, c, d, e \}$, then we might have a partial order $\{aa, ac, ae, bb, bc, bd, be, cc, dd, de, ee\}$. This partial order can be represented as a matrix.
+> Let $X = \{a, b, c, d, e \}$, then we might have a partial order $\\{aa, ac, ae, bb, bc, bd, be, cc, dd, de, ee\\}$. This partial order can be represented as a matrix.
 >
 > $$\begin{array}{c c} &
 \begin{array}{c c c c c} a & b & c & d & e \\
@@ -57,11 +57,11 @@ X = 'a', 'b', 'c', 'd', 'e'
 XxX = [''.join(i) for i in product(X,X)]
 XxX = sorted(XxX)
 XxX = str(XxX).replace("'", "")
-XxX = XxX.replace("[", "\\{")
-XxX = XxX.replace("]", "\\}")
+XxX = XxX.replace("[", "\\\\{")
+XxX = XxX.replace("]", "\\\\}")
 print(XxX)
 ```
-This will print `\{aa, ab, ac, ad, ae, ba, bb, bc, bd, be, ca, cb, cc, cd, ce, da, db, dc, dd, de, ea, eb, ec, ed, ee\}`.
+This will print `\\{aa, ab, ac, ad, ae, ba, bb, bc, bd, be, ca, cb, cc, cd, ce, da, db, dc, dd, de, ea, eb, ec, ed, ee\\}`.
 {: .prompt-tip}
 
 > The digraph diagram in the previous example can be made with the following snippet of code:
@@ -90,7 +90,7 @@ Often we can start with a strict order and derive similar results for a correspo
 
 > **Definition** A graph $G = (V, E)$ whose edge set $E$ is the set of comparable pairs of a partial order is called the comparability graph.
 
-> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its comparability graph would look like:
+> **Example** Suppose we have the strict partial order $\\{ ac, ae, bc, bd, be, de\\}$, then its comparability graph would look like:
 ```mermaid
 flowchart TB
     a o--o c
@@ -105,7 +105,7 @@ flowchart TB
 
 > **Definition** A graph $G = (V, E)$ whose edge set $E$ is the set of incomparable pairs of a partial order is called the comparability graph.
 
-> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its incomparability graph (AKA cocomparability graph) would look like:
+> **Example** Suppose we have the strict partial order $\\{ ac, ae, bc, bd, be, de\\}$, then its incomparability graph (AKA cocomparability graph) would look like:
 ```mermaid
 flowchart TB
     a o--o b
@@ -120,7 +120,7 @@ flowchart TB
 
 > **Definition** A graph $G = (V, E)$ is a cover graph when its edge set $E$ is a collection of pairs satisfying a cover relation.
 
-> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its cover graph would look like:
+> **Example** Suppose we have the strict partial order $\\{ ac, ae, bc, bd, be, de\\}$, then its cover graph would look like:
 ```mermaid
 flowchart TB
     a o--o c
@@ -132,7 +132,7 @@ flowchart TB
 
 > **Definition** A directed graph $D = (V, E)$ is a directed cover graph when its edge set $E$ is a collection of pairs satisfying a cover relation and the order of the pairs is represented with arcs.
 
-> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its directed cover graph would look like:
+> **Example** Suppose we have the strict partial order $\\{ ac, ae, bc, bd, be, de\\}$, then its directed cover graph would look like:
 ```mermaid
 flowchart TB
     e --> a
@@ -145,7 +145,7 @@ flowchart TB
 
 > **Definition** A cover diagram is a drawing of the directed graph representing a cover relation such that the edges are cover pairs $(x,y)$. Edges are drawn in such a way that $x$ is below $y$ (in the graph embedding) ad the edge is $y$-monotone.
 
-> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its cover diagram would look like:
+> **Example** Suppose we have the strict partial order $\\{ ac, ae, bc, bd, be, de\\}$, then its cover diagram would look like:
 ![](/assets/images/example_cover_relation_diagram.png)
 
 > The previous example can be plotted using the following Python script:
