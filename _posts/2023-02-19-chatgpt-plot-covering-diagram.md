@@ -2,7 +2,7 @@
 title: Asking ChatGPT to Code a Plotting Function for Covering Diagrams
 date: 2023-02-19 21:38:04
 categories: [chatgpt,coding,python,function,plotting]
-tags: [math,order-theory,partial-orders,reflexivity,transitivity,antisymmtry,asymmetry,cartesian-product,binary-relation,relation,python, directed-acyclic-graph,strict-partial-order,cover-graph,cover-digraph,cover-diagram,networkx,plotting,visualization,networkx,matplotlib]
+tags: [math,order-theory,partial-orders,reflexivity,transitivity,antisymmtry,asymmetry,cartesian-product,binary-relation,relation,python, directed-acyclic-graph,strict-partial-order,cover-graph,cover-digraph,cover-diagram,networkx,plotting,visualization,networkx,matplotlib,chatgpt]
 math: true
 mermaid: true
 ---
