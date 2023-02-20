@@ -32,8 +32,8 @@ url: 'https://galenseilis.github.io'
 github:
   username: galenseilis             # change to your github username
 
-#twitter:
-#  username: twitter_username            # change to your twitter username
+twitter:
+  username: GSeilis            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -42,11 +42,11 @@ social:
   email: example@domain.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/GSeilis      # change to your twitter homepage
     - https://github.com/galenseilis       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/galen-s-4208349b
     - https://www.youtube.com/channel/UCh3Lf3PUvWCIge5WT7IJrhg
 
 google_site_verification:               # fill in to your verification string
