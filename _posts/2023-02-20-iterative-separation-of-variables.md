@@ -6,7 +6,7 @@ tags: [math,differential-equations,separation-of-variables,product-differential-
 math: true
 ---
 
-The following is something I developed during my MSc thesis. It probably isn't novel, and comes about from well-known results. But it may be novel to someone new to differential equations.
+The following is something I developed during my MSc thesis, which was motived by the Agnesian operators I defined there. It probably isn't novel, and comes about from well-known results. But it may be novel to someone new to differential equations.
 
 > **Proposition** (Iterated Separation of Variables)
 >
