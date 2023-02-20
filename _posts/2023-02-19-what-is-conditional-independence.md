@@ -8,8 +8,11 @@ math: true
 
 > **Definition** (Pearl 2009)
 >
-> Let $S = \{V_1, \ldots, V_n\}$ be a finite set of random variables. And let F_{V_1, \ldots, V_n}(v_1, \ldots, v_n) be a joint probability function over the random variables in $S$. Taking $X$, $Y$, and $Z$ to be any three subsets of $S$, then we say that $X$ and $Y$ are conditionally independent given $Z$ if 
-> $$Pr \left[ x | y, z \right] = Pr \left[ x | z \right]$$
-> if-and-only-if $P(y,z) > 0$.
+> Let $V = \{V_1, V_2, \ldots \}$ be a finite set of variables. Let $P(\cdot)$ be a joint probability function over the variables in $V$, and let $X$, $Y$, $Z$ stand for any three subsets of the variables in $V$. The sets $X$ and $Y$ are said to be conditionally independent given $Z$ if
+>
+> $P(x | y, z) = P(x|z)$ whenever $P(y,z) > 0$.
 
 Marginal or unconditional independence can be thought of as conditional independence between two variables given an empty set, denoted $(X \perp Y | \emptyset)$. 
+
+There are some general properties of conditional independence:
+
