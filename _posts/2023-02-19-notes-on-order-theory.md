@@ -148,7 +148,7 @@ flowchart TB
 > **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its cover diagram would look like:
 ![](/assets/images/example_cover_relation_diagram.png)
 
-> The previous example cab be plotted using the following Python script:
+> The previous example can be plotted using the following Python script:
 ```python
 import matplotlib.pyplot as plt
 import networkx as nx
