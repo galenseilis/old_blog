@@ -2,7 +2,7 @@
 title: Notes On Order Theory
 date: 2023-02-19 23:09:34
 categories: [math,order-theory]
-tags: [math,order-theory,partial-orders,reflexivity,transitivity,antisymmtry,cartesian-product,binary-relation,relation,python,latex,directed-acyclic-graph,strict-order]
+tags: [math,order-theory,partial-orders,reflexivity,transitivity,antisymmtry,asymmetry,cartesian-product,binary-relation,relation,python,latex,directed-acyclic-graph,strict-partial-order,comparability,comparable-pairs,incomparable-pairs,comparability-graph,incomparability-graph,cocomparability-graph]
 math: true
 mermaid: true
 ---
@@ -73,11 +73,74 @@ for xx in XxX:
     D.edge(xx[0], xx[1])
 D.view()
 ```
-> This will produce a `PDF` named `example_partial_order.gv.pdf`.
+> This will produce a portable document formatted file named `example_partial_order.gv.pdf`.
 {: .prompt-tip}
 
 
 > **Definition**
-> A strict order is a pair $(X, <)$ composed of a set $X$ called the ground set and $<$ is a binary relation with the following relation:
+> A strict partial order is a pair $(X, <)$ composed of a set $X$ called the ground set and $<$ is a binary relation with the following relation:
 - transitivity: $x < y \land y < z \implies x < z\  \forall x,y,z \in X$
 - asymmetry: $\lnot (x < y \land y < x) \  \forall x,y \in X$
+
+> **Proposition** The digraph representation of a strict order is a directed acyclic graph (DAG).
+
+Often we can start with a strict order and derive similar results for a corresponding (non-strict) partial order.
+
+> **Definition** $\{x,  y\}$ are a comparable pair if $x < y \lor y > x$, denoted $x \sim y$.
+
+> **Definition** A graph $G = (V, E)$ whose edge set $E$ is the set of comparable pairs of a partial order is called the comparability graph.
+
+> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its comparability graph would look like:
+```mermaid
+flowchart TB
+    a o--o c
+    a o--o e
+    b o--o c
+    b o--o d
+    b o--o e
+    d o--o e
+```
+
+> **Definition** $\{x,  y\}$ are an incomparable pair if $\lnot (x < y \lor y > x)$, denoted $x \parallel y$.
+
+> **Definition** A graph $G = (V, E)$ whose edge set $E$ is the set of incomparable pairs of a partial order is called the comparability graph.
+
+> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its incomparability graph (AKA cocomparability graph) would look like:
+```mermaid
+flowchart TB
+    a o--o b
+    a o--o d
+    c o--o d
+    c o--o e
+```
+
+> **Proposition** The edge set of an incomparability graph is the complement of the edge set of the comparability graph.
+
+> **Definition** A cover relation $x \prec y$ is satisfied when $x < y$ and there does not exist $z$ such that $x < z < y$.
+
+> **Definition** A graph $G = (V, E)$ is a cover graph when its edge set $E$ is a collection of pairs satisfying a cover relation.
+
+> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its cover graph would look like:
+```mermaid
+flowchart TB
+    a o--o c
+    a o--o e
+    b o--o c
+    b o--o d
+    d o--o e
+```
+
+> **Definition** A directed graph $D = (V, E)$ is a directed cover graph when its edge set $E$ is a collection of pairs satisfying a cover relation and the order of the pairs is represented with arcs.
+
+> **Example** Suppose we have the strict partial order $\{ ac, ae, bc, bd, be, de\}$, then its directed cover graph would look like:
+```mermaid
+flowchart TB
+    e --> a
+    e --> d
+    c --> a
+    c --> b
+    d --> b
+```
+
+
+> **Definition** A cover diagram is a drawing of the directed graph representing a cover relation such that the edges are cover pairs $(x,y)$. Edges are drawn in such a way that $x$ is below $y$ (in the graph embedding) ad the edge is $y$-monotone.
