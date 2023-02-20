@@ -46,17 +46,17 @@ $$\prod_{j=1}^n \frac{dx_j}{dt} = h(x_1, \ldots, x_n)g(t)$$
 >
 > $$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} dx_1 \ldots dx_n = H(x_1, \ldots, x_n) ) + C$$
 >
-> where $C$ is a constant of integration. 
+> where $C$ is a [constant of integration](https://en.wikipedia.org/wiki/Constant_of_integration). 
 > 
 > This finally gives us
 >
 >$$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} dx_1 \ldots dx_n = \underbrace{\int \cdots \int}_{n} g(t) \underbrace{dt \ldots dt}_{n}.$$ $\blacksquare$
 
-I believe using some substitution that the result can be generalized to the case 
+I believe using substitution can acheive a more general result starting from the form
 
 $$\prod_{j=1}^n \frac{dx^k_j}{dt^k} = F(x_1, \ldots, x_n, t)$$
 
-but I will leave that as an exercise for the reader (for now).
+but I will leave that as an exercise for the reader.
 
 # Citation
 
@@ -65,7 +65,7 @@ but I will leave that as an exercise for the reader (for now).
     TITLE = {Iterated Separation of Variables},
     AUTHOR = {Galen Seilis (https://galenseilis.github.io/about/)},
     HOWPUBLISHED = {Galen's Blog},
-    NOTE = {URL:https://galenseilis.github.io/posts/iterative-separation-of-variables/ (version: 2023-02-20)},
+    NOTE = {URL:https://galenseilis.github.io/posts/iterative-separation-of-variables/},
     EPRINT = {https://galenseilis.github.io/posts/iterative-separation-of-variables/},
     URL = {https://galenseilis.github.io/posts/iterative-separation-of-variables/}
 }
