@@ -34,7 +34,7 @@ $$\prod_{j=1}^n \frac{dx_j}{dt} = h(x_1, \ldots, x_n)g(t)$$
 > 
 > $$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} \prod_{j=1}^n \frac{dx_j}{dt} \underbrace{dt \ldots dt}_{n} = \underbrace{\int \cdots \int}_{n} g(t) \underbrace{dt \ldots dt}_{n}.$$
 >
-> Taking $H(x_1, \ldots, x_n)$ to be the $n$th antiderivative of $h(x_1, \ldots, x_n)^{-1}$, and using the [chain rule of derivatives](https://en.wikipedia.org/wiki/Chain_rule) then 
+> Taking $H(x_1, \ldots, x_n)$ to be the $n$th [antiderivative](https://en.wikipedia.org/wiki/Antiderivative) of $h(x_1, \ldots, x_n)^{-1}$, and using the [chain rule of derivatives](https://en.wikipedia.org/wiki/Chain_rule) then 
 >
 > $$\frac{d^n}{dt^n} H(x_1, \ldots, x_n) = \frac{1}{h(x_1, \ldots, x_n)} \prod_{j=1}^n \frac{dx_j}{dt}.$$
 >
@@ -44,7 +44,7 @@ $$\prod_{j=1}^n \frac{dx_j}{dt} = h(x_1, \ldots, x_n)g(t)$$
 >
 > which by the [fundamental theorem of calculus](https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus) entails that
 >
-> $$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} dx_1 \ldots dx_n = H(x_1, \ldots, x_n) ) + C$$
+> $$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} dx_1 \ldots dx_n = H(x_1, \ldots, x_n) + C$$
 >
 > where $C$ is a [constant of integration](https://en.wikipedia.org/wiki/Constant_of_integration). 
 > 
@@ -54,7 +54,7 @@ $$\prod_{j=1}^n \frac{dx_j}{dt} = h(x_1, \ldots, x_n)g(t)$$
 
 I believe using substitution can acheive a more general result starting from the form
 
-$$\prod_{j=1}^n \frac{dx^k_j}{dt^k} = F(x_1, \ldots, x_n, t)$$
+$$\prod_{j=1}^n \frac{dx^k_j}{dt^k} = h(x_1, \ldots, x_n) g(t)$$
 
 but I will leave that as an exercise for the reader.
 
