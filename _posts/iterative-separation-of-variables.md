@@ -38,7 +38,7 @@ $$\prod_{j=1}^n \frac{dx_j}{dt} = h(x_1, \ldots, x_n)g(t)$$
 >
 > $$\frac{d^n}{dt^n} H(x_1, \ldots, x_n) = \frac{1}{h(x_1, \ldots, x_n)} \Xi (x_1, \ldots, x_n) \prod_{j=1}^n \frac{dx_j}{dt}$$
 > 
-> where $\Xi (x_1, \ldots, x_n)$ is a factor that fills in Fa\'a di Bruno's formula generalized to multiple arguments.
+> where $\Xi (x_1, \ldots, x_n)$ is a factor that fills in the rest of [Faà di Bruno's formula](https://en.wikipedia.org/wiki/Fa%C3%A0_di_Bruno%27s_formula) generalized to multiple arguments.
 >
 > So the left-hand integral is 
 >
