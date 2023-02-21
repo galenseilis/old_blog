@@ -36,11 +36,13 @@ $$\prod_{j=1}^n \frac{dx_j}{dt} = h(x_1, \ldots, x_n)g(t)$$
 >
 > Taking $H(x_1, \ldots, x_n)$ to be the $n$th [antiderivative](https://en.wikipedia.org/wiki/Antiderivative) of $h(x_1, \ldots, x_n)^{-1}$, and using the [chain rule of derivatives](https://en.wikipedia.org/wiki/Chain_rule) then 
 >
-> $$\frac{d^n}{dt^n} H(x_1, \ldots, x_n) = \frac{1}{h(x_1, \ldots, x_n)} \prod_{j=1}^n \frac{dx_j}{dt}.$$
+> $$\frac{d^n}{dt^n} H(x_1, \ldots, x_n) = \frac{1}{h(x_1, \ldots, x_n)} \Xi (x_1, \ldots, x_n) \prod_{j=1}^n \frac{dx_j}{dt}$$
+> 
+> where $\Xi (x_1, \ldots, x_n)$ is a factor that fills in Fa\'a di Bruno's formula generalized to multiple arguments.
 >
 > So the left-hand integral is 
 >
-> $$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} \prod_{j=1}^n \frac{dx_j}{dt} \underbrace{dt \ldots dt}_{n} = \underbrace{\int \cdots \int}_{n} \frac{d^n}{dt^n} H(x_1, \ldots, x_n) \underbrace{dt \ldots dt}_{n}$$
+> $$\underbrace{\int \cdots \int}_{n} \frac{1}{h(x_1, \ldots, x_n)} \Xi (x_1, \ldots, x_n) \prod_{j=1}^n \frac{dx_j}{dt} \underbrace{dt \ldots dt}_{n} = \underbrace{\int \cdots \int}_{n} \frac{d^n}{dt^n} H(x_1, \ldots, x_n) \underbrace{dt \ldots dt}_{n}$$
 >
 > which by the [fundamental theorem of calculus](https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus) entails that
 >
