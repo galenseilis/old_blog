@@ -2,7 +2,7 @@
 title: Asking ChatGPT About Order Theory
 date: 2023-02-22 18:10:43
 categories: [math,order-theory,history]
-tags: [math,order-theory,history]
+tags: [math,order-theory,history,chatgpt,sequences,chains,mathematical-analysis,order,total-order,partial-order,binary-relation,comparable,lattice,least-upper-bound,greatest-lower-bound,meet,join,computer-science,economics,physics,topology,set-theory,ernst-schröder,brouwer,topological-space,birkhoff,distributive-lattice,rota,matroid,algebra-of-logic,logic,david-hilbert,george-david-birkhoff,garrett-birkhoff,lászló-kalmár,paul-halmos,john-von-neumann,boolean-algebra,partially-ordered-set,george-boole,geometry,topology,engineering,poset,bertrand-russel,well-ordered-set,lattice-isomorphism-theorem,isomorphism,sublattice,power-set,finite-set,inclusion,birkhoff-representation-theorem,stone-representation-theorem,clopen-set,compact-space,hausdorff-space,marshall-harvey-stone,dilworth-theorem,finite-poset,sperners-lemma,antichain,pairwise-incomparable-elements,cover-relation,emanuel-sperner,giuseppe-peano,charles-sanders-peirce,ordered-geometry,ordered-points,ordered-lines,ordered-planes]
 math: true
 mermaid: true
 ---
