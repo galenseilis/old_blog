@@ -1,5 +1,5 @@
 ---
-title: The End of Love - By ChatGPT
+title: Life After Love - By ChatGPT
 date: 2023-02-23 21:23:30
 categories: [healthcare,hospital,avoidable-admissions]
 tags: [healthcare,hospital,avoidable-admissions]
