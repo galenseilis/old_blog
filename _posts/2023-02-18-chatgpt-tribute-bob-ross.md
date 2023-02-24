@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tribute to Bob Ross - by ChatGPT"
+title:  "A Happy Little Tribute to Bob Ross - by ChatGPT"
 date:   2023-02-18 21:39:52 -0800
 categories: [art,painting,oil-painting,wet-on-wet-technique]
 tags: [chatgpt,bob-ross,painting,art,wet-on-wet-technique,oil-painting]
