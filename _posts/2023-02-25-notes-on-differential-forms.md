@@ -146,7 +146,7 @@ ax.text(1, 2, 'd', color='grey')
 ax.text(2, 0, 'a', color='grey')
 ax.text(0, 2, 'b', color='grey')
 plt.tight_layout()
-plt.savefig('/home/galen/Dropbox/galenseilis.github.io/assets/images/third_example_tangent_space.png', transparent=True, dpi=300)
+plt.savefig('third_example_tangent_space.png', transparent=True, dpi=300)
 plt.close()
 > ```
 {: .prompt-tip}
