@@ -1,6 +1,6 @@
 ---
 title: Notes On Differential Forms
-date: 2025-02-25 21:00:30
+date: 2025-02-25 20:00:30
 categories: [math,differential-forms]
 tags: [math,differential-forms]
 math: true
