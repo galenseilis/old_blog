@@ -70,7 +70,7 @@ plt.show()
 
 Running the above, you should see a window pop up. It will look similar to this:
 
-![](https://pbs.twimg.com/media/FS2rx81VUAAuNQR?format=png&name=small)
+![](/assets/images/taxa-pie-chart.png)
 
  It has various settings for resizing, reshaping, zooming, and saving your figure. 
 
