@@ -103,3 +103,6 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 - Dedicated Service Award
 - Second Degree Black Belt
 
+# Other Places
+
+[![Foo](https://upload.wikimedia.org/wikipedia/commons/7/75/Stack_Exchange_logo_and_wordmark.svg)](https://stackexchange.com/users/5468284/galen){:target="_blank"}

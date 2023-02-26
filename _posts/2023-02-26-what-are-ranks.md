@@ -7,21 +7,26 @@ math: true
 mermaid: true
 ---
 
-This post looks at the notion of ranking data or variables. Broadly, ranks are numbers used to describe something about the order-like properties on the elements of a set. A lot of folks (including myself) have often referred to "the" rank transform, but it actually it isn't a uniquely specified thing. For example, [`scipy.stats.rankdata`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.rankdata.html) implements multiple ranking methods depending on how tied elements are to be handled:
+# Introduction
 
-> method : {‘average’, ‘min’, ‘max’, ‘dense’, ‘ordinal’}, optional
+This post looks at the notion of ranking data or variables. Broadly, ranks are numbers used to describe something about the order-like properties on the elements of a set. We might think of runners arriving at the end of a marathon at different times and assigning 1st, 2nd, 3rd, etc, place to the runners in order of their arrival accross the finish line.
+
+# Common Ranks in Statistics
+A lot of folks (including myself) have often referred to "the" rank transform, but it actually it isn't a uniquely specified thing. For example, [`scipy.stats.rankdata`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.rankdata.html) implements multiple ranking methods depending on how tied elements are to be handled:
+
+> `method` : {`‘average’`, `‘min’`, `‘max’`, `‘dense’`, `‘ordinal’`}, optional
 >
->    The method used to assign ranks to tied elements. The following methods are available (default is ‘average’):
+>    The method used to assign ranks to tied elements. The following methods are available (default is `‘average’`):
 >
-> -            ‘average’: The average of the ranks that would have been assigned to all the tied values is assigned to each value.
+> -            `‘average’`: The average of the ranks that would have been assigned to all the tied values is assigned to each value.
 >
-> -            ‘min’: The minimum of the ranks that would have been assigned to all the tied values is assigned to each value. (This is also referred to as “competition” ranking.)
+> -            `‘min’`: The minimum of the ranks that would have been assigned to all the tied values is assigned to each value. (This is also referred to as “competition” ranking.)
 >
-> -            ‘max’: The maximum of the ranks that would have been assigned to all the tied values is assigned to each value.
+> -            `‘max’`: The maximum of the ranks that would have been assigned to all the tied values is assigned to each value.
 >
-> -            ‘dense’: Like ‘min’, but the rank of the next highest element is assigned the rank immediately after those assigned to the tied elements.
+> -            `‘dense’`: Like `‘min’`, but the rank of the next highest element is assigned the rank immediately after those assigned to the tied elements.
 >
-> -            ‘ordinal’: All values are given a distinct rank, corresponding to the order that the values occur in a.
+> -            `‘ordinal’`: All values are given a distinct rank, corresponding to the order that the values occur in a.
 
 Let us consider an example. Supposing a random variable $X \sim \operatorname{binomial} \left(10, \frac{1}{2} \right)$ which we can sample of size ten from and print a table using the following Python code. The binomial is suitable for this example in order to show how these ranking methods evaluate ties. In contrast, the distribution of the ranks of a continuous random variable are [almost surely](https://en.wikipedia.org/wiki/Almost_surely) uniform and would resemble the ordinal method regardless of the ranking method chosen above.
 
@@ -66,7 +71,9 @@ The code above prints the following table.
 |   7 |              9   |            8 |           10 |              5 |                9 |
 |   7 |              9   |            8 |           10 |              5 |               10 |
 
-You can see above that most methods return only integers, with the exception of the "average" method. The "average" method will output rational numbers to account for ties whereas the minimum method and maximum method create spacing between the ranks. Among these I find the dense method the most natural, which simply allows duplicate values to have the same rank. Some approaches attempt to avoid this, but I don't think it is a problem provided that the resulting distribution is considered in an analysis. The ordinal method ignores ties altogether, but does have the advantage of being equal to the indices of a sorted array up to a translation of unity. 
+You can see above that most methods return only integers, with the exception of the "average" method. What the average method accomplishes it preserving the total rank even when ties occur. The "average" method will output rational numbers to account for ties whereas the minimum method and maximum method create spacing between the ranks. Another kind of "rank" which is non-integer-valued is the [percentile rank](https://en.wikipedia.org/wiki/Percentile_rank) which is the percentage of scores in the sample that are less than the given score. Certain percentile ranks can be calculated using [`scipy.stats.percentileofscore`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.percentileofscore.html) or by passing `pct=True` into [`pandas.DataFrame.rank`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html).
+
+The ordinal method ignores ties altogether, but does have the advantage of being equal to the indices of a sorted array up to a translation of unity. The ordinal method is called `first` in the methods available in [`pandas.DataFrame.rank`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html).
 
 And similarly Wikipedia lists some [methods of ranking](https://en.wikipedia.org/wiki/Ranking#Strategies_for_assigning_rankings):
 - Standard competition ranking
@@ -75,8 +82,15 @@ And similarly Wikipedia lists some [methods of ranking](https://en.wikipedia.org
 - Ordinal ranking
 - Fractional ranking
 
-I want to make a distinction which is not frequently made explicit, but does specify the mathematics. Namely we should make the distinction between a **ranking** and a **rank** which was suggested language in [this post](https://stats.stackexchange.com/a/605359/69508) by user [Sextus Empiricus](https://stats.stackexchange.com/users/164061/sextus-empiricus).
+Many ranking procedures are what I call **count ranks** because they involve some kind of counting procedure. For example, the dense ranking method can be considered to assign a rank to an element equal to the number of other elements strictly less than it plus unity.
 
+The above ranking procedures assume that the ranks are an order-preserving function, but we can also have order-reversing functions that are in a sense a rank. For example, we might have a weight-lifting competition where the person who lifts **the most** gets **first** place, thus assigning the largest weight lifted to value of unity. While `scipy.stats.rankdata` does not do order-reversed ranking *per se*, applying an order-reversing operation (e.g. $f(X) = - X$) before applying an order-preserving ranking will acheive the desired result. Some implementations such as `pandas.DataFrame.rank` provide a Boolean parameter `ascending` to indicate whether the ranking will be order-preserving or order-reversing.
+
+I want to make a distinction which is not frequently made explicit, but does specify the mathematics nicely. Namely we should make the distinction between a **ranking** and a **rank** which was suggested language in [this post](https://stats.stackexchange.com/a/605359/69508) by user [Sextus Empiricus](https://stats.stackexchange.com/users/164061/sextus-empiricus).
+
+Rank-based statistics are the use of any ranking function to either produce ranks, or a function of ranks, of random variables.
+
+# Abstract Ranks
 In [this post](https://stats.stackexchange.com/a/605350/69508) I gave the following definition of an "abstract ranking" which covers most forms of ranking.
 
 > **Definition** Assume a collection random variables $\{X_1(\omega), \ldots, X_n(\omega) \}$ on outcome space $\Omega$, and $\leq$ is a partial order.
@@ -90,3 +104,17 @@ In [this post](https://stats.stackexchange.com/a/605350/69508) I gave the follow
 While the above definition is quite abstract, it assumes relatively little and provides an umbrella definition for various forms of ranking. I believe it has applications in [learning to rank](https://en.wikipedia.org/wiki/Learning_to_rank) recommendations or detect inequity in addition to some of its familiar uses.
 
 But what does this abstract definition mean? Well, in a pinch it means that a ranking is a collection of ranks that respect some order relation. Like the special cases of ranking given above, any abstract ranking takes a collection of instances of random variables and assigns a number that preserves an order within that collection. Not that this monotonicity applies to the ranks within the ranking, but ranks themselves are not monotonic functions of the outcome space due to the comparative and bounded way they are calculated.
+
+# Ranks vs Ratings
+
+I want to quickly share a distinct which I find valuable for avoiding certain confusions in mathematical modelling. In this post I am explicitly considering and defining ranking and ranks as functions that satisfy an order relation. This should be contrasted to asking someone to assign ordinals (e.g. Likert-like scales) or forced choice preferences to a selection of options because we often observe [intransitivity](https://en.wikipedia.org/wiki/Intransitivity) in human preferences. This intransivity violates the assumptions of a partial order that I made above, which even relaxing from a partially ordered set to a [weak ordering](https://en.wikipedia.org/wiki/Weak_ordering) will not satisfy.
+
+When I am thinking about these mathematical transformations that are guaranteed to preserve/reverse order I use the term **ranking**, whereas observations of preferences by a human/AI/system I would instead use the term **rating**.
+
+# Beyond Ranking Numbers
+
+I want to share a less obvious facet of ranking as I have defined it above. When (I believe) most people study [random variables](https://en.wikipedia.org/wiki/Random_variable) they are thinking about numerical-valued observations.
+
+# Conclusions
+
+Ranks 
