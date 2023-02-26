@@ -169,7 +169,82 @@ plt.close()
 ```
 {: .prompt-tip}
 
+## Special Classes of Orders
+
+- linear orders (aka total orders, aka chains).
+  - Important in computer science problems such as sorting.
+  - Important in mathematics for defining sets of numbers such as $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{R}$ and others.
+- Boolean lattices
+  - $B_n = (2^{[n]}, \subseteq )$ where $$[n] = \{ 1, \ldots, n \}$$
+  - Looks at subsets of $n$ ordered by inclusion
+
+> **Proposition** The subset relation on any family of sets is an order relation.
+
+> **Example** [Intervals](https://en.wikipedia.org/wiki/Interval_(mathematics)), [discs](https://en.wikipedia.org/wiki/Disk_(mathematics)), [balls](https://en.wikipedia.org/wiki/Ball_(mathematics)), [subtrees](https://mathworld.wolfram.com/Subtree.html), [subgraphs](https://mathworld.wolfram.com/Subgraph.html), [subgroups](https://en.wikipedia.org/wiki/Subgroup) are all included sets under the order relation of set [inclusion](https://en.wikipedia.org/wiki/Inclusion_order).
+
+> **Definition** A containment relation is [...]
+
+> **Definition** For $A \subseteq X$ we have the down-set of $A$ being 
+> $$D[A] = \bigcup_{a \in A} D[a] = \{ x | \exists a \in A\ \text{s.t.}\ x \leq a \}$$.
+
+> **Proposition** Every finite order is the containment order of a family of sets.
+> 
+> **Proof** Let $P = (X, \leq)$ be an order relation.
+>
+> For $a \in X$ let $D[a] = \{ x : x \leq a \}$ be the down-set of a.
+>
+> Let $$y = \{ D[a] : a \in X \}$$.
+>
+> Now we claim that $P \cong (y, \subseteq )$ where $\cong$ is an order-preserving isomorphism.
+>
+> Since isomorphisms are bijections, we take the bijection in this case to $D : x \mapsto D[x]$.
+>
+> We need to verify that $D$ as we have just defined it is actually a bijection.
+>
+> If a mapping is a bijection, then it is both injective and surjective.
+>
+> Considering the injective case, let take two elements $x$ and $y$ such that $x \neq y$ then there are three possibilities:
+> - $x < y \implies y \not\in D[x]$
+> - $x > y \implies x \not\in D[y]$
+> - $x \parallel y$ (i.e. $x$ and $y$ are not comparable in the order) which implies $(y \not\in D[x]) \land (x \not\in D[y])$
+>
+> Surjectivity is given by definition of $D$.
+>
+> And we have that $D$ is order-preserving in the sense that $x \leq y \iff D[x] \subseteq D[y]$.
+> $$\blacksquare$$
+
+> **Definition** A lower bound of a subset $S$ of partially ordered set $(P, \leq)$ is an element $a \in P$ such that $a \leq x \forall x \in S$.
+
+> **Definition** A lower bound $a \in S$ is called an infinum (or greatest lower bound, or meet) of $S$ if for all lower bounds $y \in S$ we have $y \leq a$.
+
+> **Definition** An upper bound of a subset $S$ of partially ordered set $(P, \leq)$ is an element $b \in P$ such that $b \geq x \forall x \in S$.
+
+> **Definition** An upper bound $b$ of $S$ is called a supremum (or least upper bound, or join) of $S$ if for all upper bounds $z \in S$ we have $z \leq b$.
+
+> **Definition** A finite poset on $S$ is a lattice if every subset of $S$ has an unique least upper bound (aka join or supremum) denoted $\lor$ and an unique greatest lower bound (aka meet or infinum) denoted $\land$.
+
+> **Definition** The down-set lattice of $P$ given by
+> $$D(P) = (\{ D[A] : A \subset X \}, \subseteq)$$.
+
+> **Definition** A lattice $(L, \lor, \land)$ is distributive if the following identity holds for all $x,y,z \in L$:
+>
+> $$x \land (y \lor z) = (x \land y) \lor (x \land z)$$
+>
+> where $\land$ and $\lor$ are the [meet and join](https://en.wikipedia.org/wiki/Join_and_meet) operations.
+
+> **Proposition** The down-set lattice of $P$ is a distributive lattice.
+>
+> **Proof (Hint)** Take $\lor$ to be $\cup$ and $\land$ to be $\cap$.
+
+> **Example**
+
+> **Definition** $Q = (Y, \leq_Q ) $ is a subposet of $P = (X, \leq_P)$ if $Y \subseteq X$ and $(\leq_Q) = (\leq_P) \cap (Y \times Y)$.
+
+
+
+
 # References
 - [Lectures: Introduction to Order Theory, Fall 2020](https://www.youtube.com/playlist?list=PL5rqYzyihIQ0nzfnsEKxxedCpbNQoifgg)
 - [Introduction to Order Theorie](https://page.math.tu-berlin.de/~felsner/Lehre/dsIII20-21.html)
 - [Introduction to order theory](https://piotrmicek.staff.tcs.uj.edu.pl/introduction-to-order-theory-2020/)
+- [Infinum and Supremum](https://en.wikipedia.org/wiki/Infimum_and_supremum)
