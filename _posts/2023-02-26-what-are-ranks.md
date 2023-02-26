@@ -26,7 +26,7 @@ A lot of folks (including myself) have often referred to "the" rank transform, b
 >
 > -            `‘dense’`: Like `‘min’`, but the rank of the next highest element is assigned the rank immediately after those assigned to the tied elements.
 >
-> -            `‘ordinal’`: All values are given a distinct rank, corresponding to the order that the values occur in a.
+> -            `‘ordinal’`: All values are given a distinct rank, corresponding to the order that the values occur in `a`.
 
 Let us consider an example. Supposing a random variable $X \sim \operatorname{binomial} \left(10, \frac{1}{2} \right)$ which we can sample of size ten from and print a table using the following Python code. The binomial is suitable for this example in order to show how these ranking methods evaluate ties. In contrast, the distribution of the ranks of a continuous random variable are [almost surely](https://en.wikipedia.org/wiki/Almost_surely) uniform and would resemble the ordinal method regardless of the ranking method chosen above.
 
@@ -113,8 +113,22 @@ When I am thinking about these mathematical transformations that are guaranteed 
 
 # Beyond Ranking Numbers
 
-I want to share a less obvious facet of ranking as I have defined it above. When (I believe) most people study [random variables](https://en.wikipedia.org/wiki/Random_variable) they are thinking about numerical-valued observations.
+I want to share a less obvious facet of ranking as I have defined it above. When (I believe) most people study [random variables](https://en.wikipedia.org/wiki/Random_variable) they are thinking about numerical-valued observations. But consider two facts:
+
+- Random variables can have images that are composed of just about anything.
+  - Examples:
+    - vectors (although there at least we often use the notation $\vec X$ for a random vector)
+    - matrices
+    - tensors
+    - sets
+    - trees
+    - graphs
+    - hypergraphs
+    - [groups](https://en.wikipedia.org/wiki/Group_(mathematics))
+- [Partial orders](https://mathworld.wolfram.com/PartiallyOrderedSet.html) can likewise be defined on just about anything.
+
+So we can have just-about-anything-valued random variables and partial orderings on just about anything. Taking these notions together, we can rankings and ranks defined on just about anything as well. We're not restricted to numbers. We're restricted to where we are interested in describing order with numbers.
 
 # Conclusions
 
-Ranks 
+Ranks are transformations of things, often numbers, to describe something about their order relationships to other things. In the context of statistics we have rankings of random variables, giving rise to the notion of rank-based statistics to help us study order in the presence of uncertainty.
