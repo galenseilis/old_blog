@@ -1,6 +1,6 @@
 ---
 title: What Are Ranks?
-date: 2023-02-23 21:23:30
+date: 2023-02-26 10:16:09 -0800
 categories: [statistics,rank-based-statistics]
 tags: [statistics,ranks,ranking]
 math: true
