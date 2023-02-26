@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-This post looks at the notion of ranking data or variables. Broadly, ranks are numbers used to describe something about the order-like properties on the elements of a set. I have quite often refered to "the" rank transform, but it actually it isn't a uniquely specified thing. For example, [`scipy.stats.rankdata`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.rankdata.html) implements multiple ranking methods depending on tied elements:
+This post looks at the notion of ranking data or variables. Broadly, ranks are numbers used to describe something about the order-like properties on the elements of a set. A lot of folks (including myself) have often referred to "the" rank transform, but it actually it isn't a uniquely specified thing. For example, [`scipy.stats.rankdata`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.rankdata.html) implements multiple ranking methods depending on how tied elements are to be handled:
 
 > method : {‘average’, ‘min’, ‘max’, ‘dense’, ‘ordinal’}, optional
 >
@@ -79,7 +79,13 @@ I want to make a distinction which is not frequently made explicit, but does spe
 
 In [this post](https://stats.stackexchange.com/a/605350/69508) I gave the following definition of an "abstract ranking" which covers most forms of ranking.
 
-> **Definition** Assume a collection random variables $\{X_1(\omega), \ldots, X_n(\omega) \}$ on outcome space $\Omega$, and $\leq$ is a partial order. An **abstract ranking** $$\rho: \prod_{i=1}^n X_i(\omega) \mapsto \mathbb{R}_{\geq 0}^n$$ is a function such that there exists a non-decreasing function $\kappa:\mathbb{N} \mapsto \mathbb{R}_{\geq0}$ that satisfies $\rho(\vec x)_i \leq \kappa(n)$ for all $i\in \{1, \ldots, n\}$. It must also hold that $\rho(\vec x)_i \leq \rho(\vec x)_j \iff x_i \leq x_j$ for all $i,j \in \{1, \ldots, n\}$ and for all $\omega \in \Omega$ [exor](https://en.wikipedia.org/wiki/Exclusive_or) $\rho(\vec x)_i \geq \rho(\vec x)_j \iff x_i \leq x_j$ for all $i,j \in \{1, \ldots, n\}$ and for all $\omega \in \Omega$. An component of an image element of an abstract ranking is called an **abstract rank**.
+> **Definition** Assume a collection random variables $\{X_1(\omega), \ldots, X_n(\omega) \}$ on outcome space $\Omega$, and $\leq$ is a partial order.
+>
+> An **abstract ranking** $$\rho: \prod_{i=1}^n X_i(\omega) \mapsto \mathbb{R}_{\geq 0}^n$$ is a function such that there exists a non-decreasing function $\kappa:\mathbb{N} \mapsto \mathbb{R}_{\geq0}$ that satisfies $\rho(\vec x)_i \leq \kappa(n)$ for all $i\in \{1, \ldots, n\}$.
+>
+> It must also hold that $\rho(\vec x)_i \leq \rho(\vec x)_j \iff x_i \leq x_j$ for all $i,j \in \{1, \ldots, n\}$ and for all $\omega \in \Omega$ [exor](https://en.wikipedia.org/wiki/Exclusive_or) $\rho(\vec x)_i \geq \rho(\vec x)_j \iff x_i \leq x_j$ for all $i,j \in \{1, \ldots, n\}$ and for all $\omega \in \Omega$.
+>
+> An component of an image element of an abstract ranking is called an **abstract rank**.
 
 While the above definition is quite abstract, it assumes relatively little and provides an umbrella definition for various forms of ranking. I believe it has applications in [learning to rank](https://en.wikipedia.org/wiki/Learning_to_rank) recommendations or detect inequity in addition to some of its familiar uses.
 
