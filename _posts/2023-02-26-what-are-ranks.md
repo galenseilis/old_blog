@@ -28,6 +28,13 @@ A lot of folks (including myself) have often referred to "the" rank transform, b
 >
 > -            `‘ordinal’`: All values are given a distinct rank, corresponding to the order that the values occur in `a`.
 
+And similarly Wikipedia lists some [methods of ranking](https://en.wikipedia.org/wiki/Ranking#Strategies_for_assigning_rankings):
+- Standard competition ranking
+- Modified competition ranking
+- Dense ranking
+- Ordinal ranking
+- Fractional ranking
+
 Let us consider an example. Supposing a random variable $X \sim \operatorname{binomial} \left(10, \frac{1}{2} \right)$ which we can sample of size ten from and print a table using the following Python code. The binomial is suitable for this example in order to show how these ranking methods evaluate ties. In contrast, the distribution of the ranks of a continuous random variable are [almost surely](https://en.wikipedia.org/wiki/Almost_surely) uniform and would resemble the ordinal method regardless of the ranking method chosen above.
 
 ```python
@@ -75,13 +82,6 @@ You can see above that most methods return only integers, with the exception of 
 
 The ordinal method ignores ties altogether, but does have the advantage of being equal to the indices of a sorted array up to a translation of unity. The ordinal method is called `first` in the methods available in [`pandas.DataFrame.rank`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html).
 
-And similarly Wikipedia lists some [methods of ranking](https://en.wikipedia.org/wiki/Ranking#Strategies_for_assigning_rankings):
-- Standard competition ranking
-- Modified competition ranking
-- Dense ranking
-- Ordinal ranking
-- Fractional ranking
-
 Many ranking procedures are what I call **count ranks** because they involve some kind of counting procedure. For example, the dense ranking method can be considered to assign a rank to an element equal to the number of other elements strictly less than it plus unity.
 
 The above ranking procedures assume that the ranks are an order-preserving function, but we can also have order-reversing functions that are in a sense a rank. For example, we might have a weight-lifting competition where the person who lifts **the most** gets **first** place, thus assigning the largest weight lifted to value of unity. While `scipy.stats.rankdata` does not do order-reversed ranking *per se*, applying an order-reversing operation (e.g. $f(X) = - X$) before applying an order-preserving ranking will acheive the desired result. Some implementations such as `pandas.DataFrame.rank` provide a Boolean parameter `ascending` to indicate whether the ranking will be order-preserving or order-reversing.
@@ -117,17 +117,18 @@ I want to share a less obvious facet of ranking as I have defined it above. When
 
 - Random variables can have images that are composed of just about anything.
   - Examples:
-    - vectors (although there at least we often use the notation $\vec X$ for a random vector)
-    - matrices
-    - tensors
-    - sets
-    - trees
-    - graphs
-    - hypergraphs
+    - [vectors](https://en.wikipedia.org/wiki/Vector_space) (although there at least we often use the notation $\vec X$ for a random vector)
+    - [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics))
+    - [tensors](https://en.wikipedia.org/wiki/Tensor)
+    - [sets](https://en.wikipedia.org/wiki/Set_(mathematics))
+    - [trees](https://en.wikipedia.org/wiki/Tree_(graph_theory))
+    - [graphs](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics))
+    - [hypergraphs](https://en.wikipedia.org/wiki/Hypergraph)
+    - [simplicial complexes](https://en.wikipedia.org/wiki/Simplicial_complex)
     - [groups](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Partial orders](https://mathworld.wolfram.com/PartiallyOrderedSet.html) can likewise be defined on just about anything.
 
-So we can have just-about-anything-valued random variables and partial orderings on just about anything. Taking these notions together, we can rankings and ranks defined on just about anything as well. We're not restricted to numbers. We're restricted to where we are interested in describing order with numbers.
+So we can have just-about-anything-valued random variables and partial orderings on just about anything. Taking these notions together, we can rankings and ranks defined on just about anything as well. We're not restricted to orders on numbers.
 
 # Conclusions
 
