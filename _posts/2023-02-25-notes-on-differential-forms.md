@@ -1,6 +1,6 @@
 ---
 title: Notes On Differential Forms
-date: 2023-02-25 21:23:30
+date: 2025-02-25 21:00:30
 categories: [math,differential-forms]
 tags: [math,differential-forms]
 math: true
@@ -151,5 +151,48 @@ plt.close()
 > ```
 {: .prompt-tip}
 
+> **Definition** A 1-form is a linear function $\omega : T_p \mathbb{R}^n \mapsto \mathbb{R}$.
+
+> **Proposition**
+> For a 1-form $\omega : T_p \mathbb{R}^n \mapsto \mathbb{R}$ it holds that $\omega \in (T_p \mathbb{R})^{\*}$ where $(T_p \mathbb{R})^{\*}$ is the [dual space](https://en.wikipedia.org/wiki/Dual_space) of the tangent space $T_p \mathbb{R}$.
+
+> **Example** Given $\mathbb{R}^2$ and $T_p \mathbb{R}^2$ and  $\omega : T_p \mathbb{R}^2 \mapsto \mathbb{R}$ be linear:
+>
+> $$\implies \omega (\langle dx, dy \rangle) = adx + bdx = \langle a, b \rangle \cdot \langle dx, dy \rangle$$
+> 
+> which also equals
+>
+> $$\vert| \langle a, b \rangle \vert| \operatorname{scalar\_projection}_{\langle a,b \rangle} \langle dx, dy \rangle .$$
+>
+> This leads to an intuition that a 1-form is a multiple of the scalar projection on to the same line.
+
+> **Example** Let $\omega : T_p \mathbb{R}^n \mapsto \mathbb{R}$ then
+>
+> $$\omega ( \langle dx_1, \ldots, dx_n \rangle ) = \sum_{i=1}^n a_i dx_i$$
+
+> **Example** Define $\omega (\langle dx, dy \rangle) = 3dx + 2dy.$ What line does $\omega$ project vectors onto?
+>
+> - The line is in the direction $\langle 3, 2 \rangle$ b/c $\omega ( \langle dx, dy \rangle ) = \langle 3,2 \rangle \cdot \langle dx, dy \rangle$
+>
+> Notice that $\langle 3,2 \rangle$ is parallel to $\langle 1, \frac{2}{3} \rangle$ which entails that $dy = \frac{2}{3} x.$
+
+> **Example** Suppose $\omega$ scalar projects onto the line $dy = 2dx$ with length of 3. Find $\omega .$
+>
+> We know that $\omega (\langle dx, dy \rangle) = \langle a,b \rangle \cdot \langle dx, dy \rangle .$ We need  $\langle a, b \rangle$ to be parallel to $\langle 1, 2 \rangle$ because $\langle 1, 2 \rangle$ is the vector in the direction of the line $dy = 2dx$.
+>
+> So $\langle a, b \rangle = \langle a, 2a \rangle$ which needs that have 
+$$\vert| \langle a, 2a \rangle \vert| = 3 $$ .
+>
+> So 
+$$\vert| \langle a, 2a \rangle \vert| = \sqrt{a^2 + 4 a^2} = 3 \implies a \sqrt{5} = 3 \implies a = \frac{3}{\sqrt{5}}$$ . So $b=\frac{6}{\sqrt{5}}$
+>
+> $$\implies \omega (\langle dx, dy \rangle) = \frac{3}{\sqrt{5}} dx + \frac{6}{\sqrt{5}} dy$$
+
+> **Example** Supposing $n=2$ and $\omega_1 \wedge \omega_2 : T_p \mathbb{R}^2 \times T_p \mathbb{R}^2 \mapsto \mathbb{R}$ then what is $\omega_1 \wedge \omega_2 (v_1, v_2)$ where $v_1, v_2 \in \mathbb{R}^2$ ?
+
 # References
-- [Differential Forms](https://www.youtube.com/playlist?list=PL22w63XsKjqzQZtDZO_9s2HEMRJnaOTX7)
+- [Differential Forms (Michael Penn)](https://www.youtube.com/playlist?list=PL22w63XsKjqzQZtDZO_9s2HEMRJnaOTX7)
+- [Differential form (Wikipedia)](https://en.wikipedia.org/wiki/Differential_form)
+- [What is a differential form? (math.se)](https://math.stackexchange.com/questions/2858098/what-is-a-differential-form)
+- [Differential k-form (mathworld)](https://mathworld.wolfram.com/Differentialk-Form.html)
+- [Differential form (Encyclopedia of Math)](https://encyclopediaofmath.org/wiki/Differential_form)
