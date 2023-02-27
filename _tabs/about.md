@@ -10,24 +10,24 @@ order: 4
 
 University of Northern British Columbia (2020--2022)
 
-- Thesis: [ConAction: Efficient Implementations and Applications of Functions Inspired by the Trinity of Covariation](https://doi.org/10.24124/2022/59312)
+- Thesis: [ConAction: Efficient Implementations and Applications of Functions Inspired by the Trinity of Covariation](https://doi.org/10.24124/2022/59312){:target="_blank"}
 
 | Person                 | Role              |
 |------------------------|-------------------|
-| ([Dr. Alex Aravind](https://scholar.google.ca/citations?user=F6DrkCEAAAAJ))     |(Former Supervisor)|
-| [Dr. Edward Dobrowolski](https://www.researchgate.net/scientific-contributions/Edward-Dobrowolski-2054966210) | Supervisor        |
-| [Dr. Brent Murray](https://www.researchgate.net/profile/Brent-Murray-2)       | Committee Member  |
-| [Dr. Mohammad El Smaily](https://smaily.opened.ca/) | Committee Member  |
-| [Dr. Anne Condon](https://www.cs.ubc.ca/~condon/)        | External Examiner |
+| ([Dr. Alex Aravind](https://scholar.google.ca/citations?user=F6DrkCEAAAAJ){:target="_blank"})     |(Former Supervisor)|
+| [Dr. Edward Dobrowolski](https://www.researchgate.net/scientific-contributions/Edward-Dobrowolski-2054966210){:target="_blank"} | Supervisor        |
+| [Dr. Brent Murray](https://www.researchgate.net/profile/Brent-Murray-2){:target="_blank"}       | Committee Member  |
+| [Dr. Mohammad El Smaily](https://smaily.opened.ca/){:target="_blank"} | Committee Member  |
+| [Dr. Anne Condon](https://www.cs.ubc.ca/~condon/){:target="_blank"}        | External Examiner |
 
-- Course project: [Literature Review: Synthetic Circuit Design](https://github.com/galenseilis/CPSC791-Advanced-Special-Topics-I/blob/main/literature_review.pdf)
-- Course project: [Modelling Simple Genetic Circuit Gates with Differential Equations](https://github.com/galenseilis/CPSC791-Advanced-Special-Topics-I/blob/main/project.pdf)
-- Course project: [Citation Analysis of Genetic Circuit Design Literature](https://github.com/galenseilis/CPSC706-research-methods/blob/main/final_report.pdf)
-- Course project: [Phylogenetic Inference from Enumeration of Automorphism Orbits of Graphlets](https://github.com/galenseilis/CPSC650-bioinformatics/blob/main/project.pdf)
-- Course project: [Technical Report: Debate Post-Hoc Analysis](https://github.com/galenseilis/CPSC650-bioinformatics/blob/main/technical_report.pdf)
-- Course project: [Comparability of Inductive Rules of Gene Enrichment Between Humans and Mice](https://github.com/galenseilis/CPSC673-data-mining-project/blob/main/project_report.pdf)
-- Course project: [*A Priori* Frequent Pattern Mining Implementation](https://github.com/galenseilis/apriori-frequent-pattern-mining)
-- Course project: [FP-Growth Frequent Pattern Mining Implementation](https://github.com/galenseilis/fpgrowth)
+- Course project: [Literature Review: Synthetic Circuit Design](https://github.com/galenseilis/CPSC791-Advanced-Special-Topics-I/blob/main/literature_review.pdf){:target="_blank"}
+- Course project: [Modelling Simple Genetic Circuit Gates with Differential Equations](https://github.com/galenseilis/CPSC791-Advanced-Special-Topics-I/blob/main/project.pdf){:target="_blank"}
+- Course project: [Citation Analysis of Genetic Circuit Design Literature](https://github.com/galenseilis/CPSC706-research-methods/blob/main/final_report.pdf){:target="_blank"}
+- Course project: [Phylogenetic Inference from Enumeration of Automorphism Orbits of Graphlets](https://github.com/galenseilis/CPSC650-bioinformatics/blob/main/project.pdf){:target="_blank"}
+- Course project: [Technical Report: Debate Post-Hoc Analysis](https://github.com/galenseilis/CPSC650-bioinformatics/blob/main/technical_report.pdf){:target="_blank"}
+- Course project: [Comparability of Inductive Rules of Gene Enrichment Between Humans and Mice](https://github.com/galenseilis/CPSC673-data-mining-project/blob/main/project_report.pdf){:target="_blank"}
+- Course project: [*A Priori* Frequent Pattern Mining Implementation](https://github.com/galenseilis/apriori-frequent-pattern-mining){:target="_blank"}
+- Course project: [FP-Growth Frequent Pattern Mining Implementation](https://github.com/galenseilis/fpgrowth){:target="_blank"}
 - Debate: Nature vs Nurture of human behaviour
 - Presentation: A Brief Introduction to Multiobjective Optimization
 - Presentation: Introduction to Adam (Adaptive Moments Estimation)
@@ -61,14 +61,14 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 - Example of Training a SARIMAX Model
 - Review of a Study Using SARIMAX
 - Guest lecture: Relations and Graphs
-- [Enumeration of Automorphism Orbits of Graphlets (HackSeq)](https://www.youtube.com/watch?v=vY1UkCPSKH8)
-- [Practical Approaches to Faster and Leaner Python](https://www.youtube.com/watch?v=W8VMOp8QCdE)
-- [A Gentle Introduction to Geometric Deep Learning](https://video.unbc.ca/media/IWSS+February+11th+2022/0_xzlj7fi4/28597)
-- [A Gentle Introduction to L-Systems](https://iwss.opened.ca/wp-content/uploads/sites/3318/2021/02/GSeilis-w21.pdf)
+- [Enumeration of Automorphism Orbits of Graphlets (HackSeq)](https://www.youtube.com/watch?v=vY1UkCPSKH8){:target="_blank"}
+- [Practical Approaches to Faster and Leaner Python](https://www.youtube.com/watch?v=W8VMOp8QCdE){:target="_blank"}
+- [A Gentle Introduction to Geometric Deep Learning](https://video.unbc.ca/media/IWSS+February+11th+2022/0_xzlj7fi4/28597){:target="_blank"}
+- [A Gentle Introduction to L-Systems](https://iwss.opened.ca/wp-content/uploads/sites/3318/2021/02/GSeilis-w21.pdf){:target="_blank"}
 
 # Publications
 - Research and Knowledge Translation Newsletter: The Importance of Partial Pooling with Northern Health Data
-- Research and Knowledge Translation Newsletter: [Project: Advanced Analytics](https://www.northernhealth.ca/sites/northern_health/files/health-professionals/research/documents/knowledge-translation-newsletter-seven.pdf)
+- Research and Knowledge Translation Newsletter: [Project: Advanced Analytics](https://www.northernhealth.ca/sites/northern_health/files/health-professionals/research/documents/knowledge-translation-newsletter-seven.pdf){:target="_blank"}
 ```latex
 @mastersthesis{seilisthesis2022,
   author  = "Galen Seilis",
@@ -83,19 +83,19 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 ```
 
 # Software
- - ConAction: A package for studying how things change together. ([GitHub](https://github.com/galenseilis/ConAction), [ReadTheDocs](https://conaction.readthedocs.io/en/latest/), [PyPi](https://pypi.org/project/conaction/))
+ - ConAction: A package for studying how things change together. ([GitHub](https://github.com/galenseilis/ConAction){:target="_blank"}, [ReadTheDocs](https://conaction.readthedocs.io/en/latest/){:target="_blank"}, [PyPi](https://pypi.org/project/conaction/){:target="_blank"})
 
 # Volunteer
-- Amateur naturalist at [iNaturalist](https://www.inaturalist.org/people/5429560).
-- Model for [The Raft of the Medusa Tableau Vivant](https://adadhannah.com/2009-the-raft-of-the-medusa-100-mile-house?fbclid=IwAR0Ixxz9coNKVft010WDHdze2Y4WruKFYPZA4vK0QTrBktzCGtTbQthjQvc).
+- Amateur naturalist at [iNaturalist](https://www.inaturalist.org/people/5429560){:target="_blank"}.
+- Model for [The Raft of the Medusa Tableau Vivant](https://adadhannah.com/2009-the-raft-of-the-medusa-100-mile-house?fbclid=IwAR0Ixxz9coNKVft010WDHdze2Y4WruKFYPZA4vK0QTrBktzCGtTbQthjQvc){:target="_blank"}.
 
 
 # Acknowledgements
-- [*Bacterial diversity and production of sulfide in microcosms containing uncompacted bentonites*](https://doi.org/10.1016/j.heliyon.2018.e00722)
-- [*Characterizing anaerobic biodegradation of gasoline with low molecular weight organic acid anions and phosphate amendment*](https://harvest.usask.ca/handle/10388/8489)
-- [*Who Is the Rock Miner and Who Is the Hunter? The Use of Heavy-Oxygen Labeled Phosphate (P18O4) to Differentiate between C and P Fluxes in a Benzene-Degrading Consortium*](https://pubs.acs.org/doi/10.1021/acs.est.7b05773)
-- [*Plant belowground diversity and species segregation by depth in a semi-arid grassland*](https://www.tandfonline.com/doi/full/10.1080/11956860.2017.1403242)
-- [*Archaea and bacteria mediate the effects of native species root loss on fungi during plant invasion*](https://www.nature.com/articles/ismej2016205)
+- [*Bacterial diversity and production of sulfide in microcosms containing uncompacted bentonites*](https://doi.org/10.1016/j.heliyon.2018.e00722){:target="_blank"}
+- [*Characterizing anaerobic biodegradation of gasoline with low molecular weight organic acid anions and phosphate amendment*](https://harvest.usask.ca/handle/10388/8489){:target="_blank"}
+- [*Who Is the Rock Miner and Who Is the Hunter? The Use of Heavy-Oxygen Labeled Phosphate (P18O4) to Differentiate between C and P Fluxes in a Benzene-Degrading Consortium*](https://pubs.acs.org/doi/10.1021/acs.est.7b05773){:target="_blank"}
+- [*Plant belowground diversity and species segregation by depth in a semi-arid grassland*](https://www.tandfonline.com/doi/full/10.1080/11956860.2017.1403242){:target="_blank"}
+- [*Archaea and bacteria mediate the effects of native species root loss on fungi during plant invasion*](https://www.nature.com/articles/ismej2016205){:target="_blank"}
 
 # Honors & Awards
 - BC Graduate Scholarship ($15000)
