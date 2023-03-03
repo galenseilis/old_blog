@@ -2,7 +2,7 @@
 title: Mixtures of Dirac Delta Distributions
 date: 2023-03-01 18:55:00 -0800
 categories: [statistics]
-tags: [statistics,dirac-delta-distribution,python,pymc,arviz,matplotlib,numpy,mixture-distribution,poisson-distribution]
+tags: [statistics,dirac-delta-distribution,python,pymc,arviz,matplotlib,numpy,mixture-distribution,poisson-distribution,dirichlet-distribution]
 math: true
 mermaid: true
 ---
