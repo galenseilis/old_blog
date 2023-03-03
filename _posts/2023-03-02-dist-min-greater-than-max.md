@@ -1,8 +1,8 @@
 ---
-title: Probability of Min(X) > Max(Y)
-date: 2023-03-02 21:21:00 -0800
+title: Probability of Min of X Greater than Max of Y
+date: 2023-03-02 21:21:09 -0800
 categories: [statistics,probability-distribution]
-tags: [statistics,probability-distribution,derivation,change-of-variables,transformation,stochastic-order,identical-and-independently-distributed,,random-variables,statistical-independence,smooth-function,minimum,maximum,probability,order-statistics,convolution,convolution-theorem,fourier-transform]
+tags: [statistics,probability-distribution,derivation,change-of-variables,transformation,stochastic-order,identical-and-independently-distributed,random-variables,statistical-independence,smooth-function,minimum,maximum,probability,order-statistics,convolution,convolution-theorem,fourier-transform]
 math: true
 ---
 
