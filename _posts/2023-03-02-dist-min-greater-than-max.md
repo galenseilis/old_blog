@@ -26,6 +26,11 @@ To compute the convolution of the densities $f_U \star f_V$ we need the density 
 
 $$f_U(u) = \frac{d}{dx} F_X(x) = n \left[ 1 - F_X(x) \right]^{n-1}f_X(x)$$
 
-Finally we can use the convolution theorem to obtain the result via the Fourier transform $\mathcal{F}$ and its inverse $\mathcal{F}^{-1}$.
+We can use the convolution theorem to obtain the result via the Fourier transform $\mathcal{F}$ and its inverse $\mathcal{F}^{-1}$.
 
-$$\mathcal{F}^{-1} \left\{ \mathcal{F} \left\{ n \left[ 1 - F_X(x) \right]^{n-1} f_X(x) \right\} \mathcal{F} \left\{ m f_Y(-y) \left[ F_Y(-y) \right]^{m-1} \right\}  \right\}$$
+$$f_{X_{(1)} - Y_{(m)}} = \mathcal{F}^{-1} \left\{ \mathcal{F} \left\{ n \left[ 1 - F_X(x) \right]^{n-1} f_X(x) \right\} \mathcal{F} \left\{ m f_Y(-y) \left[ F_Y(-y) \right]^{m-1} \right\}  \right\}$$
+
+
+Finally, we can obtain the cumulative distribution by integrating:
+
+$$F_{X_{(1)} - Y_{(m)}}(x,y) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{X_{(1)} - Y_{(m)}}(x,y) dx dy$$
