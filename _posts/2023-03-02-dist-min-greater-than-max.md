@@ -28,4 +28,4 @@ $$f_U(u) = \frac{d}{dx} F_X(x) = n \left[ 1 - F_X(x) \right]^{n-1}f_X(x)$$
 
 Finally we can use the convolution theorem to obtain the result via the Fourier transform $\mathcal{F}$ and its inverse $\mathcal{F}^{-1}$.
 
-$$\mathcal{F}^{-1} \left\{ \mathcal{F} \left\{ n \left[ 1 - F_X(x) \right]^{n-1} f_X(x) \right\} \mathcal{F} \left\{ m f_Y(-y) \left[ F_Y(-y) \right]^m \right\}  \right\}$$
+$$\mathcal{F}^{-1} \left\{ \mathcal{F} \left\{ n \left[ 1 - F_X(x) \right]^{n-1} f_X(x) \right\} \mathcal{F} \left\{ m f_Y(-y) \left[ F_Y(-y) \right]^{m-1} \right\}  \right\}$$
