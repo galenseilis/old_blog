@@ -72,7 +72,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode: dark # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -88,14 +88,14 @@ avatar: https://media.licdn.com/dms/image/D5603AQFTcW-1xNt7Zg/profile-displaypho
 toc: true
 
 comments:
-  active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: utterances         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo:         # <gh-username>/<repo>
-    issue_term:   # < url | pathname | title | ...>
+    repo: galenseilis/galenseilis.github.io         # <gh-username>/<repo>
+    issue_term:   pathname # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
     repo:              # <gh-username>/<repo>
