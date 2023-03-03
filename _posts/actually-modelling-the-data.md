@@ -1,6 +1,6 @@
 ---
 title: Actually Modelling the Data
-date: 2023-02-16 12:00:0
+date: 2023-03-02 12:00:0
 categories: [statistics,statistical-modelling]
 tags: [expression-tree,computation-graph,statistics,modelling,differential-equations,t-test,histogram,boxplot,welch-t-test,random-variable,measurable-function,outcome-space,probability-space,functions,transformations,data-transformations,relation,binary-relation,domain,codomain,normality,ordinary-least-squares,gauss-markov-theorem,estimation,parameters,general-linear-model,multiple-linear-regression,assumptions,function-composition,generalized-linear-models,linear-mixed-effects,mixed-effects,structural-equation-models,nonlinear-regression,generalized-linear-mixed-models,nonlinear-mixed-effects-models,empirical-induction,problem-of-induction,regression,regression-analysis,estimators,lorenz-system,bayesian,boostrap,p-values,curves,computer-algebra-system,normal-distribution,differentials,ordinary-differential-equations,stochastic-processes,stochastic-calculus,stochastic-differential-equations,ito-calculus,stratonovich-integral,derivatives,python]
 math: true
