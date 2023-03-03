@@ -1,5 +1,5 @@
 ---
-title: Distribution of the Minimum of Sample Being Less than the Maximum of Another Sample
+title: Probability of Min(X) > Max(Y)
 date: 2023-03-02 21:21:00 -0800
 categories: [statistics,probability-distribution]
 tags: [statistics,probability-distribution,derivation,change-of-variables,transformation,stochastic-order,identical-and-independently-distributed,,random-variables,statistical-independence,smooth-function,minimum,maximum,probability,order-statistics,convolution,convolution-theorem,fourier-transform]
