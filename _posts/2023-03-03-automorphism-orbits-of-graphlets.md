@@ -33,7 +33,9 @@ A [bijection](https://en.wikipedia.org/wiki/Bijection) is a [function](https://e
 
 A [graph isomorphism](https://en.wikipedia.org/wiki/Graph_isomorphism) is a [bijection](https://mathworld.wolfram.com/Bijection.html) *f* between two graphs (which can be the same graph in the case of graph automorphisms) such that any two vertices *u* and *v* in the first graph are adjacent *if-and-only-if* *f(u)* and *f(v)* are adjacent. 
 
-![https://upload.wikimedia.org/wikipedia/commons/9/9a/Graph_isomorphism_a.svg](https://upload.wikimedia.org/wikipedia/commons/9/9a/Graph_isomorphism_a.svg) ![https://upload.wikimedia.org/wikipedia/commons/8/84/Graph_isomorphism_b.svg](https://upload.wikimedia.org/wikipedia/commons/8/84/Graph_isomorphism_b.svg)
+![https://upload.wikimedia.org/wikipedia/commons/9/9a/Graph_isomorphism_a.svg](https://upload.wikimedia.org/wikipedia/commons/9/9a/Graph_isomorphism_a.svg) 
+
+![https://upload.wikimedia.org/wikipedia/commons/8/84/Graph_isomorphism_b.svg](https://upload.wikimedia.org/wikipedia/commons/8/84/Graph_isomorphism_b.svg)
 
 A [graph automorphism](https://mathworld.wolfram.com/GraphAutomorphism.html) is a [graph isomorphism](https://en.wikipedia.org/wiki/Graph_isomorphism) where the domain graph and the image graph are the same graph.
 
