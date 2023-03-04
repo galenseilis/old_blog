@@ -3,10 +3,9 @@ title: Quotes I Like
 date: 2023-03-03 19:35:09 -0800
 categories: [quotes]
 tags: [quotes]
-math: true
 ---
 
-Nothing like an assortment of miscellaneous quotes, right?
+Nothing like an assortment of miscellaneous quotes, right? I'll add more once in a while.
 
 > **Quotation** (John Tukey)
 >
