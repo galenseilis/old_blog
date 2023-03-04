@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-> [This question](https://math.stackexchange.com/questions/4371576/what-is-dyadic-sampling-in-the-context-of-a-wavelet-transform) was automatically deleted from `math.stackexchange.com`.
+> [This question](https://math.stackexchange.com/questions/4367093/series-expansion-for-total-derivative-of-finite-order) was automatically deleted from `math.stackexchange.com`.
 {: .prompt-info}
 
 # Question
