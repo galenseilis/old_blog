@@ -7,6 +7,10 @@ math: true
 mermaid: true
 ---
 
+
+> Some of the figures in this post are more easily read in light mode rather than dark mode. When time allows I will find suitable replacement images.
+{: .prompt-info}
+
 Back in May 2020 I released a video on YouTube for the HackSeq event:
 
 {% include embed/youtube.html id='vY1UkCPSKH8' %}
