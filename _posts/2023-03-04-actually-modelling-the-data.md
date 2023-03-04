@@ -65,7 +65,7 @@ It may be tempting to lean on the distinction that a model only represents the *
 
 I don't think that Dustin is referring to essentialism. He has mentioned separating the *signal* from *noise*, which is a different distinction from essentialism. But it also isn't clear to me how this distinction makes rank-based statistics into non-models.
 
-While this "model as representation" is my preferred choice of meaning for "model" in my philosophical thinking, is too broad for the binary classification Dustin would like to draw between rank-based statistics and non-rank-based statistics.
+While this "model as representation" is my preferred choice of meaning for "model" in my philosophical thinking, it is too broad for the binary classification Dustin would like to draw between rank-based statistics and non-rank-based statistics.
 
 Let us move on to what I think about as a "statistical model".
 
