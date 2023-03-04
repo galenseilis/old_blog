@@ -201,3 +201,5 @@ During my time at this position, I was trained in multiple aspects of processing
 # Other Places
 
 [![Foo](https://upload.wikimedia.org/wikipedia/commons/7/75/Stack_Exchange_logo_and_wordmark.svg)](https://stackexchange.com/users/5468284/galen){:target="_blank"}
+
+[![Bar](https://upload.wikimedia.org/wikipedia/en/7/76/INaturalist_logo.png)](https://www.inaturalist.org/people/galenseilis){:target="_blank"}
