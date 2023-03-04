@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-Back in May 2020 I release a video for the HackSeq event:
+Back in May 2020 I released a video on YouTube for the HackSeq event:
 
 {% include embed/youtube.html id='vY1UkCPSKH8' %}
 
