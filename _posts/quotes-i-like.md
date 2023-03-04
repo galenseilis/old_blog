@@ -1,3 +1,13 @@
+---
+title: Quotes I Like
+date: 2023-03-03 19:35:09 -0800
+categories: [quotes]
+tags: [quotes]
+math: true
+---
+
+Nothing like an assortment of miscellaneous quotes, right?
+
 > **Quotation** (John Tukey)
 >
 > The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.

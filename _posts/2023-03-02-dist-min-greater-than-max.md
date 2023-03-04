@@ -22,7 +22,7 @@ We would like to put our problem into the form of adding two independent random 
 
 $$f_V(v) = m f_Y(-y) \left[ F_Y(-y)\right]^{m-1}.$$
 
-To compute the convolution of the densities $f_U \star f_V$ we need the density $F_U$:
+To compute the convolution of the densities $f_U \star f_V$ we need the density $f_U$:
 
 $$f_U(u) = \frac{d}{dx} F_X(x) = n \left[ 1 - F_X(x) \right]^{n-1}f_X(x)$$
 
