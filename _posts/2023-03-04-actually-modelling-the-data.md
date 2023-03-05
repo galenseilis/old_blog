@@ -146,7 +146,7 @@ Transformations are not only for preparing variables to satisfy the assumptions 
 
 $$f(X,Z; \vec{\beta}) \triangleq \underbrace{\underbrace{\underbrace{\underbrace{\beta_1 X}_{\text{Scale }X} + \underbrace{\beta_2 Z}_{\text{Scale } Z}}_{\text{Sum}} + \beta_0}_{\text{Translate by } \beta_0} + \epsilon}_{\text{Sum}}$$
 
-Within the above equation I have underbraced multiple transformations of the random variables. The way I have pointed them out is not unique. I could have focused on linear combinations and their relation to linear transformations, for example. A fairly general way to look at the non-uniqueness is to thing of an expression tree or computation graph which has a partial order on the operations. Here is an example of an expression tree for the linear regression above.
+Within the above equation I have underbraced multiple transformations of the random variables. The way I have pointed them out is not unique. I could have focused on linear combinations and their relation to linear transformations, for example. A fairly general way to look at the non-uniqueness is to think of an expression tree or computation graph which has a partial order on the operations. Here is an example of an expression tree for the linear regression above.
 
 ![](/assets/images/linear_regression_expression_tree.png)
 
