@@ -2,12 +2,12 @@
 title: Crayon Drawing 1
 date: 2023-03-05 22:29:00
 categories: [art,crayon-drawing]
-tags: [art,crayon-drawing,crayon-artwork]
+tags: [art,crayon-drawing,crayon-artwork,chatgpt]
 math: true
 ---
 
 
-I tried googling "what is a picture made with crayon called" and I consistently got suggestions for crayon etching, which is a more specific usage of crayon. I asked ChatGPT the following question
+I tried googling "what is a picture made with crayon called" and I consistently got suggestions for crayon etching, which is a more specific usage of crayons. I asked ChatGPT the following question
 
 > What is a picture called when it is made with crayon? I don't mean a crayon etching, but just when crayons are used to make a picture.
 
