@@ -96,6 +96,10 @@ for func in models:
 
 The following table of figures summarizes the results.
 
+> The plots below may be quite small depending on the resolution of your device's screen. If you click or tap on them they should be maximized.
+{: .prompt-tip}
+
+
 | Function    | Training  History                                                            | Visual  Fit                                                            |
 |-------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | sin         | ![](/assets/images/nn_elementary_functions/sine_training_history.png)        | ![](/assets/images/nn_elementary_functions/sine_visual_fit.png)        |
