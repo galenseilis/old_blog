@@ -50,7 +50,7 @@ And I myself have echoed a similar sentiment in a comment on one of his videos:
 
 Unfortunately, Galen today disagrees with Galen from over a year ago. Reading and contemplation will do that. Later in this post I will try to recover some likely points of agreement, but let us understand the disagreement about models first.
 
-Without getting *too deep* into quagmires of epistemology and ontology, or too technical for that matter, there is a basic philosophical problem: *representation* is too ubiquitous for our purposes here. If you're using any kind of language or symbols to represent things at all, and using this representation notion of a model, then you are modelling things. Taken to even a cursory logical rigor we find that anything that references the data can be thought of as *modelling the data*.
+Without getting *too deep* into quagmires of epistemology and ontology, there is a basic philosophical problem: *representation* is too ubiquitous for our purposes here. If you're using any kind of language or symbols to represent things at all, and using this representation notion of a model, then you are modelling things. Taken to even a cursory logical rigor we find that anything that references the data can be thought of as *modelling the data*.
 
 There is a metaphor I find helpful around this: the [map-territory relation](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation). I was going to explain it here, but I think these blog posts adequately cover the idea:
 
