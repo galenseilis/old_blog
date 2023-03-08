@@ -14,7 +14,7 @@ Let us say we retreat to a position invoking a statistical assumption without ca
 - [Functions of independent Random Variables](https://stats.stackexchange.com/questions/94872/functions-of-independent-random-variables)
 - [Are functions of independent variables also independent](https://math.stackexchange.com/questions/8742/are-functions-of-independent-variables-also-independent)
 
-So what happens if you train a model $$Y = f(X; \theta) + \epsilon$$ when $$\{ X,Y,\epsilon \}$$ are independent? I encourage you to try it out. You'll observe that the sample estimates of $$\mathbb{E}[Y | X]$$ and $$\mathbb{E}[Y]$$ are equal up to sampling variation. Let's see an example with coins (i.e. Bernoulli trials):
+So what happens if you train a model $$Y = f(X; \theta) + \epsilon$$ when $$\{ X,Y,\epsilon \}$$ are independent? I encourage you to try it out. You'll observe that the sample estimates of $$\mathbb{E}[Y \vert X]$$ and $$\mathbb{E}[Y]$$ are equal up to sampling variation. Let's see an example with coins (i.e. Bernoulli trials):
 
 ```python
 import numpy as np

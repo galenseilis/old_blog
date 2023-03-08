@@ -32,6 +32,7 @@ def genmlp(width):
     '''
     model = tf.keras.models.Sequential()
     model.add(tf.keras.Input(shape=(1,)))
+    model.add(tf.keras.layers.Normalization())
     model.add(tf.keras.layers.Dense(width, activation='sigmoid'))
     model.add(tf.keras.layers.Dense(1))
     return model
@@ -53,7 +54,6 @@ functions = {
     }
 images = {key:f(t) for key,f in functions.items()}
 images = {key:tfnormalize(ft) for key,ft in images.items()}
-t = tfnormalize(t)
 
 # Train models
 results = {}
