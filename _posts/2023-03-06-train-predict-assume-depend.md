@@ -29,4 +29,4 @@ Not that this computational experiment of computing the conditional expectation 
 
 The intuitive phrasing is that if $X$ and $Y$ are independent than any model that conditions $Y$ on $X$ will not have any effect in theory, and very little if any in practice. When you train a model on variables for which you do not know if they are independent you are not committing any kind of fallacy. The model will fit better or worse. If it consistently predicts test examples then there is likely some statistical dependence. If not, there *could* statistical independence or the form of statistical dependence is not one in which your choice of model captured very well.
 
-
+In summary, training predictive models does not assume statistical dependence. It just won't be a better model than taking the average of the predictor variable instead.
