@@ -180,4 +180,4 @@ Run metrics:
 Files skipped (0):
 ```
 
-It is interesting to see that a software package intended to detect security issues finds some potential security issues within itself. None of the issues were rated as being high severity, and they're potentially all justified depending on if/how they were considered by the developers of Bandit. You can see that each issue has a documented description in the results.
+You can see that each issue has a documented description in the results. The first issue actually appears to be more of a warning that the subprocess module is potentially dangerous, which makes sense. Others appear to be about xml or temp files. It is interesting to see that a software package intended to detect security issues finds some potential security issues within itself. None of the issues were rated as being high severity, and they're potentially all justified depending on if/how they were considered by the developers of Bandit.  What remains an open question for any given project is how to assess and manage risk. Bandit helps with assessing risk, but it will not provide a judgement of whether it is "acceptable" or not.
