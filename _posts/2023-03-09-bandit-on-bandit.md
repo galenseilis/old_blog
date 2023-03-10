@@ -1,6 +1,6 @@
 ---
 title: Bandit Passes Bandit
-date: 2023-03-09 20:00:00
+date: 2023-03-09 21:12:00
 categories: [security,information-security]
 tags: [python,security,information-security,bandit]
 ---
