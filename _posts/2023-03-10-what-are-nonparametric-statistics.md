@@ -1,8 +1,16 @@
-The distinction of "parametric" vs "nonparametric" statistics is worth making as it allows us to categorize braod areas of techniques. It isn't without problems, however. Soe of the difficulties with the term "nonparametric statistics" are alluded to by Andrew Wasserman in his textbook *All of Nonparametric Statistics*:
+---
+title: What Are Nonparametric Statistics?
+date: 2023-03-10 20:11:00
+categories: [statistics,nonparametric-statistics]
+tags: [statistics,nonparametric-statistics,andrew-wasserman,inference,fourier-series,hilbert-space,probability-distribution,rank-statistics,normal-distribution,mean,variance,hypothesis-testing,hierarchical-model,Bayesian-model,dirichlet-process,latent-variable,kernel-density-estimation,approximation-theory,overfitting,cross-validation,pinskers-theorem,local-regression,locally-estimated-scatterplot-smoothing,locally-weighted-scatterplot-smoothing,rank-based-nonparametric-statistcs,regularization,inner-product,epsilon-delta-proof]
+math: true
+---
+
+The distinction of "parametric" vs "nonparametric" statistics is worth making as it allows us to quickly categorize broad areas of techniques. It isn't without problems, however. Some of the difficulties with the term "nonparametric statistics" are alluded to by Andrew Wasserman in his textbook *All of Nonparametric Statistics*:
 
 > The basic idea of nonparemetric inference is to use data to infer an unknown quantity while making as few assumptions as possible. Usually, this means using statistical models that are infinite-dimensional. Indeed, a better name for nonparametric inference might be infinite-dimensional inference. But it is difficult to give a precise definition of nonparametric inference, and if I did venture to give one, no doubt I would be barraged with dissenting opinions.
 
-This notion of infinite-dimensional inference I suspect pertains to the usage of infinite function spaces that occur in some non-parametric procedures. Chapter 9 of All of Nonparametric Statistcs by Wasserman cover Wavelets which are a nice example of functional analysis. Wavelets can be used to form bases of function spaces in a way analogous to how Fourier series can be used to construct Fourier bases. It turns out that lots of functions can be expressed as linear combinations of such mathematical functions. Both of these approaches to representing function spaces rely on inner products making these spaces Hilbert spaces which are allowed to be infinite dimensional. The word *dimension* can be a bit of an overloaded term. Here I meant "dimension" in the same sense as vector spaces.
+This notion of infinite-dimensional inference I suspect pertains to the usage of infinite function spaces that occur in some nonparametric procedures. Chapter 9 of All of Nonparametric Statistcs by Wasserman cover Wavelets which are a nice example of functional analysis. Wavelets can be used to form bases of function spaces in a way analogous to how Fourier series can be used to construct Fourier bases. It turns out that lots of functions can be expressed as linear combinations of such mathematical functions. Both of these approaches to representing function spaces rely on inner products making these spaces Hilbert spaces which are allowed to be infinite dimensional. The word *dimension* can be a bit of an overloaded term. Here I meant "dimension" in the same sense as vector spaces.
 
 Let us compare this to the description on Wikipedia (accessed 2022-12-18):
 
@@ -24,33 +32,33 @@ distributions. As such it is the opposite of parametric statistics.
 > (the normal) and the hypothesis was concerned entirely with the value of one or both of its parameters. Such a hypothesis, for obvious
 > reasons, is called parametric.
 > Hypothesis (c) was of a different nature, as no parameter values are specified in the statement of the hypothesis; we might reasonably
-> call such a hypothesis non-parametric. Hypothesis (d) is also non-parametric but, in addition, it does not even specify the underlying
+> call such a hypothesis nonparametric. Hypothesis (d) is also nonparametric but, in addition, it does not even specify the underlying
 > form of the distribution and may now be reasonably termed distribution-free. Notwithstanding these distinctions, the statistical literature
-> now commonly applies the label ”non-parametric” to test procedures that we have just termed ”distribution-free”, thereby losing a useful
+> now commonly applies the label ”nonparametric” to test procedures that we have just termed ”distribution-free”, thereby losing a useful
 > classification.
-> 2. The second meaning of non-parametric covers techniques that do not assume that the structure of a model is fixed. Typically, the model
+> 2. The second meaning of nonparametric covers techniques that do not assume that the structure of a model is fixed. Typically, the model
 > grows in size to accommodate the complexity of the data. In these techniques, individual variables are typically assumed to belong to
 > parametric distributions, and assumptions about the types of connections among variables are also made. These techniques include, among
 > others:
-> - non-parametric regression, which is modeling whereby the structure of the relationship between variables is treated non-
+> - nonparametric regression, which is modeling whereby the structure of the relationship between variables is treated non-
 > parametrically, but where nevertheless there may be parametric assumptions about the distribution of model residuals.
-> - non-parametric hierarchical Bayesian models, such as models based on the Dirichlet process, which allow the number of latent
+> - nonparametric hierarchical Bayesian models, such as models based on the Dirichlet process, which allow the number of latent
 > variables to grow as necessary to fit the data, but where individual variables still follow parametric distributions and even the
 > process controlling the rate of growth of latent variables follows a parametric distribution.
 
-What I find salient about this wikipedia entry and Wasserman’s quote is that non-parametric elludes a
+What I find salient about this wikipedia entry and Wasserman’s quote is that nonparametric elludes a
 formal, unique, and rigorous definition. This makes it difficult to reason precisely about, but it still helps us
 roughly classify methods.
 
-Ever since I first heard of non-parametric statistics it always seemed like a misnomer to me that non-
+Ever since I first heard of nonparametric statistics it always seemed like a misnomer to me that non-
 parametric does not mean something lacking parameters. A nice example of this is kernel density estimation
 (KDE) with a Gaussian kernel. Although each kernel has a mean and standard deviation, Gaussian KDE is
-often seen as a non-parametric procedure because it can really take on such a wide variety of shapes that
+often seen as a nonparametric procedure because it can really take on such a wide variety of shapes that
 resemble other distributions that it seems like we have not assumed much. Perhaps if one fixed the number
 of kernels and the bandwidth that they could argue they have a parametric procedure, but in practice most
 of us place KDE in the nonparametric side of the distinction.
 
-What KDE and many other non-parametric methods have in common is not that you cannot assume
+What KDE and many other nonparametric methods have in common is not that you cannot assume
 a particular family of distributions if you insist, but rather that some model structures and estimators are
 so flexible that they can fit practically anything. (In some cases we have theorems that show extremely general capabilities of approximation. The field of mathematics called
 approximation theory explores how functions can look like each other. Often these proofs involve (ε-δ)-proofs under a choice of
@@ -58,8 +66,8 @@ metric or specialized bounds such as Pinsker’s inequality.) With this flexibil
 be combatted with a variety of regularization techniques, and we can assess how badly such models have
 overfit using cross-validation. It is with such methods that you may hear phrases like, “the method is non-
 parametric because we have not assumed a fixed model structure ahead of time”. And it is in this sense that
-random forests or LOESS/LOWESS regression are non-parametric.
+random forests or LOESS/LOWESS regression are nonparametric.
 
-Rank-based non-parametric statistcs are more like the other sense of non-parametric mentioned in the
-wikipedia article. It isn’t that statistics calculated on ranks are themselves really flexible in the same sense
-as discussed above. Rather, they often ignore many of the properties of the data.
+Rank-based nonparametric statistcs are more like the other sense of nonparametric mentioned in the wikipedia article. It isn’t that statistics calculated on ranks are themselves really flexible in the same sense as discussed above. Rather, they often ignore many of the properties of the data. That's a bad thing if you wanted to study those properties, but it is potentially a good thing if you wanted to extract the order properties away from some of the other properties. More specifically the ranks of a collection of continuous random variables are [almost-surely](https://en.wikipedia.org/wiki/Almost_surely) uniform. That continuity assumption is important. In constrast the distribution of the ranks of various discrete random variables actually does depend substantially on the parametric family of distribution. So rank-based statistics are not non-parametric *per se*, but they can be.
+
+Loosely speaking nonparametric statistics are those in which you do not need to worry about specifying a parametric family of distributions. Sometimes that is because of being able to approximate most functions/distributions, and sometimes it is because of invariance to choice of distribution.
