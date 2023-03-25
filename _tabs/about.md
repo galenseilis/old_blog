@@ -179,6 +179,7 @@ During my time at this position, I was trained in multiple aspects of processing
 
 # Software
 
+![Star History Chart](https://api.star-history.com/svg?repos=galenseilis/ConAction&type=Date)(https://star-history.com/#galenseilis/ConAction&Date)
  - ConAction: A package for studying how things change together. ([GitHub](https://github.com/galenseilis/ConAction){:target="_blank"}, [ReadTheDocs](https://conaction.readthedocs.io/en/latest/){:target="_blank"}, [PyPi](https://pypi.org/project/conaction/){:target="_blank"})
 
 # Volunteer
