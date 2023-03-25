@@ -7,6 +7,7 @@ math: true
 ---
 
 > This post is based on a memorandum I wrote on 2019-06-12.
+{: .prompt-info}
 
 # Purpose
 
