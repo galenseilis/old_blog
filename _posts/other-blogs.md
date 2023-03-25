@@ -1,0 +1,4 @@
+- [*Biased and Inefficient*](https://notstatschat.rbind.io/)
+- [Terry Tao](https://terrytao.wordpress.com/)
+- [Arya McCarthy](https://aryamccarthy.github.io/)
+- [statmodeling.stat.columbia.edu](https://statmodeling.stat.columbia.edu/)

@@ -106,4 +106,4 @@ $$\frac{F{\left(a \right)} - F{\left(x \right)}}{F{\left(a \right)} - F{\left(b 
 
 reveals that SymPy produced the same result but with a distinct expression.
 
-It is easy to confirm that not all of the functionals I have tabulated above will provide a normalization onto the interval $[0,1]$.
+It is easy to confirm that not all of the functionals I have tabulated above will provide a normalization onto the interval $[0,1]$. Because this and other properties may not be preserved, one might regard this as an "unnatural generalization".
