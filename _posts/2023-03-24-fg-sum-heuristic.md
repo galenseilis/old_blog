@@ -24,6 +24,7 @@ Where $\bar{x}$ is the average number of stems per hectare (or plot, if scaling 
 The LCL is a function of the mean number of stems per hectare, and the mean number of stems per area is a function of the total count of FG/WS stems in the sample. While LCL is not solely a function of the total count of FG/WS stems, the following figure shows the relationships among LCL, the sum of FG/WS plot counts, and the sample size.
 
 ![](/assets/images/n_affects_sum_effect_on_LCL.png)
+
 Scatterplot showing the relationship between the sum of free growing plot counts and the resulting lower confidence limit used to determine sufficient stocking for Free-to-Grow status of a surveyed block. The relationship is plotted at 5 different sample sizes to illustrate the effect that sample size has on the relationship between the sum of free growing plot counts and the resulting lower confidence limit. Each point represents a possible combination of FG/WS stem counts for a sampled block.
 
 
