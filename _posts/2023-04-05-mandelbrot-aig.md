@@ -1,6 +1,6 @@
 ---
 title: Dr. Lisle's Lecture On The Mandelbrot Set
-date: 2023-04-05 19:00:00 -0800
+date: 2023-04-10 17:00:00 -0800
 categories: [math]
 tags: [math,education,philosophy,answers-in-genesis,jason-lisle,philosophy-of-mathematics,religion,christianity,religion,atheism,young-earth-creationism,mandelbrot-set,sets,set-theory,cardioid,nephroid,pseudoscience,pseudophilosophy,pseudo-scholarship,magical-thinking,theism,god,atheism,materialism,physicalism]
 math: true
