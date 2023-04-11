@@ -19,10 +19,10 @@ The tiresome titles of the form `<type_of_person_I_do_not_agree_with>`*s' WORST 
 The video is a talk given by Dr. Jason Lisle on the Answers in Genesis YouTube Channel. The beginning of the video] suggests that there is a hidden code in numbers but throughout the video the subject of '[codes](https://en.wikipedia.org/wiki/Coding_theory)' is not revisited.
 
 
-The talk begins inoccuously with a brief but intuitive explanation of sets and the Mandelbrot set. This introduction was acceptable as a popular mathematics talk. There is only so much rigor that can be imposed on a non-technical audience. The only mathematical detail that irked me here was a misleading description Dr. Lisle gave of "remaining small". He gives partial sequence of 
+The talk begins inoccuously with a brief but intuitive explanation of sets and the Mandelbrot set. This introduction was acceptable as a popular mathematics talk. There is only so much rigor that can be imposed on a non-technical audience.
 
 
-The Mandelbrot set doesn't require any [presuppositional apologetics](https://en.wikipedia.org/wiki/Presuppositional_apologetics) to be understood and enjoyed by a wider audience. Consider watching the following videos for contrast.
+But the Mandelbrot set doesn't require any [presuppositional apologetics](https://en.wikipedia.org/wiki/Presuppositional_apologetics) to be understood and enjoyed by a wider audience. I think it should be enjoyed by anyone who wishes to without them worrying about whether "their worldview can account for it". Consider watching the following videos for contrast.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FFftmWSzgmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
