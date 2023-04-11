@@ -2,7 +2,7 @@
 title: ChatGPT On Canada's Anesthetist Shortage
 date: 2023-04-10 17:00:00 -0800
 categories: [chatgpt]
-tags: [canada,anesthetist,anesthesiology,hospital,operations-management,chatgpt,healthcare,anesthesia,health-professionals,healthcare-system,cross-training,nurses,nurse-practitioners,physccians,anesthesiologist,sustainability]
+tags: [canada,anesthetist,anesthesiology,hospital,operations-management,chatgpt,healthcare,anesthesia,health-professionals,healthcare-system,cross-training,nurses,nurse-practitioners,physicians,anesthesiologist,sustainability]
 math: true
 mermaid: true
 ---
@@ -15,6 +15,12 @@ I asked ChatGPT a question about hospitals adapting to Canada's shortage in anes
 > Consider using these answers as suggested information for further reading.
 {: .prompt-tip}
 
+> **Question**
+>
+> How should hospitals in Canada adapt to the current shortage of anesthetists?
+
+> **Answer**
+>
 > The shortage of anesthetists in Canada is a significant issue that has been affecting the healthcare system for some time. To adapt to this shortage, hospitals in Canada can consider the following strategies:
 >
 >    - Cross-training healthcare professionals: Hospitals can cross-train nurses, nurse practitioners, and physician assistants to provide anesthesia services under the supervision of an anesthesiologist. This will help to alleviate the workload of anesthetists and ensure that patients receive the care they need.
