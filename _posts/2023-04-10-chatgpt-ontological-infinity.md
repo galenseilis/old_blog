@@ -2,7 +2,7 @@
 title: ChatGPT on "Ontological Infinity"
 date: 2023-04-10 17:00:00 -0800
 categories: [chatgpt,philosophy,ontology,infinity,ontological-infinity]
-tags: [philosophy,ontology,infinity,ontological-infinity]
+tags: [philosophy,ontology,infinity,ontological-infinity,chatgpt]
 math: true
 mermaid: true
 ---
