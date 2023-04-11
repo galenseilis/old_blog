@@ -16,7 +16,7 @@ The tiresome titles of the form `<type_of_person_I_do_not_agree_with>`*s' WORST 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S2xHZPH5Sng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The video is a talk given by Dr. Jason Lisle on the Answers in Genesis YouTube Channel. The beginning of the video] suggests that there is a hidden code in numbers but throughout the video the subject of '[codes](https://en.wikipedia.org/wiki/Coding_theory)' is not revisited.
+The video is a talk given by Dr. Jason Lisle on the Answers in Genesis YouTube Channel. The beginning of the video suggests that there is a hidden code in numbers but throughout the video the subject of '[codes](https://en.wikipedia.org/wiki/Coding_theory)' is not revisited.
 
 
 The talk begins inoccuously with a brief but intuitive explanation of sets and the Mandelbrot set. This introduction was acceptable as a popular mathematics talk. There is only so much rigor that can be imposed on a non-technical audience.
