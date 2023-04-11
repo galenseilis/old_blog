@@ -30,7 +30,7 @@ The Mandelbrot set doesn't require any [presuppositional apologetics](https://en
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LqbZpur38nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Beyond the visually pleasing introduction to the Mandelbrot set, I found that Dr. Lisle's talk was mostly a string of logical fallacies with the most common of them being the [argument from ignorance (*argumentum ad ignorantiam*)](https://en.wikipedia.org/wiki/Argument_from_ignorance). Furthermore, Dr. Lisle claims (and in some cases tacitly assumes) that his worldview solves a variety of mysteries related but he doesn't *demonstrate* that they actually do.
+Beyond the visually pleasing introduction to the Mandelbrot set, I found that Dr. Lisle's talk was mostly a string of logical fallacies with the most common of them being the [argument from ignorance (*argumentum ad ignorantiam*)](https://en.wikipedia.org/wiki/Argument_from_ignorance). Furthermore, Dr. Lisle claims (and in some cases tacitly assumes) that his worldview solves a variety of mysteries related to mathematics and abstraction but he doesn't *demonstrate* that it actually does.
 
 The talk is more rhetorical and preaching than reasonable and was intended to gratify an audience that didn't need convincing. 
 
