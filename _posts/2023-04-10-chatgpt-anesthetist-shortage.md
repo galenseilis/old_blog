@@ -1,4 +1,4 @@
---
+---
 title: ChatGPT On Canada's Anesthetist Shortage
 date: 2023-04-10 17:00:00 -0800
 categories: [chatgpt]
