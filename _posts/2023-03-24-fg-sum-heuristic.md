@@ -11,7 +11,7 @@ math: true
 
 # Purpose
 
-After doing enough silviculture plots, intuitions about whether the block will pass the lower confidence limit (LCL) of stems per hectare (SPH) are developed. This memo covers some computational results that back up these intuitions, and may serve as a useful shorthand for predicting if a block will have sufficient SPH for meeting stocking standards.
+After doing enough silviculture plots, intuitions about whether the block will pass the lower confidence limit (LCL) of stems per hectare (SPH) are developed. This post covers some computational results that back up these intuitions, and may serve as a useful shorthand for predicting if a block will have sufficient SPH for meeting stocking standards.
 
 # Introduction and Findings
 One of these intuitions is that if the free-growing (FG), or well-spaced (WS), counts are sufficiently high for a given number of plots, then the statistics will almost certaintly pass. Similarly, low counts at a given sample size suggest that the statistics will almost certainly fail. The pass-or-failure status is dependent on the LCL.
