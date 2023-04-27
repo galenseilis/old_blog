@@ -11,7 +11,18 @@ Let the **independence gap** be defined as
 
 $$\phi(x_1, \ldots, x_n) \triangleq F_{X_1, \ldots, X_n}(x_1, \ldots, x_n) - \prod_{j=1}^n F_{X_j}(x_j)$$
 
-where $F_{X_1, \ldots, X_n}$ is the joint [CDF](https://en.wikipedia.org/wiki/Cumulative_distribution_function) over the random variables $X_1, \ldots, X_n$ and $F_{X_j}(x_j)$ is the marginal CDF of the $j$th variable. That is, the independence gap directly quantifies (in a signed way) the statistical dependence about a point $(x_1, \ldots, x_n)$ based on the definition of statistical independence.
+where 
+
+$$F_{X_1, \ldots, X_n}$$
+
+is the joint [CDF](https://en.wikipedia.org/wiki/Cumulative_distribution_function) over the random variables 
+
+$$X_1, \ldots, X_n$$ 
+
+and 
+
+$$F_{X_j}(x_j)$$
+is the marginal CDF of the $j$th variable. That is, the independence gap directly quantifies (in a signed way) the statistical dependence about a point $(x_1, \ldots, x_n)$ based on the definition of statistical independence.
 
 The independence gap whose range can be generally taken to be the real-interval $[-1,1]$. As such, it has [positive and negative parts](https://en.wikipedia.org/wiki/Positive_and_negative_parts):
 
