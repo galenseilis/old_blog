@@ -1,5 +1,5 @@
 ---
-title: Beyond Correlation: Quantifying Statistical Dependence and Its Balance
+title: Dependence Entropy
 date: 2023-04-26 12:12:00
 categories: [statistics,mathematical-statistics]
 tags: [statistics,mathematical-statistics,dependence,statistical-dependence,mutual-dependence,shannon-entropy,information-theory,calculus,probability-theory]
