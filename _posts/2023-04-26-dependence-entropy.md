@@ -27,23 +27,23 @@ is the marginal CDF of the $j$th variable. That is, the independence gap directl
 
 The independence gap whose range can be generally taken to be the real-interval $$[-1,1]$$. As such, it has [positive and negative parts](https://en.wikipedia.org/wiki/Positive_and_negative_parts){:target="_blank"}:
 
-$$\phi^+(x_1, \ldots, x_n) = \frac{|\phi(x_1, \ldots, x_n)| + \phi(x_1, \ldots, x_n)}{2}$$
+$$\phi^+(x_1, \ldots, x_n) = \frac{\|\phi(x_1, \ldots, x_n)\| + \phi(x_1, \ldots, x_n)}{2}$$
 
-$$\phi^-(x_1, \ldots, x_n) = \frac{|\phi(x_1, \ldots, x_n)| - \phi(x_1, \ldots, x_n)}{2}$$
+$$\phi^-(x_1, \ldots, x_n) = \frac{\|\phi(x_1, \ldots, x_n)\| - \phi(x_1, \ldots, x_n)}{2}$$
 
 It follows immediately that 
 
-$$0 \leq \phi^+(x_1, \ldots, x_n) \leq |\phi(x_1, \ldots, x_n)|$$
+$$0 \leq \phi^+(x_1, \ldots, x_n) \leq \|\phi(x_1, \ldots, x_n)\|$$
 
 and
 
-$$0 \leq \phi^-(x_1, \ldots, x_n) \leq |\phi(x_1, \ldots, x_n)|.$$
+$$0 \leq \phi^-(x_1, \ldots, x_n) \leq \|\phi(x_1, \ldots, x_n)\|.$$
 
 which allows us to normalize (when the denominator is non-zero) the totality of the positive and negative parts of the independence gap:
 
-$$\rho_+ = \frac{\int_{\Omega} \phi^+(x_1, \ldots, x_n) d \Omega}{\int_{\Omega} |\phi(x_1, \ldots, x_n)| d \Omega}$$
+$$\rho_+ = \frac{\int_{\Omega} \phi^+(x_1, \ldots, x_n) d \Omega}{\int_{\Omega} \|\phi(x_1, \ldots, x_n)\| d \Omega}$$
 
-$$\rho_- = \frac{\int_{\Omega} \phi^-(x_1, \ldots, x_n) d \Omega}{\int_{\Omega} |\phi(x_1, \ldots, x_n)| d \Omega}$$
+$$\rho_- = \frac{\int_{\Omega} \phi^-(x_1, \ldots, x_n) d \Omega}{\int_{\Omega} \|\phi(x_1, \ldots, x_n)\| d \Omega}$$
 
 which I'll call the **positive dependence measure** and **negative dependence measure** respectively. These functions quantify the amount of positive and negative statistical dependence as ratios.
 
