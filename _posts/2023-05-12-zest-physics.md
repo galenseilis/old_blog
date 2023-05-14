@@ -1,6 +1,6 @@
 ---
 title: Adding A Little Zest To Physics
-date: 2023-03-02 7:53:00 -0800
+date: 2023-05-12 7:53:00 -0800
 categories: [physics,zest-physics]
 tags: [zest-physics]
 math: true

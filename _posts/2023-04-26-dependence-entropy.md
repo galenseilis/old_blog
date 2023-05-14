@@ -3,6 +3,7 @@ title: Dependence Entropy
 date: 2023-04-26 12:12:00
 categories: [statistics,mathematical-statistics]
 tags: [statistics,mathematical-statistics,dependence,statistical-dependence,mutual-dependence,shannon-entropy,information-theory,calculus,probability-theory]
+math: true
 ---
 
 I want to share an update in my thinking since asking and answering [A formal definition of a "measure of association"](https://stats.stackexchange.com/q/534454/69508){:target="_blank"}. I've developed a functional which assigns how balanced the positive and negative statistical independence will be for a given probability distribution. It is not without assumptions, of course, but it is quite general all the same,
