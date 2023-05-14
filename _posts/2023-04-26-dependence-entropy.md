@@ -6,7 +6,7 @@ tags: [statistics,mathematical-statistics,dependence,statistical-dependence,mutu
 math: true
 ---
 
-I want to share an update in my thinking since asking and answering [A formal definition of a "measure of association"](https://stats.stackexchange.com/q/534454/69508){:target="_blank"}. I've developed a functional which assigns how balanced the positive and negative statistical independence will be for a given probability distribution. It is not without assumptions, of course, but it is quite general all the same,
+I want to share an update in my thinking since asking and answering [A formal definition of a "measure of association"](https://stats.stackexchange.com/q/534454/69508){:target="_blank"}. I've developed a functional which assigns how balanced the positive and negative statistical independence will be for a given probability distribution. It is not without assumptions, of course, but it is quite general all the same.
 
 Let the **independence gap** be defined as 
 
