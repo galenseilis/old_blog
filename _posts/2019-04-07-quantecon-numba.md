@@ -1,5 +1,5 @@
 ---
-title: QuantEcon 2: Numba
+title: QuantEcon 2 Numba
 date:   2019-04-09 12:00:50 -0700
 categories: [python,numba]
 tags: [python,numpy,timeit,precompiling,just-in-time-compiling,jit,vectorizing]
