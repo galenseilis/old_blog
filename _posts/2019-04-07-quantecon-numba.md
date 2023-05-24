@@ -9,7 +9,7 @@ mermaid: true
 
 # Introduction
 
-[Numba](http://numba.pydata.org/) is a Python library that provides an open source just-in-time compiler that allows a coder to mark selected parts of their code to be compiled for faster execution. As someone interested in computation at any scale, from calculating 13 * 19 (mental arithmetic is not my forte) to analyzing the behaviour of tens of thousands of genes or hundreds of thousands of IP addresses. I am not one to squeeze every inch of performance out of something small that was only meant to run once as a proof of concept, but it can be worth speeding up tasks that are either huge or will be repeated.
+[Numba](http://numba.pydata.org/) is a Python library that provides an open source just-in-time compiler that allows a coder to mark selected parts of their code to be compiled for faster execution. As someone interested in computation at any scale, from calculating $13 \times 19$ (mental arithmetic is not my *forte*) to analyzing the behaviour of tens of thousands of genes or hundreds of thousands of IP addresses. I am not one to squeeze every inch of performance out of something small that was only meant to run once as a proof of concept, but it can be worth speeding up tasks that are either huge or will be repeated.
 
 Let's get into how to use Numba -- hang on! Why not just use compiled languages like C, C++ or FORTRAN? Well, herein lies one of meta-problems of development that requires some optimization. Coding in Python is useful for quickly coding up proofs of concept, but properties like its dynamic typing slow it down compared to memory-managed code in C. Coding in C will give a faster execution for the same code, but will often require more time and degugging to get ready for deployment. Using Python with Numba is an attempt to get the best of both worlds, and in practice is not much slower than software compiled from well-written low-level languages.
 
@@ -43,7 +43,7 @@ def fib(n):
 
 print(timeit('fib(10)', globals={'fib':fib}))
 ```
-Running the above code on my laptop gives around 4.7 seconds to run the function 1000000 times according to timeit, which is reasonable for small *n* but let's see if we can speed this up with the Numba's jit.
+Running the above code on my laptop gives around $4.7$ seconds to run the function $1000000$ times according to timeit, which is reasonable for small $n$ but let's see if we can speed this up with the Numba's jit.
 
 ```python
 from numba jit
@@ -80,7 +80,7 @@ fib = jit(fib)
 
 print(timeit('fib(10)', globals={'fib':fib}))
 ```
-Running the above code with jit brought the execution time down to about 0.71 second, which is about 6.6 times faster than the original function.
+Running the above code with jit brought the execution time down to about $0.71$ seconds, which is about $6.6$ times faster than the original function.
 
 # Vectorizing
 
@@ -102,7 +102,7 @@ f(x, y)
 end = qe.util.toc()
 ```
 
-On my machine the execution time was about 0.05 seconds, which isn't half-bad by itself. Not let's run the same code in vectorized form.
+On my machine the execution time was about $0.05$ seconds, which isn't half-bad by itself. Not let's run the same code in vectorized form.
 
 ```python
 from numba import vectorize
@@ -124,7 +124,7 @@ f(x, y)
 end = qe.util.toc()
 ```
 
-This vectorized form took about 0.0042 seconds to execute, which is about 12 times faster! This is a clear demonstration that vectorizing functions is worthwhile as scalability becomes an issue.
+This vectorized form took about $0.0042$ seconds to execute, which is about $12$ times faster! This is a clear demonstration that vectorizing functions is worthwhile as scalability becomes an issue.
 
 Because the vectorization of this function means that each element of the array is calculated independently, we can further attempt to speed this calculation up by calculating elements in parallel! We do that by telling the decorator the element types (we'll use `float64`), and that the target is function should be done in parallel.
 
@@ -148,7 +148,7 @@ f(x, y)
 end = qe.util.toc()
 ```
 
-This last acceleration to make the calculations parallel squeezed the execution time down to 0.0031 seconds. This is only 0.0011 seconds faster than without the parallel execution, but still a worthwhile addition to the toolkit for doing independent calculations.
+This last acceleration to make the calculations parallel squeezed the execution time down to $0.0031$ seconds. This is only $0.0011$ seconds faster than without the parallel execution, but still a worthwhile addition to the toolkit for doing independent calculations.
 
 # Conclusion
 
