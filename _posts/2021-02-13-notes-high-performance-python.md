@@ -1,0 +1,251 @@
+---
+title: Some Notes From High Performance Python
+date: 2021-02-13 00:00:00 -0800
+categories: [python]
+tags: [python]
+math: true
+mermaid: true
+---
+
+CHAPTER 1
+- numexpr improves numerical computation by compiling (https://numexpr.readthedocs.io/en/latest/intro.html)
+
+
+CHAPTER 2
+- Use unix command /usr/bin/time to get timing spent inside/outsie python process
+    - /usr/bin/time --verbose <scripy.py>
+        - Use full path instead of `time` to avoid Shell built-in that is different
+    - Major page faults give information about file I/O?
+- cProfile
+- Write unit tests for code
+- pstats library can load *.prof files
+    - Can give which functions call others, which could be used to build digraph
+- There are other visualizers of *.prof files
+    - snakeviz
+    - runsnakerun
+        - requires wxpython
+- UML would visualize structure but not performance
+- line_profiler package providers a decorator to give detailed function performance
+    - kernprof.py -l -v <script.py>
+- Use timeit package to profile snippets of code
+- In compound "if" statements, put faster comparisons further to the left
+- memory_profiler package gives line-by-line memory usage
+    - Runs faster if psutil is installed
+    - Reports MiB (mebibyte) not MB
+    - Shows changes in memory allocated to process, not size of objects
+    - python -m memory_profiler <script.py>
+    - Uses @profile decorator
+    - Also has a utility mprof to give memory usage vs time data
+        - mprof run <script.py>
+        - profile.timestamp context manager allows further annotation of time graph
+- guppy package contains heapy tool that gives detailed memory usage of different datatypes
+    - hpy.setrelheap allows deltas of usage from set point in code
+- dowser (and dozer?) package with cherryPy package provide live memory usage of instantiated variables
+- dis package disassembles code which can provide info on what the program is really doing
+- Use coverage.py to learn which parts of your code participate in unit tests
+- Use no-op @decorators found on page 58 of "High Performance Python" to make unit tests compatible with profiler decorators
+- Use unix diff to quickly check differences in profile outputs
+- Use git to version control every change made to project files
+- Consider the following to stabilize performance testing
+    - Disable TurboBoost in BIOS
+    - Disable the OS's ability to override SpeedStep (option in BIOS)
+    - Use only mains power, never battery
+    - Disable backrgound tools (backups/Dropbox)
+    - Run experiments many times to obtain statistics
+    - Drop to run level 1 (Unix) to minimize running processes
+    - Reboot and rerun all experiments to duplicate results
+
+CHAPTER 3
+- Use bisect standard library
+    - Construct sorted lists one element at a time
+    - Uses efficient bisection algorithm
+    - log (n) search, n log n sorted construction
+- Tuples vs lists
+    - lists are dynamic, tuples are static
+    - tuples (of sizes 1-20) are cached by Python runtime
+    - https://stackoverflow.com/questions/14135542/how-is-tuple-implemented-in-cpython
+- Try not to have mixed data types within tuples/lists
+- Built-in list.append method allocates more memory than just enough for the appended element
+    - How does this compare to n * [0] or [0 for i in range(n)]?
+- While tuples are immutable, their concatenation creates a new copy with 'needed' length
+- Lists are always bigger than tuples of the same length
+- Instantiating tuples is faster than instantiating lists
+    - tuples require less communication with operating system
+
+CHAPTER 4
+- Dictionaries are only resized upon insertion of elements
+- Python's namespace lookup follows this order: local -> global -> __builtin__
+    - explicit "from <X> import <Y>" should be faster
+    - store things as local variables, all else being equal
+- Use __hash__ magic method to make objects hashable
+    - Do NOT change the objects once they're in a dictionary/set!
+
+CHAPTER 5
+- use iter() to create iterables from simple objects
+- use __iter__ in custom objects to make your custom object iterable
+- use 'generator comprehensions' instead of list comprehensions when possible
+- map, reduce, filter, slice, and zip in Python3 are generators available without import
+- itertools.chain combines multiple generators
+- itertools.takewhile adds a condition that will end a generator
+- itertools.cycle makes a finite generator infinite by repeating it
+- https://pypi.org/project/more-itertools/ has a bunch of ready-to-use itertool recipes
+- collections module has lots of ready-to-deploy data structures (trees, deques, etc)
+
+CHAPTER 6
+- Always profile before optimizing
+- Minimize operations performed
+- Minimize memory allocations
+- Prefer to reuse allocated space rather than allocate new space
+- Von Neumann bottleneck
+- branch prection and pipelining are performed by CPU
+- perf gives information about a program's CPU performance
+    - https://en.wikipedia.org/wiki/Perf_(Linux)
+    - example: perf stat -e cycles,stalled-cycles-frontend,stalled-cycles-backend,instructions,cache-references,cache-misses,branches,branch-misses,task-clock,faults,minor-faults,cs,migrations -r 3 python3 <script.py>
+        - The -r flag is 'runs'
+    - task-clock: number of clock cycles task took
+    - context-switches: program being halted to allow another program to run
+        -tends to happen when I/O (memory,disk,network) is being performed
+        - Can use nice to increase the program's priority on Linux
+            - https://en.wikipedia.org/wiki/Nice_(Unix)
+    - CPU-migrations: program is moved to a new CPU
+        - Each CPU has its own L1 cache
+    - (minor) page-fault: kernel gives reference to memory when allocations are requested. When that memory block is first used, it throws a page fault interrupt, pausing the current program to properly allocate that memory.
+        - lazy allocation system
+    - (major) page-fault: disk/network data request not only pauses current program, but takes time to access that data
+    - cache-reference: measure usage of cached data
+    - cache-miss: request for cache data that doesn't exist in cache but can be pulled from memory
+    - instructions: how many instructions our code issued to the CPU
+    -insns per cycle: instructions per clock cycle
+    - pipelining allows the CPU to run current operations while fetching and preparing the next one
+        - frontend is the fetching and preparing of operations
+        - backend is the running of current operation
+        - stalling is wasted cycles caused by cache misses, mispredicted branches, or resource conflicts
+            -stalled-cycles-frontend: How many cycles our program waited at frontend of pipeline
+            -stalled-cycles-backend: How many cycles our program waited at backend of pipeline
+    - A branch is a part of the code where the execution flow changes
+        -if/else statements cause branching
+        - can result in stalled-cycles or branch-misses when branches mispredicted
+- Tutorial: http://web.cs.iastate.edu/~prabhu/Tutorial/title.html
+- Some terms to review:
+    - https://en.wikipedia.org/wiki/Hyper-threading
+    - https://en.wikipedia.org/wiki/Instruction_pipelining
+    - https://en.wikipedia.org/wiki/Branch_predictor
+    - https://en.wikipedia.org/wiki/Branch_(computer_science)
+    - https://en.wikipedia.org/wiki/CPU_cache
+    - https://en.wikipedia.org/wiki/Clock_signal
+    - https://en.wikipedia.org/wiki/Instructions_per_cycle
+    - https://en.wikipedia.org/wiki/Fragmentation_(computing)
+    - https://en.wikipedia.org/wiki/Array_programming
+- lists are fragmented, but not array.array
+    - but array.array are will not be vectorized, and their creation is actually slower than making lists
+    - array.array is suitable for non-math storage of fixed data types
+-numpy.array are continuous in memory, vectorized, can require less CPU instructions, and have fewer cache misses compared to lists
+- call builtin id() on things to check if they're referencing the same memory
+- prefer using in-place operations (+=, *=, etc) over non-in-place operations (a = a + n)
+    - one form of inplace is 'swapping' like a,b = b,a because it changes references, not the original data
+- 'sometimes' it is best to rewrite numpy functions with fewer allocations, sacrificing human understandability
+- use numexpr on vector expressions b/c it will compile them into code that minimizes cache misses, temp space used, and allow multicore utilization
+    - requires rewriting expressions as strings
+    - Works best if the problem cannot be contained within cache, else it might take 'more' time with numepxr
+        - How can I automatically check cache size of system in Python?
+
+CHAPTER 7
+    - Main reason to compile Python is to statically type
+    - AOT
+        - https://pypi.org/project/pythran/
+        - https://cython.org/
+            - Has OpenMP support
+            - cython -a <script>.pyx provides a colour-coded annotation of Python vs non-python calls
+            - Can disable bounds checking and wraparound checking
+                - Improve performance if code is in loop that involves frequent dereferencing
+            - pyximport is a tool that might be easy for beginners to Cython
+    - JIT: 
+        -https://numba.pydata.org/
+            -NumPy-friendly
+        - Not as good for AOT 'if' it will be frequently rerun
+    - Costly CPU-time operations
+        - Operations/expressions in tight inner loops
+        - Dereferencing list, array, or np.array
+    -strength reduction: https://en.wikipedia.org/wiki/Strength_reduction
+    - Cython
+        - required file
+            - .pyx file that contains cython code
+                - can import numpy with the following two lines:
+                    - import numpy as np
+                    - cimport numpy as np
+            - setup.py file to give compiler instructions
+                - from distutils.core import setup
+                - from distutils.extension import Extension
+                - Cython.Distutils import build_ext
+                - Compile step: `$ python setup.py build_ext --inplace`
+            - .py file that calls cython code
+        - #cython: boundscheck=False
+            - this flag turns off ensuring that program doesn't access memory outside of bounds of array
+            - this often saves only a little bit of time
+        - OpenMP
+            - from cython.parallel import prange
+            - use nogil context wrapper around prange loop
+                - do not change any native python objects, or have any, in this loop
+            - in setup.py, add -fopenmp flag to extra_compile_args
+            - adding schedule="guided" can help keep the CPU load balanced
+    - Numba
+        - made to JIT compile numpy code
+        - provides @jit decorator for functions
+        - best use case is non-vectorizable numpy looping
+    - Theano
+        - compiled multidimensional array operations
+        - supports GPU
+    - Prefer 64 bit floats on 64 bit architecture over 32 bit floats on 64 bit architecture
+    - ctypes
+        - library that allows writing C extensions to Python
+        - link together shared object (.so) files with your python
+        - this code can become complicated
+        - should be compatible with numpy arrays or python arrays
+    - cffi
+        -library that does the same thing as ctypes, but handles a lot more of the typing
+    - f2py
+        - takes fortran code, and turns it into a C module that CPython can use
+        - comparatively simple compared to ctypes or even cffi
+        - basically creates a module that can be imported like a regular python module
+        - if passing numpy arrays into a function from f2py, set parameter order='F' in the numpy array first
+    - CPython modules
+        - You can write your own python modules
+        - difficult to maintain and reuse
+        - this is really a last resort
+        - requires a setup.py script with use of distutils
+        
+CHAPTER 8
+- asynchronous programming reduces I/O wait
+    - Therefore tends to improve performance of I/O bound programs
+- https://en.wikipedia.org/wiki/Concurrency_(computer_science)
+
+- eventloops help implement asynchronous approaches
+    - can use callbacks
+        - https://en.wikipedia.org/wiki/Callback_(computer_programming)
+    - can use futures/promises
+        - uses partial from functools
+    - having too many things on the eventloop can slow performance
+-asyncio
+    - A library for asynchronous programming in Python
+    - https://docs.python.org/3/library/asyncio.html
+    - https://docs.python.org/3/library/asyncio-task.html
+- gevent
+    - coroutine-based library for Python
+         - https://en.wikipedia.org/wiki/Coroutine
+    - monkey-patches standard I/O functions to have asynchronous behaviour
+    - https://pypi.org/project/gevent/
+    - a semaphore can be used to control the number of greenlets (a type of thread)
+        - https://en.wikipedia.org/wiki/Semaphore_(programming)
+        - sephamore can be a context manager
+- grequests
+    - library that combines making HTTP requests with gevent library
+    - handles semaphore logic for you 
+    - https://pypi.org/project/grequests/
+- tornado
+    - library thats make asynchronous HTTP requests
+    - based on callbacks rather than coroutines
+- sometimes set membership in streamed data can be stochastically estimated
+    - https://en.wikipedia.org/wiki/Bloom_filter
+    - https://en.wikipedia.org/wiki/Counting_Bloom_filter
+    - https://github.com/mynameisfiber/fuggetaboutit
+- choose tool that is appropriate to domain and level of abstraction
