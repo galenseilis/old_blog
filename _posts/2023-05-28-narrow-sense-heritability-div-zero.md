@@ -1,6 +1,6 @@
 ---
 title: A Biology Guy Divided By Zero
-date: 2023-02-28 14:15:02
+date: 2023-05-28 14:15:02
 categories: [math,algebra,division]
 tags: [math,biology,evolutionary-biology,narrow-sense-heritability,heritability,algebra,division,zero]
 math: true
