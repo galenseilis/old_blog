@@ -13,7 +13,7 @@ mermaid: true
 
 Let's get into how to use Numba -- hang on! Why not just use compiled languages like C, C++ or FORTRAN? Well, herein lies one of meta-problems of development that requires some optimization. Coding in Python is useful for quickly coding up proofs of concept, but properties like its dynamic typing slow it down compared to memory-managed code in C. Coding in C will give a faster execution for the same code, but will often require more time and degugging to get ready for deployment. Using Python with Numba is an attempt to get the best of both worlds, and in practice is not much slower than software compiled from well-written low-level languages.
 
-# Precompiling
+# JIT
 
 The first way we can use Numba to speed up our code is by compiling a function so that future executions can use the compiled version, removing the need to compile at runtime. Let's take a function that gives us the first *n* Fibonnacci numbers, and see how it performs.
 
