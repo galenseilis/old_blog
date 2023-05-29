@@ -1,5 +1,5 @@
 ---
-title: Five Years Long
+title: Five Years Long And The Love Is Gone
 date: 2023-11-24 20:00:00 -0800
 categories: [song-writing]
 tags: [poetry,lyrics,chatgpt,limerance,relationships]
