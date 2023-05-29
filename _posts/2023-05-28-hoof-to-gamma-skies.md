@@ -6,7 +6,7 @@ tags: [music,music-appreciation,gamma-skies,just-say-it-out-loud]
 math: true
 ---
 
-The last week or so I've been watching videos by The Hoof GP, like this one for example:
+The last week or so I've been watching videos by [The Hoof GP](https://www.youtube.com/c/thehoofgp), like this one for example:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hu3iaKAjs5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
