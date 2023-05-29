@@ -8,7 +8,7 @@ math: true
 
 I want to share a recollection of an amusing argument I had back in my undergraduate days. A biology professor explained a definition of *narrow sense heritability* in the sense of a [parent-offspring regression](https://en.wikipedia.org/wiki/Heritability#Parent-offspring_regression). In this approach the heritability is being estimated via the slope of the regression line. Our professor further claimed that if there is no variability in parent phenotype, then the heritability is zero. Herein lies the problem.
 
-Supposing least-squares estimation, the slope $\beta$ can be written as the ratio $\frac{\operatorname{Cov}[X,Y]}{\operatorname{Var}[X]}$. In our estimate of the slope from a sample, $\hat \beta$, we can represent it as
+Supposing ordinary least-squares estimation, the slope $\beta$ can be written as the ratio $\frac{\operatorname{Cov}[X,Y]}{\operatorname{Var}[X]}$. In our estimate of the slope from a sample, $\hat \beta$, we can represent it as
 
 $$\hat \beta = \frac{\sum_{i=1}^n \left(x_i - \frac{1}{n} \sum_{i=1} x_i \right) \left(y_i - \frac{1}{n} \sum_{i=1} y_i \right)}{\sum_{i=1}^n \left(x_i - \frac{1}{n} \sum_{i=1} x_i \right)^2}.$$
 
