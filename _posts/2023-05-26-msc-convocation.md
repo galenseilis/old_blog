@@ -7,6 +7,6 @@ math: true
 mermaid: true
 ---
 
-Here is the convocation ceremony for my MSc in Computer Science.
+Here is the convocation ceremony for my MSc in Computer Science. A friend pointed out to me that I cross the stage at about `1:52:34`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M1gnMCGhBZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
