@@ -21,3 +21,6 @@ math: true
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J_yb41wESn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+# Conclusions
+
+It is a fascinating phenomenon. I did not experience ASMR watching these videos, but I'm not sure I have ever experienced ASMR from sound.
