@@ -6,7 +6,8 @@ math: true
 mermaid: true
 ---
 
-I always appreciate talks by Richard McElreath and this was no exception:
+
+This post is about a fascinating talk about Richard McElreath. I've taken some notes below which focus on some of the general statistical and causal points which I think would transfer to other areas I am interested in.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ez3o3uWRSyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
