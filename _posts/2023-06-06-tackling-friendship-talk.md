@@ -1,6 +1,6 @@
 ---
 title: Jaime Krem's Tackling Friendship
-date: 2023-06-03 8:02:00 -0800
+date: 2023-06-03 6:30:00 -0800
 categories: [sociology,friendship]
 tags: [sociology,friendship,jaime-krems]
 math: true
