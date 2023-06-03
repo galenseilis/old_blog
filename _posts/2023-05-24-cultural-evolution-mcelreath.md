@@ -63,5 +63,19 @@ I always appreciate talks by Richard McElreath and this was no exception:
   - Otherwise the statistical power can be massively inflated.
 - Just having lots of data does not remedy many of the issues that come up in statistical and causal analysis.
 - See [Acharya, Blackwell and Sen 2016](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/explaining-causal-findings-without-bias-detecting-and-assessing-direct-effects/D11BEB8666E913A0DCD7D0B9872F5D11) for a paper that strongly emphasizes addressing confounds.
-
-CONTINUE FROM 49:06
+- Sometimes we use tree models when the real phenomena is not a single tree in its abstract structure
+  - e.g. biological evolution
+    - i.e. incomplete lineage sorting
+  - e.g. language trees
+  - Coloring trees with properties that give invalid inferences for when traits evolved.
+  - This doesn't make trees irrelevant. They can still be informative.
+- Important to remember that some of our abstractions (e.g. trees or social networks) don't exist.
+  - Actually, I don't agree with this. I think that they must exist in some sense. But sure, they're maps for a territory. They're models that do not capture everything about the phenomena we're interested in.
+- Moto: Honest methods for modest questions
+  - Sometimes we can be deincentivised for being honest.
+- Simple 4-step plan for honest cultural evolutions sch...
+  1. What are we trying to learn?
+  2. What is the ideal data for doing so? PROVE WITH A NON-NULL MODEL, NOT RHETOTIC.
+  3. What data do we have or can get?
+  4. What causes the differences between (2) and (3)?
+  5. [Optional] Is there a statistical way to use (2-4) to do (1)? VALIDATE WITH SYNTHETIC DATA.
