@@ -62,6 +62,8 @@ Northern Health (Nov 2022 - present)
 
 Freelance (Jun 2021 - present)
 
+- (2021) Explored and made inferences about experimental [rheometric](https://en.wikipedia.org/wiki/Rheometry) data.
+
 I can provide you with services including data visualization, statistical estimation, simulations, network analysis, and mathematical modelling.
 
 You can contact me on [Fiverr](https://www.fiverr.com/galenseilis){:target="_blank"} for a consultation.
