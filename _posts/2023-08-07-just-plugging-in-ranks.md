@@ -17,7 +17,7 @@ This post picks up with responding to the following quote.
 >
 > You lose the interpretability of the estimates. So a slope doesn't mean what it meant before, a Cohen's D doesn't mean what it meant before, and those sorts of things.
 
-It is usually a bad idea to just expect plugging in variables (transformed or otherwise) into a function without doing some sort of checking. Fortunately, we can sometimes check! Let's try plugging in ranks into some basic functions and statistics to see what we learn. I'll be assuming dense ranks with no ties between elements.
+It is usually a bad idea to just plug in data (transformed or otherwise) into a function without doing some sort of consideration of what it might imply or suggest. Fortunately, we can sometimes explore this from the safety of pure mathematics! Let's try plugging in ranks into some basic functions and statistics to see what we learn. I'll be assuming dense ranks with no ties between elements.
 
 Let's start simple with summation. If we have $\operatorname{rank}(X) = \\{1, \ldots, m \\}$, we can consider their sum:
 
