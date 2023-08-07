@@ -50,13 +50,19 @@ University of Northern British Columbia (2016--2019)
 
 Saskatchewan Institute of Applied Science and Technology (2012--2014)
 
-- Course project: Extraction of phosphatidylinositol 3-kinase regulatory subunit gamma (PIK3R3) gene sequence from a laboratory mouse.
+- Course project: Extraction of [phosphatidylinositol 3-kinase regulatory subunit gamma (PIK3R3)](https://en.wikipedia.org/wiki/PIK3R3){:target="_blank"} gene sequence from a laboratory mouse.
 
 # Employment
 
 ## Data Scientist
 
 Northern Health (Nov 2022 - present)
+
+- (2023) Developed and ran queueing model for simulating surgery waitlists among facilities with probabilistically forecasted demands and supply of surgery services.
+- (2023) Probabilistic Bayesian inference of stochastic patient transfer surgery network among health authorities in British Columbia.
+- (2023) Bayesian non-negative canonical polyadic decomposition of chronic health factors.
+- (2023) Made valuable contributions to developing data sceince practices and standards at Northern Health.
+- (2023) Developed scenarios for operating room hours being allocated to surgery specialties.
 
 ## Data Analyst
 
