@@ -60,9 +60,6 @@ While machine computers did exist at that time, most calculations were still per
 
 This is not to say that everyone involved in developed rank-based statistics and tests emphasized using rank-based non-parametric statistics as an approximate substitute for common non-rank-based procedures. Reading through [*On a Test of Whether One of Two Random Variables is Stochastically Larger than the Other*](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-18/issue-1/On-a-Test-of-Whether-one-of-Two-Random-Variables/10.1214/aoms/1177730491.full) by Mann and Whitney (1947), they spoke of testing for a stochastic dominance relation without any mention of testing differences in group means. They claimed that the U statistic they discuss, under some assumptions such as independence of replicates, will converge to a normally-distributed random variable. For finite samples, the only kind we really deal with, the result is an approximation that depends on the sample size (and the rate of convergence).
 
-How closely do t-tests and ANOVA resemble some of these rank-based procedures? Let's consider some examples for compare and contrast, beginning with the Mann-Whitney $U$ statistic and unpaired t-statistic. A statistical test requires one or more statistics **and** a decision rule (i.e. a test procedure). Here I will stick to studying the statistics rather than the tests, but I recommend [`@Glen_b`'s post](https://stats.stackexchange.com/a/76080/69508) comparing the acceptance region of an ANOVA vs Kruskal-Wallis.
-	
-
 Let us return the notion that ranking collections of continuous random variables gives uniformly-distributed random variables. We can understand this with an example. For [IID](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables) samples of size $m=10^4$ we can sample from each of these random variables
 
 $$X_i \sim \mathcal{N}(0,1)$$
@@ -122,7 +119,6 @@ plt.savefig('dist_noninvariant_to_ranking.png', dpi=300, transparent=True)
 plt.close()
 ```
 
-
 One way to study statistics is to study how they compose with other functions. While it can feel a little backward at first, an effective way to go about this is to understand what a function **doesn't** quantify. For functions $f: \Omega \mapsto \Omega^{\prime}$ and $g: \Omega \mapsto \Omega$ we can define $g$ to be an *invariant* of $f$ if the equality $(f \circ g)(\omega) = f(\omega)$ for all $\omega \in \Omega$.
 
 > Often $g$ is taken to be a [group action](https://en.wikipedia.org/wiki/Group_action) on the domain $\Omega$, but I think this is more specific than needed here. While it has a bent toward applications of mathematical symmetry in deep learning, which may be outside some reader's interests, I like how [Bronstein *et al* 2021](https://arxiv.org/abs/2104.13478) introduce the history and mathematical notions around this subject.
@@ -133,7 +129,7 @@ Because a rank transform preserves little more than the order of the input, we c
 > As an exercise, pick a function you are familiar with and look for an invariant.
 {: .prompt-tip}
 
-Not everything about a function can be neatly studied in terms of invariance, equivariance, or other similar concepts. It can help to do numerical calculations and plot the results to study how a function works. Let's go beyond ranks themselves to comparing the unpaired Student's t score against the Mann-Whitney U score (but again, not the tests). While the ranks of a collection of variables alone were invariant to translations, the Mann-Whitney U score involves a partition of the data in which the score may or may not change when a translation of the data is considered.
+How closely do t-tests and ANOVA resemble some of these rank-based procedures? Let's consider some examples for compare and contrast, beginning with the Mann-Whitney $U$ statistic and unpaired t-statistic. A statistical test requires one or more statistics **and** a decision rule (i.e. a test procedure). Here I will stick to studying the statistics rather than the tests, but I recommend [`@Glen_b`'s post](https://stats.stackexchange.com/a/76080/69508) comparing the acceptance region of an ANOVA vs Kruskal-Wallis.
 
 The [U statistic](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test#U_statistic) can be written
 
@@ -143,7 +139,11 @@ where $R_1$ and $R_2$ are the sum of the ranks in group 1 and 2 respectively, an
 
 $$U(X + \alpha,Y)$$
 
-which is *not* an invariant. Rather, for *some* $\alpha$ is holds that $U(X + \alpha,Y) \neq  U(X,Y)$. Let's consider a concrete example. Suppose we have two samples of sizes $m_1 = m_2 = 10^3$ from a standard normal distribution (i.e. IID). We can see from the figure below that produces an s-shaped response.
+which is *not* an invariant. Rather, for *some* $\alpha$ is holds that $U(X + \alpha,Y) \neq  U(X,Y)$. 
+
+Not everything about a function can be neatly studied in terms of invariance, equivariance, or other similar concepts. It can help to do numerical calculations and plot the results to study how a function works. Let's go beyond ranks themselves to comparing the unpaired Student's t score against the Mann-Whitney U score (but again, not the tests). While the ranks of a collection of variables alone were invariant to translations, the Mann-Whitney U score involves a partition of the data in which the score may or may not change when a translation of the data is considered.
+
+Let's consider a concrete example. Suppose we have two samples of sizes $m_1 = m_2 = 10^3$ from a standard normal distribution (i.e. IID). We can see from the figure below that produces an s-shaped response.
 
 ![](/assets/images/U_vs_alpha.png)
 
