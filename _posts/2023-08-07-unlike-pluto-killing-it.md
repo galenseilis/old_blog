@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-Lately I have been thoroughly enjoyed a few song that Unlike Pluto recently came out with.
+Lately I have been thoroughly enjoying a few song that Unlike Pluto recently came out with.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VBbjN5_0CMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
