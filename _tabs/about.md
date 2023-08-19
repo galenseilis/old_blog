@@ -210,23 +210,7 @@ During my time at this position, I was trained in multiple aspects of processing
 
 # Elsewhere
 
-<a href="https://ca.linkedin.com/in/galen-s-4208349b" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src="./images/linkedin.png" alt="Galen Seilis | LinkedIn" width=40px></a>
-
-<a href="https://galenseilis.github.io/" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src=https://github.com/galenseilis/galenseilis.github.io/blob/main/assets/img/favicons/android-chrome-512x512.png alt="Galen Seilis | Blog" width=40px></a>
-
-<a href="https://orcid.org/0000-0002-0456-735X" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src="./images/orcid.png" alt="Galen Seilis | ORCiD" width=43px></a>
-
-<a href="https://twitter.com/GSeilis" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src="./images/twitter.png" alt="Galen Seilis | Twitter" width=40px></a>
-
-<a href="https://www.inaturalist.org/people/5429560" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src=https://upload.wikimedia.org/wikipedia/en/7/76/INaturalist_logo.png alt="Galen Seilis | iNaturalist" width=40px></a>
-
-<a href="https://stackexchange.com/users/5468284/galen" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src=https://upload.wikimedia.org/wikipedia/commons/e/e0/Stack_Exchange_icon.svg alt="Galen Seilis | Stack Exchange" width=40px></a>
-
-<a href="https://www.fiverr.com/users/galenseilis/" target="_blank" rel="noreferrer noopener" text-decoration=none><img align="left" src='./images/fiverr.png' alt="Galen Seilis | Stack Exchange" width=40px></a>
-
-</br>
-</br>
-
+<a href="https://orcid.org/0000-0002-0456-735X" target="_blank" rel="noreferrer noopener" text-decoration=none><img a
 # Some Tools I Enjoy
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
