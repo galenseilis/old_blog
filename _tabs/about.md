@@ -155,21 +155,3 @@ University of Saskatchewan
 This position was the final chapter in acquiring a diploma in BioScience technology from the Saskatchewan Institute of Applied Science and Technology (SIAST), now known as Saskatchewan Polytechnic. Based on my interests, and aptitude, an academic advisor selected me to spend a month working at Agriculture and Agri-Food Canada before considering my graduation.
 
 During my time at this position, I was trained in multiple aspects of processing DNA sequences. In general, this included preparing and performing agarose gel electrophoresis, traditional PCR, qPCR, DNA barcoding/indexing, and performing DNA extractions and purifications from bacterial cultures in a laminar flow hood. 
-
-# Volunteer
-- Amateur naturalist at [iNaturalist](https://www.inaturalist.org/people/5429560){:target="_blank"}.
-- Model for [The Raft of the Medusa Tableau Vivant](https://adadhannah.com/2009-the-raft-of-the-medusa-100-mile-house?fbclid=IwAR0Ixxz9coNKVft010WDHdze2Y4WruKFYPZA4vK0QTrBktzCGtTbQthjQvc){:target="_blank"}.
-
-
-# Acknowledgements
-- [*Bacterial diversity and production of sulfide in microcosms containing uncompacted bentonites*](https://doi.org/10.1016/j.heliyon.2018.e00722){:target="_blank"}
-- [*Characterizing anaerobic biodegradation of gasoline with low molecular weight organic acid anions and phosphate amendment*](https://harvest.usask.ca/handle/10388/8489){:target="_blank"}
-- [*Who Is the Rock Miner and Who Is the Hunter? The Use of Heavy-Oxygen Labeled Phosphate (P18O4) to Differentiate between C and P Fluxes in a Benzene-Degrading Consortium*](https://pubs.acs.org/doi/10.1021/acs.est.7b05773){:target="_blank"}
-- [*Plant belowground diversity and species segregation by depth in a semi-arid grassland*](https://www.tandfonline.com/doi/full/10.1080/11956860.2017.1403242){:target="_blank"}
-- [*Archaea and bacteria mediate the effects of native species root loss on fungi during plant invasion*](https://www.nature.com/articles/ismej2016205){:target="_blank"}
-
-# Honors & Awards
-- BC Graduate Scholarship ($15000)
-- UNBC Merit Award ($1200)
-- Dedicated Service Award
-- Second Degree Black Belt
