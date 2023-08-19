@@ -156,40 +156,6 @@ This position was the final chapter in acquiring a diploma in BioScience technol
 
 During my time at this position, I was trained in multiple aspects of processing DNA sequences. In general, this included preparing and performing agarose gel electrophoresis, traditional PCR, qPCR, DNA barcoding/indexing, and performing DNA extractions and purifications from bacterial cultures in a laminar flow hood. 
 
-# Talks
-- Adventures in Non-Negative Canonical Polyadic Decomposition
-- A Friendly Introduction to Statistical Forecasting
-- How Correlation Really Works
-- Introduction to Interval Arithmetic
-- Introduction to Using ARIMA
-- Example of Training a SARIMAX Model
-- Review of a Study Using SARIMAX
-- Guest lecture: Relations and Graphs
-- [Enumeration of Automorphism Orbits of Graphlets (HackSeq)](https://www.youtube.com/watch?v=vY1UkCPSKH8){:target="_blank"}
-- [Practical Approaches to Faster and Leaner Python](https://www.youtube.com/watch?v=W8VMOp8QCdE){:target="_blank"}
-- [A Gentle Introduction to Geometric Deep Learning](https://video.unbc.ca/media/IWSS+February+11th+2022/0_xzlj7fi4/28597){:target="_blank"}
-- [A Gentle Introduction to L-Systems](https://iwss.opened.ca/wp-content/uploads/sites/3318/2021/02/GSeilis-w21.pdf){:target="_blank"}
-
-# Publications
-- Research and Knowledge Translation Newsletter: The Importance of Partial Pooling with Northern Health Data
-- Research and Knowledge Translation Newsletter: [Project: Advanced Analytics](https://www.northernhealth.ca/sites/northern_health/files/health-professionals/research/documents/knowledge-translation-newsletter-seven.pdf){:target="_blank"}
-```latex
-@mastersthesis{seilisthesis2022,
-  author  = "Galen Seilis",
-  title   = "ConAction: Efficient Implementations and Applications of Functions Inspired by the Trinity of Covariation",
-  school  = "University of Northern British Columbia",
-  year    = "2022",
-  address = "3333 University Way, Prince George, British Columbia, V2N 4Z9, Canada",
-  month   = "September",
-  doi = 10.24124/2022/59312,
-  url = https://doi.org/10.24124/2022/59312
-}
-```
-
-# Software
-- canomaly: This package detects specific types of anomalies with an emphasis in looking for cumulative changes. ([GitHub](https://github.com/galenseilis/canomaly){:target="_blank"}, [ReadTheDocs](https://canomaly.readthedocs.io/en/latest/index.html){:target="_blank"}, [PyPi](https://pypi.org/project/canomaly/){:target="_blank"})
-- ConAction: A package for studying how things change together. ([GitHub](https://github.com/galenseilis/ConAction){:target="_blank"}, [ReadTheDocs](https://conaction.readthedocs.io/en/latest/){:target="_blank"}, [PyPi](https://pypi.org/project/conaction/){:target="_blank"})
-
 # Volunteer
 - Amateur naturalist at [iNaturalist](https://www.inaturalist.org/people/5429560){:target="_blank"}.
 - Model for [The Raft of the Medusa Tableau Vivant](https://adadhannah.com/2009-the-raft-of-the-medusa-100-mile-house?fbclid=IwAR0Ixxz9coNKVft010WDHdze2Y4WruKFYPZA4vK0QTrBktzCGtTbQthjQvc){:target="_blank"}.
