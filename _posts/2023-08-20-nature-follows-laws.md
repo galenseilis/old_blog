@@ -89,10 +89,21 @@ I agree in a sense. But for me it is in a sense of metaphorical [cartography](ht
  
 > **Quotation** (Dustin Fife)
 > 
-> When we use nonparametric statistics it runs counter to that notion. Nonparametric statistics don't actually model the mathematical structure of Nature. Instead they modify the nature of your data so that it kind-sorta looks like a mathematical model. So its just a hack. A temporary fix to get you an answer.
+> When we use nonparametric statistics it runs counter to that notion. Nonparametric statistics don't actually model the mathematical structure of Nature.
 
 My impressions of this quote I think are largely discussed in [*Actually Modelling the Data*](https://galenseilis.github.io/posts/actually-modelling-the-data/), but I will say little bit more here at the risk of repeating myself. 
 
 Nonparametric statistics are obviously mathematical, so I don't think "mathematical structure" is a clear criterion to use. I'm still not confident about what Dustin considers to be an 'actual model', but I think in most contexts we can consider any piece of math that is used to represent something else to be a mathematical model. That's not precise, but sticking more closely to what I would use as a criterion for a "mathematical model".
 
-I think in some ways the world is hostile to human understanding. It can be very difficult to tease out the various patterns, and it may be impossible for some things.
+> Instead they modify the nature of your data so that it kind-sorta looks like a mathematical model.
+
+Every function you apply to the data that isn't the identity function will in some way change your data. This includes linear models. Why would scaling the variables and then adding them together be a good idea? Well, because they may approximately equal something that we care about it. 
+
+The primary reason to rank data is to facilite the study the order properties of the data. One metaphor is that we are 'extracting' certain properties as if performing a chemical extraction in a lab. Why would we extract chemicals from other chemicals? To study certain chemicals in isolation from the others! The intuition with ranks is similar. Ranking the data allows us to study order properties in a way that has been 'purified' from many of the other properties of the data.
+
+> So its just a hack. A temporary fix to get you an answer.
+
+I'm in favour of people finding better ways of doing something. So if a given phenomena can be better modelled with a parametric model rather than a given nonparametric model I think that's great. But I don't think that nonparametric statistics, rank-based or not, are inherently hacks or temporary fixes. Certainly people *can* and *have* used them as such, but that doesn't not preclude using them in a non-hacky way. Even if we intend for something to be a permanent solution to a problem, often it is not and that's okay.
+
+
+Dustin's philosophical view that the world is lawful I think is largely compatible with my own view, and we agree that mathematics should be involved in scientific research. I tend to be somewhat optimistic that mathematics is useful and pessimistic that it is fundamental. I don't know if Dustin would agree with that. Lastly, I don't think nonparametric statistics is just, as Gandalf put it, "*a conjurer of cheap tricks*".
