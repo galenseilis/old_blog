@@ -1,5 +1,5 @@
 ---
-title: Nonparametric Statistics Disagrees With Nature Lawful?
+title: Nonparametric Statistics Doesn't Model The Mathematical Structure Of Nature?
 date: 2023-08-20 02:50:15
 categories: []
 tags: []
