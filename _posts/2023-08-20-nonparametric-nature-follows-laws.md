@@ -1,5 +1,5 @@
 ---
-title: Is Nature Lawful?
+title: Nonparametric Statistics Disagrees With Nature Lawful?
 date: 2023-08-20 02:50:15
 categories: []
 tags: []
