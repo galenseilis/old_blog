@@ -45,7 +45,7 @@ flowchart TD
 11 -- More than two --> 16[Parametric assumptions satisfied?]
 16 -- Yes --> 17[One-way ANOVA]
 17 --> 18[Significant?]
-18 --> Yes --> 19[Post-hoc test: Bonferroni's, Dunn's, Tukey's, etc]
+18 -- Yes --> 19[Post-hoc test: Bonferroni's, Dunn's, Tukey's, etc]
 16 -- No --> 20[Kruskall-Wallis test]
 20 --> 18
 16 -- No --> 21[Transform data?]
