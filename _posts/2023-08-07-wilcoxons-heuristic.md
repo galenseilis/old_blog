@@ -21,7 +21,40 @@ I cannot carefully consider this point about equivalence without clarification o
 
 The idea that rank-based statistics are merely proxies of certain parametric statistics is inaccurate. But before we unpack that, let us consider why many people, possibly Dustin included think this way. After all, there is an inexhaustible supply of  textbooks, tutorials, and internet posts express this point of view.
 
-According to some sources, you can simply consult a flow chart to determine which statistical procedure can be used.
+According to some sources, you can simply consult a flow chart to determine which statistical procedure can be used. Here is such a diagram which I adapated from Richard McElreath's *Statistical Rethinking* lectures.
+
+```mermaid
+flowchart TD
+0[Type of data?] -- Discrete, categorical --> 1[Any counts < 5?>]
+1 -- No -->  2[Chi-square tests, one and two sample]
+1 -- Yes --> 3[Fisher's exact test]
+0 -- Continuous --> 4[Type of question?]
+4 -- Relationships --> 5[Do you have dependent & independent variables?]
+5 -- Yes --> 6[Regression Analysis]
+5 -- No --> 7[Correlation Analysis]
+7 -- Parametric --> 8[Pearson's r]
+7 -- Nonparametric --> 9[Spearman's rank correlation]
+4 -- Differences --> 10[Differences between what?]
+10 -- Multiple means single variable --> 11[How many groups?]
+11 -- Two --> 12[Parametric assumptions satisfied]
+12 -- No --> 13[Transform data?]
+13 -- OK --> 14[Student's t-test]
+13 -- No --> 15[Mann-Whitney U or Wilcoxon test]
+12 -- Yes --> 14
+12 -- No --> 15
+11 -- More than two --> 16[Parametric assumptions satisfied?]
+16 -- Yes --> 17[One-way ANOVA]
+17 --> 18[Significant?]
+18 --> Yes --> 19[Post-hoc test: Bonferroni's, Dunn's, Tukey's, etc]
+16 -- No --> 20[Kruskall-Wallis test]
+20 --> 18
+16 -- No --> 21[Transform data?]
+21 -- OK --> 17
+21 -- No --> 20
+```
+
+> The above diagram is quite misleading in multiple respects, not all of which will I cover here. Do **not** use this diagram to guide your analysis.
+{: .prompt-danger }
 
 This itself is a problematic practice as such charts rarely cover the myriad of considerations required in a real analysis. Furthermore, in such charts a list of so-called "parametric assumptions" are given. Exactly what constitutes this list of assumptions can vary, but four commonly-given assumptions are as follows:
 
