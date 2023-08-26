@@ -59,4 +59,4 @@ There is a lateral move here, which is to use ranks on the trace plots of Monte 
 
 It is in part the scale and translation invariance of ranks, along with being order-preserving on a given sample, that make them suitable for identifying certain problems in trace plots. 
 
-My overall opinion about Dustin's discussion about convergence issues is that (1) we generally agree that they happen and (2) sometimes we can do things about them and (3) there is not a known case of where convergence issues in training a model are improved by rank-transforming a data set. The rest of it I was a little perplexed about what to take away.
+My overall opinion about Dustin's discussion about convergence issues is that (1) we generally agree that they happen and (2) sometimes we can do things about them and (3) there is not a known case of where convergence issues in training a model are improved by rank-transforming a data set. The rest of it I was a little perplexed about what to take away. But I did stumble on some modern applications of rank-based statistics in studying traces, so I am grateful for being prompted to think on this subject.
