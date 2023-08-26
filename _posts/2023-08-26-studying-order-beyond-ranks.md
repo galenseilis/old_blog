@@ -17,7 +17,7 @@ While Dustin and I have a disagreement about the usefulness of classic rank-base
 
 # What Is Order?
 
-First of all, we need more rigorous tools. Thinking intuitively about order will eventually lead to confusion and fuzzy thinking that is difficult to translate into methods of analysis. Fortunately, there is [Order Theory](*https://en.wikipedia.org/wiki/Order_theory), which is a branch of mathematics that makes order its explicit target of study. I've been (very slowly) making my way through [these lectures](https://www.youtube.com/playlist?list=PL5rqYzyihIQ0nzfnsEKxxedCpbNQoifgg) provide a mathematical introduction. What is the first thing to know about order from this perspective?
+First of all, we need more rigorous tools. Thinking intuitively about order will eventually lead to confusion and fuzzy thinking that is difficult to translate into methods of analysis. Fortunately, there is [Order Theory](https://en.wikipedia.org/wiki/Order_theory), which is a branch of mathematics that makes order its explicit target of study. I've been (very slowly) making my way through [these lectures](https://www.youtube.com/playlist?list=PL5rqYzyihIQ0nzfnsEKxxedCpbNQoifgg) provide a mathematical introduction. What is the first thing to know about order from this perspective?
 
 Order in conventional mathematics is **not** about numbers *per se*. Rather orders are binary relations, which are subsets of [Cartesian products](https://en.wikipedia.org/wiki/Cartesian_product). An order is a binary relation with certain properties, and there are actually different classes of orders. 
 
