@@ -7,6 +7,11 @@ math: true
 mermaid: true
 ---
 
+
+This post is a response to a particular claim made in the following video:
+
+{% include embed/youtube.html id='qee6b7vl2O0' %}
+
 > I think what Galen is talking about here is convergence issues. If not, please correct me, Galen.
 
 I was not alluding to convergence issus, although I think this is a reasonable interperation of my words. Perhaps I'll address what I actually meant in another post.
