@@ -13,7 +13,7 @@ Let us suppose that we have a sequence of random vectors
 
 $$\vec u_1, \ldots, \vec u_k$$
 
-$$\vec u_1 \sim \text{Exponential}(\vec \lambda_1)$$
+$$\vec u_i \sim \text{Exponential}(\vec \lambda_i)$$
 
 then their outer product makes
 
