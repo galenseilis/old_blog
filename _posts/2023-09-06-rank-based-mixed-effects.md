@@ -120,4 +120,4 @@ You could further compute the regression on the ranks of $Y$, however I don't th
 
 # Conclusions
 
-There are rank-based parametric, semiparametric, and nonparametric models exist.
+Rank-based parametric, semiparametric, and nonparametric mixed-effects models exist.
