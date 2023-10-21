@@ -1,5 +1,5 @@
 ---
-title: Minimal Bayesian Von Mise Model Example
+title: Minimal Bayesian Von Mises Model Example
 date: 2023-10-21 00:50:15
 categories: [statistics,bayesian-statistics,von-mise-distribution]
 tags: [statistics,bayesian-statistics,von-mise-distribution,bayesian-modelling,pymc]
