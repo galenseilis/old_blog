@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-The this post is the home page to a collection of responses to the following video, which gives the relevant context.
+This post is the home page to a collection of responses to the following video, which gives the relevant context.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qee6b7vl2O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
