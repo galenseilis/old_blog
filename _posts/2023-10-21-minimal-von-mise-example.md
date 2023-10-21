@@ -10,7 +10,12 @@ mermaid: true
 Found this code in my miscellaneous `bin` folder. Instead of deleting it I thought I would share it here. It is a minimal working example of using the PyMC package to model a Von-Mise distribution with priors put on its parameters. It is an extremely small model given by:
 
 $$\kappa \sim \text{Exponential}(1)$$
+
 $$\mu \sim \text{Uniform}\left( -\pi, \pi \right)$$
+
+$$\theta \sim \text{VonMise}(\mu, \kappa)$$
+
+And here is the aforementioned Python code:
 
 ```python
 import matplotlib.pyplot as plt
@@ -30,7 +35,7 @@ with model:
     plt.show()
 ```
 
-I can see from `observed=[-2]*10 + [2]*10` that I was tinkering with having data at exactly two angles. Maybe I was stress-testing the distribution for bimodality.
+I can see from `observed=[-2]*10 + [2]*10` that I was tinkering with having data at exactly two angles. Maybe I was stress-testing the sampler for how it handles bimodality.
 
 Here is *an* example output. Because I didn't set a seed number you may find your plot differs from mine somewhat.
 
