@@ -41,7 +41,7 @@ Here is *an* example output. Because I didn't set a seed number you may find you
 
 ![](/assets/images/von_mise_bimodal_test.png)
 
-Adding `az.summary(data, round_to=2).to_markdown('von_mise_bimdal_test.md')` to the code above we can also see a summary of the model parameters. It is not a great effective sample size (ESS) and $\hat r$, especially for $\mu$. The plot above also suggests that there are a couple of states that the chain switches between, which are likely the two modes.
+Adding `az.summary(data, round_to=2).to_markdown('von_mise_bimdal_test.md')` to the code above we can also see a summary of the model parameters. It is not a great effective sample size (ESS) and $\hat r$, especially for $\mu$. Actually, $\kappa$ doesn't look horrible despite the low ESS. The plot above also suggests that there are a couple of states that the chain switches between, which are likely the two modes.
 
 
 |       |   mean |   sd |   hdi_3% |   hdi_97% |   mcse_mean |   mcse_sd |   ess_bulk |   ess_tail |   r_hat |
