@@ -13,7 +13,7 @@ $$\kappa \sim \text{Exponential}(1)$$
 
 $$\mu \sim \text{Uniform}\left( -\pi, \pi \right)$$
 
-$$\theta \sim \text{VonMise}(\mu, \kappa)$$
+$$\theta \sim \text{VonMises}(\mu, \kappa)$$
 
 And here is the aforementioned Python code:
 
