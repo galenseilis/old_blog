@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-The Ciw library allows for a stochastic matrix representing probabilities of transitioning from one service to another. Here is an example [from the documentation](https://ciw.readthedocs.io/en/latest/Guides/process_based.html).
+The Ciw library allows for a stochastic matrix representing probabilities of transitioning from one service to another. Here is an example [from the documentation](https://ciw.readthedocs.io/en/latest/Tutorial-II/tutorial_v.html).
 
 ```python
 import ciw
@@ -28,7 +28,7 @@ N = ciw.create_network(
 
 This example will only use a fixed stochastic matrix, however. If the probabilities were estimated from data or there is *a priori* uncertainty in the entries of the stochastic matrix then we might want to account for that.
 
-Strictly-speaking, the Ciw library provides process-based routing customization that is extremely flexible. But as a weird flex I would like to share a little hack and its motivation.
+Strictly-speaking, the Ciw library provides process-based routing customization that is extremely flexible. See this [guide](https://ciw.readthedocs.io/en/latest/Guides/process_based.html) for how to use their process-based routing. But as a weird flex I would like to share a little hack and its motivation.
 
 We can make a subclass from `list` and provide methods such that it samples new values whenever it is accessed!
 
