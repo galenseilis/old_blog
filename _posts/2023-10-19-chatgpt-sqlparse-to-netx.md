@@ -172,7 +172,7 @@ import sqlglot
 with open('query.sql', 'r') as f:
   query_str = f.read()
   
-joins = [j for j in sqlglot(query_str).find_all(sqlglot.expressions.Join)]
+joins = [j for j in sqlglot.parse(query_str).find_all(sqlglot.expressions.Join)]
 ```
 
 The `sqlglot` implementation still leaves some basic string processing to be done, but it provides most of what I need.
