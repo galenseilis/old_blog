@@ -7,6 +7,10 @@ math: true
 mermaid: true
 ---
 
+It would be convienent to keep track of classes of customers in Ciw networks based on a collection of attributes. A first approximation is to try using tuples since they are immutable.
+
+The following code works, and demonstrates that we can use tuples as the class names for Ciw.
+
 ```python
 N = ciw.create_network(
     arrival_distributions={
@@ -39,7 +43,7 @@ Q = ciw.Simulation(N)
 Q.simulate_until_max_time(9)
 ```
 
-Also note that the tuples do not need to be of the same length.
+Also note that the tuples do not need to be of the same length provided since the lexicographical ordering used to evaluate tuples in Python will stop at the end of the shortest tuple.
 
 
 But they do need to have order-compatible data. For example, the following code raises `TypeError: '<' not supported between instances of 'int' and 'str'`. 
