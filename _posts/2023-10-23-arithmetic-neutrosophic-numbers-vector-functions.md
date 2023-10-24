@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-In this post I map the arithmetic of neutrosophic numbers and then aimlessly wander.
+In this post I map the arithmetic of neutrosophic numbers to vector functions and then aimlessly wander.
 
 ## Neutrosophic Scalar Addition
 
