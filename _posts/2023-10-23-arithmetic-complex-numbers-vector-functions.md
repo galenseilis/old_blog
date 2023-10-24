@@ -90,8 +90,11 @@ We can see how this constructs a differential operator on vector fields:
 
 $$\vec \nabla \dot \times \vec v (x,y) = \frac{\partial}{\partial x} \begin{bmatrix} g(x,y) \\ h(x,y) \end{bmatrix} + \frac{\partial}{\partial y} \begin{bmatrix} -h(x,y) \\ g(x,y) \end{bmatrix}$$
 
+Taking
 
-And there is no reason to stop at first derivatives:
+$$\vec \nabla^{\odot k} \triangleq \bigodot_{j=1}^k \vec \nabla$$
+
+there is no reason to stop at the first derivative either:
 
 $$\vec \nabla^{\odot k} \dot \times \vec v (x,y) = \frac{\partial^k}{\partial x^k} \begin{bmatrix} g(x,y) \\ h(x,y) \end{bmatrix} + \frac{\partial^k}{\partial y^k} \begin{bmatrix} -h(x,y) \\ g(x,y) \end{bmatrix}.$$
 
