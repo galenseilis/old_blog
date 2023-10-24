@@ -87,4 +87,6 @@ $$\left[ \vec \nabla^{\odot k} g(x,y) = \vec 0 \right] \implies \left[ \begin{bm
 
 We similarly obtain the bizarre relation:
 
-$$\left[ \vec \nabla^{\odot 2} g(x,y) =\vec 0  \right] \implies \left[ \begin{bmatrix} \alpha \\ 1 \end{bmatrix} \cdot \left( \begin{bmatrix} 0 & 0 \\ 1 & 1 \end{bmatrix} \vec \nabla^{\odot 2} h(x,y) \right) = \vec \nabla^2 h(x,y) \right].$$
+$$\left[ \vec \nabla^{\odot 2} g(x,y) =\vec 0  \right] \implies \left[ \begin{bmatrix} \alpha \\ 1 \end{bmatrix} \cdot \left( \begin{bmatrix} 0 & 0 \\ 1 & 1 \end{bmatrix} \vec \nabla^{\odot 2} h(x,y) \right) = \vec \nabla^2 h(x,y) \right]$$
+
+for any scalar $\alpha$.
