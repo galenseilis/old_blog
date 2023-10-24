@@ -93,24 +93,24 @@ $$\vec \nabla \dot \times \vec v (x,y) = \frac{\partial}{\partial x} \begin{bmat
 
 And there is no reason to stop at first derivatives:
 
-$$\vec \nabla^k \dot \times \vec v (x,y) = \frac{\partial^k}{\partial x^k} \begin{bmatrix} g(x,y) \\ h(x,y) \end{bmatrix} + \frac{\partial^k}{\partial y^k} \begin{bmatrix} -h(x,y) \\ g(x,y) \end{bmatrix}.$$
+$$\vec \nabla^{\odot k} \dot \times \vec v (x,y) = \frac{\partial^k}{\partial x^k} \begin{bmatrix} g(x,y) \\ h(x,y) \end{bmatrix} + \frac{\partial^k}{\partial y^k} \begin{bmatrix} -h(x,y) \\ g(x,y) \end{bmatrix}.$$
 
 It should also be apparent that 
 
-$$\vec \nabla^k \dot \times \left[ \alpha \vec v (x,y) \right] = \alpha \left[ \vec \nabla^k \dot \times \vec v (x,y) \right]$$
+$$\vec \nabla^{\odot k} \dot \times \left[ \alpha \vec v (x,y) \right] = \alpha \left[ \vec \nabla^{\odot k} \dot \times \vec v (x,y) \right]$$
 
 due to the linearity of derivatives.
 
 Likewise the linearity of derivatives implies the distribution:
 
-$$\vec \nabla^k \dot \times  \left[ \vec v (x,y) + \vec u (x,y) \right] = \vec \nabla^k \dot \times  \vec v (x,y) + \vec \nabla^k \dot \times  \vec u (x,y).$$
+$$\vec \nabla^{\odot k} \dot \times  \left[ \vec v (x,y) + \vec u (x,y) \right] = \vec \nabla^{\odot k} \dot \times  \vec v (x,y) + \vec \nabla^{\odot k} \dot \times  \vec u (x,y).$$
 
 We can immediately generalize to linear combinations of functions:
 
-$$\vec \nabla^k \dot \times  \left[ \sum_{i=1}^n \alpha_i \vec v_i (x,y) \right] = \sum_{i=1}^n \alpha_i \vec \nabla^k \dot \times  \vec v (x,y).$$
+$$\vec \nabla^{\odot k} \dot \times  \left[ \sum_{i=1}^n \alpha_i \vec v_i (x,y) \right] = \sum_{i=1}^n \alpha_i \vec \nabla^{\odot k} \dot \times  \vec v (x,y).$$
 
 And of course we can consider the "infinite dimensional" (i.e. integral) case:
 
-$$\vec \nabla^k \dot \times  \left[ \underbrace{\int_{\Omega} \ldots \int_{\Omega}}_{k} \vec v (x,y)\   d(¯\_(ツ)_/¯) \right]$$
+$$\vec \nabla^{\odot k} \dot \times  \left[ \underbrace{\int_{\Omega} \ldots \int_{\Omega}}_{k} \vec v (x,y)\   d(¯\_(ツ)_/¯) \right]$$
 
 So yeah, I'm not sure the integral case is well-defined until we **choose** what we are integrated with respect to, denoted d(¯\_(ツ)_/¯).
