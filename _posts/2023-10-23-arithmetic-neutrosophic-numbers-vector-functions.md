@@ -93,6 +93,6 @@ for any scalar $\alpha$.
 
 More generally
 
-$$\left[ \vec \nabla^{\odot k} g(x,y) =\vec 0  \right] \implies \left[ \begin{bmatrix} \alpha \\ 1 \end{bmatrix} \cdot \left( \begin{bmatrix} 0 & 0 & \ldots & 0 \\ 1 & 1 & \ldots & 1 \end{bmatrix} \vec \nabla^{\odot k} h(x,y) \right) = \vec 1 \cdot \vec \nabla^{\odot k} h(x,y) \right]$$
+$$\left[ \vec \nabla^{\odot k} g(x,y) =\vec 0  \right] \implies \left[ \begin{bmatrix} \alpha \\ 1 \end{bmatrix} \cdot \left( \begin{bmatrix} 0 & 0 \\ 1 & 1 \end{bmatrix} \vec \nabla^{\odot k} h(x,y) \right) = \vec 1 \cdot \vec \nabla^{\odot k} h(x,y) \right]$$
 
 for any scalar $\alpha$.
