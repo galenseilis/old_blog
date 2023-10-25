@@ -26,7 +26,7 @@ def scheduled_changes(sim, sched):
 		sim: Ciw Simulation
 		sched (tuple): tuple of times and functions 
 	'''
-	for event in events:
+	for event in sched:
 		time_to, funcs = event
 		sim.simulate_until_max_time(sim.current_time + time_to)
 		for func in funcs:
