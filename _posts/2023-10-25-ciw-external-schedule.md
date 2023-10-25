@@ -21,19 +21,17 @@ schedule = ( # Ordered schedule of time-to-event and the functions to be applied
 )
 
 def scheduled_changes(sim, sched):
-  '''
-  parameters:
-    sim: Ciw Simulation
-    sched (tuple): tuple of times and functions 
-  '''
-  for event_bundle in sched:
-    for event in events:
-      time_to, funcs = event
-      sim.simulate_until_max_time(sim.current_time + time_to)
-      for func in funcs:
-        sim = func(sim) # Transform the state of the simulation
-
-  return sim
+	'''
+	parameters:
+		sim: Ciw Simulation
+		sched (tuple): tuple of times and functions 
+	'''
+	for event in events:
+		time_to, funcs = event
+		sim.simulate_until_max_time(sim.current_time + time_to)
+		for func in funcs:
+			sim = func(sim) # Transform the state of the simulation
+	return sim
 ```
 
 The above is a rough prototype. It assumes that the time-to-events are constants fixed ahead of time, but I could see extension to this where the time-to-events change depending on what has happened in the simulation so far. Likewise, control flow to change the events that occur depending on the state might also be beneficial.
