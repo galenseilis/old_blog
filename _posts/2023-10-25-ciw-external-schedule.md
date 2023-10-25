@@ -1,6 +1,6 @@
 ---
 title: External Schedule of Ciw Simulations
-date: 2023-10-24 00:50:15
+date: 2023-10-25 00:50:15
 categories: [discrete-event-simulation,queueing-networks,ciw]
 tags: [discrete-event-simulation,queueing-networks,ciw,python,computer-programming,]
 math: true
