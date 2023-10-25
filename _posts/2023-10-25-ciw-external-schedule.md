@@ -16,8 +16,8 @@ from <local_script> import ops
 
 schedule = ( # Ordered schedule of time-to-event and the functions to be applied to update the state of a simulation.
 (10, (ops.func1, ops.func2)), 
-(30, (ops.func1)), 
-(23, (ops.func1))
+(30, (ops.func1,)), 
+(23, (ops.func1,))
 )
 
 def scheduled_changes(sim, sched):
