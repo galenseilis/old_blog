@@ -31,6 +31,7 @@ $$f_o(t) = \frac{\exp \left(\cos t + \sin t \right) - \exp \left(\cos (-t) + \si
 
 $$\vec p_f (t) \triangleq \begin{bmatrix} \frac{\exp \left(\cos t + \sin t \right) + \exp \left(\cos (-t) + \sin (-t) \right)}{2} \\ \frac{\exp \left(\cos t + \sin t \right) - \exp \left(\cos (-t) + \sin (-t) \right)}{2}  \end{bmatrix}$$
 
+Here is the decomposition using Python (NumPy):
 
 ```python
 import numpy as np
