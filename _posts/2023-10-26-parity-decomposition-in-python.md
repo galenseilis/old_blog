@@ -23,23 +23,28 @@ $$\vec p_f (t) \triangleq \begin{bmatrix} f_e(t) \\ f_o(t)  \end{bmatrix}$$
 
 which I call the *parity decomposition vector* of a scalar function.
 
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Whatever scalar function you are interested in
+
+# Whatever function you are interested in
 f = lambda t : np.exp(np.cos(t) + np.sin(t))
 t = np.linspace(-2*np.pi, 2*np.pi, num=1000)
 
+# Decomposition Functionals
 even = lambda t: 0.5*(f(t) + f(-t))
 odd = lambda t: 0.5*(f(t) - f(-t))
 
-# Basic Plot
+# Plot
 plt.plot(even(t), odd(t))
+plt.xlabel('Even Part')
+plt.ylabel('Odd Part')
 plt.savefig('example_parity_decomposition.png', dpi=300, transparent=True)
 plt.close()
 ```
+
+![](/assets/images/example_parity_decomposition.png)
 
 I've wondered if parity decomposition could be useful in further understanding machine learning models, but things get complicated. Often machine learning models map many inputs to many outputs. 
 
