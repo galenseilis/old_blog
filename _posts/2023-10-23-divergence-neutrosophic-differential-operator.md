@@ -16,5 +16,3 @@ It has a divergence of:
 
 $$\nabla \cdot \left[ \vec \nabla \dot \star \vec v(x,y) \right] = \nabla \cdot \begin{bmatrix} \frac{\partial}{\partial x} g(x,y) \\ \frac{\partial}{\partial x}h(x,y) + \frac{\partial}{\partial y}g(x,y) + \frac{\partial}{\partial y}h(x,y) \end{bmatrix}$$
 $$\nabla \cdot \left[ \vec \nabla \dot \star \vec v(x,y) \right] = \frac{\partial^2}{\partial x^2} g(x,y) + \frac{\partial^2}{\partial x \partial y} h(x,y) + \frac{\partial^2}{\partial y^2} g(x,y) + \frac{\partial^2}{\partial y^2} h(x,y)$$
-
-This is a linear second-order partial differential equation which therefore has the property that linear combinations of its solutions will also be solutions. Nice closure property.
