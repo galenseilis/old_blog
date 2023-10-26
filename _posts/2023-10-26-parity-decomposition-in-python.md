@@ -13,15 +13,24 @@ $$f = \underbrace{f_e}_{\text{Even Function}} + \underbrace{f_o}_{\text{Odd Func
 
 Further, when reflections of the input are defined it will also be expressible exactly as follows:
 
-$$f_e = \frac{f(t) + f(-t)}{2}$$
+$$f_e(t) = \frac{f(t) + f(-t)}{2}$$
 
-$$f_o = \frac{f(t) - f(-t)}{2}$$
+$$f_o(t) = \frac{f(t) - f(-t)}{2}$$
 
 Strictly-speaking, the image of the function could be elements of a vector space, or matrices, of tensors, etc. But those are harder to visualize. Here is a snippet of code producing what I call a "parity decomposition plot of a scalar function". It plots the parametric curve of 
 
 $$\vec p_f (t) \triangleq \begin{bmatrix} f_e(t) \\ f_o(t)  \end{bmatrix}$$
 
 which I call the *parity decomposition vector* of a scalar function.
+
+Let us consider the function $f(t) = \exp \left(\cos t + \sin t \right)$ as an example. The decompositions are as follows:
+
+$$f_e(t) = \frac{\exp \left(\cos t + \sin t \right) + \exp \left(\cos (-t) + \sin (-t) \right)}{2}$$
+
+$$f_o(t) = \frac{\exp \left(\cos t + \sin t \right) - \exp \left(\cos (-t) + \sin (-t) \right)}{2}$$
+
+$$\vec p_f (t) \triangleq \begin{bmatrix} \frac{\exp \left(\cos t + \sin t \right) + \exp \left(\cos (-t) + \sin (-t) \right)}{2} \\ \frac{\exp \left(\cos t + \sin t \right) - \exp \left(\cos (-t) + \sin (-t) \right)}{2}  \end{bmatrix}$$
+
 
 ```python
 import numpy as np
