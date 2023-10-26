@@ -5,6 +5,7 @@ order: 6
 ---
 
 - (2023) A Friendly Introduction to Statistical Forecasting
+- (2023) [A Moosy Proposal: Estimating Average Direction of Moose Travel from Weak Information](https://github.com/galenseilis/2023-01-27-moose-slides/blob/main/2023-01-27_Galen_Seilis_moose_orientation.pdf)
 - (2022) Adventures in Non-Negative Canonical Polyadic Decomposition
 - (2022) How Correlation Really Works
 - (2022) Introduction to Interval Arithmetic

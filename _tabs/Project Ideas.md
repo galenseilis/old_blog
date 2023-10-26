@@ -25,6 +25,7 @@ I've come to a stage where I accept that I have more project ideas than I have t
 
 ## Miscellaneous
 - [ ] Library that summarizes a probability of properties hold of a random relation satisfying a given relation property.
+- [ ] TDDA: [Type hint stubs?](https://github.com/tdda/tdda/issues/37)
 
 # Data Analysis
 - [ ] Use [COBRApy](https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-7-74) to simulate metabolic flux in *Cyanidioschyzon merolae*.
