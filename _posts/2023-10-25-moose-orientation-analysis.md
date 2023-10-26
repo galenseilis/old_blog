@@ -17,3 +17,5 @@ standing and the direction its scat falls.
 A limitation of this approach is that if the earlier scat lands random, but the dependent scat doesn’t, then the overall non-randomness could be misleading.
 
 Some the covariates are the ground obstacles such as rocks, logs, stumps, and vegetation, but also the ground slope, and mass.
+
+See [Seilis 2023](https://github.com/galenseilis/2023-01-27-moose-slides/blob/main/2023-01-27_Galen_Seilis_moose_orientation.pdf) for some further information.
