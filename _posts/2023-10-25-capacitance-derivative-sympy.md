@@ -32,19 +32,19 @@ epsilon_0 = Symbol('\\epsilon_0')
 g = d_0 + d_i / epsilon_r
 y = w_0 / g
 
-# Some square rooty stuff
+# Some square rooty stuff and plus-minus stuff
 sqrty = sqrt(y)
 sqrtym = sqrt(sqrty - y)
 sqrtyp = sqrt(sqrty + y)
 
-# Some arctan and plus-minus stuff
+# Some arctan stuff
 left_inner = atan(sqrty / sqrtym) / sqrtym
 right_inner = atan(sqrty / sqrtyp) / sqrtyp
 
 # A leading coefficient
 coef = 2 * a * b * epsilon_0 / g
 
-# Target variavle
+# Target variable
 
 C = coef * (left_inner + right_inner)
 
