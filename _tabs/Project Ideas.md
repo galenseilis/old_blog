@@ -30,7 +30,7 @@ I've come to a stage where I accept that I have more project ideas than I have t
 # Data Analysis
 - [ ] Use [COBRApy](https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-7-74) to simulate metabolic flux in *Cyanidioschyzon merolae*.
 - [ ] Develop statistical forecasting model of venting index in British Columbia, Canada.
-- [ ] Orientation analysis of moose scat. (Yup, you read that right).
+- [ ] Orientation analysis of moose scat and other weak information. See [Seilis 2023](https://github.com/galenseilis/2023-01-27-moose-slides/blob/main/2023-01-27_Galen_Seilis_moose_orientation.pdf).
 - [ ] Compute the [assembly index](https://en.wikipedia.org/wiki/Assembly_theory) of Canada's national road network and compare with the historical construction of the road network.
 - [ ] Drawing The Bayesian Baboon: Apply an analysis similar to [this](https://www.youtube.com/watch?v=hnYhJzYAQ60) approach on [this data set](http://www.sociopatterns.org/datasets/baboons-interactions/).
 
