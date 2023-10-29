@@ -4,6 +4,16 @@ icon: fas fa-info-circle
 order: 6
 ---
 
+- (2023) [Integrating Causal Inference Methods into Northern Health's Analytics Work](https://www2.unbc.ca/health-research-institute/2023-northern-bc-research-and-quality-conference-concurrent-session-information-2)
+
+> **Objective**: This talk aims to highlight the integration of modern causal inference methods into the decision-making processes at Northern Health (NH). I present a comprehensive approach to incorporate causal inference principles into NH's analytics work, emphasizing the significance of causality in healthcare research and its alignment with NH's mission, vision, and strategic plans.
+>
+> **Methods**: The presentation outlines our approach, which involves the development of a systematic causal model development process. These methods are designed to equip NH's data scientists and researchers with the skills necessary to apply modern causal inference techniques effectively.
+>
+> **Results**: I discuss the theoretical foundations and the framework for integrating modern causal inference methodologies into NH's projects. I highlight the general challenges and benefits of applying causal inference methods in healthcare research, including addressing incomplete or corrupted data, accounting for unmeasured confounds, and estimating heterogeneous treatment effects at the individual level. Finally, I will report on the current state of a project to estimate the causal impact of COVID-19 on a time series data set in NH.
+> 
+> **Lessons Learned**: Causality has deep roots in philosophy, and modern causal inference offers a rigorous framework to address the complexities of healthcare data analysis. I emphasize the critical distinction between causal inference and traditional statistics and demonstrate how misleading statistics can misguide decision-making. I stress that causal inference methodologies are in harmony with NH's mission, vision, and strategic objectives, enhancing the quality of inferences drawn from healthcare data.
+
 - (2023) A Friendly Introduction to Statistical Forecasting
 - (2023) [A Moosy Proposal: Estimating Average Direction of Moose Travel from Weak Information](https://github.com/galenseilis/2023-01-27-moose-slides/blob/main/2023-01-27_Galen_Seilis_moose_orientation.pdf)
 - (2022) Adventures in Non-Negative Canonical Polyadic Decomposition
