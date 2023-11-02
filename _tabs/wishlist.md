@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 11
 ---
 
-These are projects in their early infancy. I know I won't get around to all of this by myself. Let me know if you're interested in collaborating.
+These are projects ideas in their early infancy. I know I won't get around to all of this by myself. Let me know if someone has done any of these things already, or if you're interested in doing some of them.
 
 ## Tool Development
 
@@ -23,7 +23,7 @@ These are projects in their early infancy. I know I won't get around to all of t
 
 ### Scikit-Learn
 - [ ] Trainable queueing network model class compliant with Scikit-Learn API.
-- Numerically-stable hyperspherical rotations as a data transformation class compliant with Scikit-Learn API.
+- [ ] Numerically-stable hyperspherical rotations as a data transformation class compliant with Scikit-Learn API.
 
 ### Miscellaneous
 - [ ] Library that summarizes a probability of properties hold of a random relation satisfying a given relation property.
@@ -44,3 +44,4 @@ These are projects in their early infancy. I know I won't get around to all of t
 - [ ] Derive the change of variables for a given random forest on a random vector with a given distribution.
 - [ ] In [Seilis 2022](https://doi.org/10.24124/2022/59312) I developed the Agnesian operator. It clearly induces a form of differential equations which I would term "Agnesian equations". When two collections of functions given the same Agnesian, I call them "Agnesian-equivalent". It would be interesting to further explore this family of differential equations and their properties.
 - [ ] Quantum Agnesians are a notion I had of bringing Agnesian operators to quantum operators.
+- [ ] Reformulate Schrödinger's equations with [vector functions](https://galenseilis.github.io/posts/arithmetic-complex-numbers-vector-functions/).
