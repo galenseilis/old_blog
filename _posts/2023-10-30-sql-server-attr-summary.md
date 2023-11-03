@@ -1,5 +1,5 @@
 ---
-title: How to list all available databses paired to their tables and attributes in Microsoft SQL Server
+title: How to list all available databases paired to their tables and attributes in Microsoft SQL Server
 date: 2023-10-24 00:51:15
 categories: [sql,microsoft-sql,sql-server]
 tags: [sql,microsoft-sql,sql-server,tsql,sql-query,databases,microsoft-sql-server,tables,attributes]
