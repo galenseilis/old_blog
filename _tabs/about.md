@@ -59,7 +59,10 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 Northern Health (Nov 2022 - present)
 
 - (2023) Used Bayesian interrupted time series analysis to estimate the cumulative causal impact of surgery completion in Northern Health.
+- (2023 - present) Developing Mjölnir, a highly interpretable machine learning model enhanced with causal assumptions and conformal prediction.
+- (2023) Counterfactual causal inference of demand for future implementation of MRI breast cancer screening services in Northern Health. My analysis also included adoption curve scenarios for the service.
 - (2023) Reviewed conference abstracts.
+- (2023) Developed acute care bed modelling dashboard in Tableau with scenarios for adjusting available beds.
 - (2023) Developed and ran queueing model for simulating surgery waitlists among facilities with probabilistically forecasted demands and supply of surgery services.
 - (2023) Probabilistic Bayesian inference of stochastic patient transfer surgery network among health authorities in British Columbia.
 - (2023) Bayesian non-negative canonical polyadic decomposition of chronic health factors.
