@@ -1,6 +1,6 @@
 ---
 title: Parallel Execution of a DAG on Functions in Topological Order
-date: 2023-11-02 00:51:15
+date: 2023-11-02 01:51:15
 categories: [programming,concurrent-programming]
 tags: [programming,concurrent-programming,python,networkx,directed-acyclic-graph,dag,graph-theory,order-theory,transitive-closure,multiprocessing,digraph,directed-graph,function,mutual-exclusion,topological-order,topological-generation]
 math: true
