@@ -14,6 +14,7 @@ The goal of this post is to present a minimal description of a generalization of
 The cross product for vectors $\vec a, \vec b \in \mathbb{R}^3$ is given by
 
 $$\vec a \times \vec b = \begin{bmatrix} a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1 \end{bmatrix}.$$
+
 ## The Generalization
 The approach I took to this generalization is to start with the cross product and re-express it in terms of other operations:
 
@@ -22,15 +23,18 @@ $$\begin{align} \vec a \times \vec b =& \begin{bmatrix} a_2b_3 - a_3b_2 \\ a_3b_
 The $\odot$ operator is the [Hadamard product](https://stats.stackexchange.com/questions/533577/what-is-the-difference-between-the-dot-product-and-the-element-by-element-multip/533578#533578). So the above expansion of the cross product is pretty busy, especially with all the matrices and operators. Notice that we're actually using a single permutation matrix and its transpose. We can readily generalize from this particular $3 \times 3$ permutation matrix to $n \times n$ permutation matrices acting on $\vec a, \vec b \in \mathbb{R}^n$ producing what I'll term the *permutive cross-product*. This cross product, $\times_P : \mathbb{R}^n \times \mathbb{R}^n \mapsto \mathbb{R}^n$ is defined as follows:
 
 $$\vec a \times_P \vec b \triangleq P \vec a \odot P^T\vec b - P^T \vec a \odot P \vec b$$
+
 For a given dimension $n$, there are $n!$ permutations to choose from to construct permutation matrices $P$. While we have achieved a generalization of the cross product, perhaps we would like to find special cases of it that are more natural to the original cross product.
 
 ### Signatures
 For example, the permutation matrix 
 
 $$\begin{bmatrix} 0 & 1 & 0\\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix}$$
+
 used above to obtain the ordinary cross product represents an even permutation. For any permutation matrix $P_{\sigma}$ representing permutation $\sigma$ we know that 
 
 $$\text{sign} \left( \det (P_{\sigma}) \right) = \text{sgn}(\sigma)$$
+
 where $\text{sign}$ on the left-hand-side is the [sign function](https://en.wikipedia.org/wiki/Sign_function) and the $\text{sgn}$ on the right-hand-side (RHS) is the [permutation signature](https://en.wikipedia.org/wiki/Parity_of_a_permutation). It is regrettable that these functions have the same name so I dropped an "i" in the RHS just to make them distinct for our denotation. When $\text{sgn}(\sigma) = 1$ the permutation is even, and when $\text{sgn}(\sigma) = -1$ it is an odd permutation. The permutation matrix for the ordinary cross product is even, and we can rely on the property that 
 
 $$\det (A) = \det (A^T)$$
@@ -73,20 +77,28 @@ One of these is the original cross product as we introduced it, and the other is
 Using the same code as above, except we assign $dim=4$, we find the following vectors are non-trivial examples of the generalization:
 
 $$\left[\begin{matrix}0\\a_{3} b_{4} - a_{4} b_{3}\\- a_{2} b_{4} + a_{4} b_{2}\\a_{2} b_{3} - a_{3} b_{2}\end{matrix}\right]$$
+
 $$\left[\begin{matrix}0\\- a_{3} b_{4} + a_{4} b_{3}\\a_{2} b_{4} - a_{4} b_{2}\\- a_{2} b_{3} + a_{3} b_{2}\end{matrix}\right]
 $$
+
 $$\left[\begin{matrix}a_{2} b_{3} - a_{3} b_{2}\\- a_{1} b_{3} + a_{3} b_{1}\\a_{1} b_{2} - a_{2} b_{1}\\0\end{matrix}\right]
 $$
+
 $$\left[\begin{matrix}a_{2} b_{4} - a_{4} b_{2}\\- a_{1} b_{4} + a_{4} b_{1}\\0\\a_{1} b_{2} - a_{2} b_{1}\end{matrix}\right]
 $$
+
 $$\left[\begin{matrix}- a_{2} b_{3} + a_{3} b_{2}\\a_{1} b_{3} - a_{3} b_{1}\\- a_{1} b_{2} + a_{2} b_{1}\\0\end{matrix}\right]
 $$
+
 $$\left[\begin{matrix}a_{3} b_{4} - a_{4} b_{3}\\0\\- a_{1} b_{4} + a_{4} b_{1}\\a_{1} b_{3} - a_{3} b_{1}\end{matrix}\right]
 $$
+
 $$\left[\begin{matrix}- a_{2} b_{4} + a_{4} b_{2}\\a_{1} b_{4} - a_{4} b_{1}\\0\\- a_{1} b_{2} + a_{2} b_{1}\end{matrix}\right]
 $$
+
 $$\left[\begin{matrix}- a_{3} b_{4} + a_{4} b_{3}\\0\\a_{1} b_{4} - a_{4} b_{1}\\- a_{1} b_{3} + a_{3} b_{1}\end{matrix}\right]
 $$
+
 Look at that, we found 8 cross products in 4D! But notice that they are not so different than the two we found in 3D. You'll see that 4 of them are just the ordinary cross product for certain choices of variables, which is embedded in 4D where one of the components is always zero. The remaining four are again just reflections that point in the opposite direction.
 
 So not only did we find a generalization of the cross product for n-dimensional space, but we also learned that the generalization really just provides either trivial examples, examples that are just the ordinary cross product embedded in higher dimensions or their reflections. Personally, I'm satisfied with this generalization because it helped me better understand that there are limited options for what one might mean by a non-trivial vector being orthogonal to two other vectors (or likewise the plane that they span but I did not discuss that).
@@ -98,9 +110,11 @@ But let's get perverse by generalizing further (just for fun).
 Let's taking a further generalization from what we have seen so far. The operator
 
 $$\vec a \times_P \vec b \triangleq P \vec a \odot P^T\vec b - P^T \vec a \odot P \vec b$$
+
 gives us a generalization of the cross product using a given permutation matrix $P$. Let's see if we find anything new if we generalize to
 
 $$P_1 \vec a \odot  P_2 \vec b - P_3 \vec a \odot P_4 \vec b$$
+
 where $P_1,P_2,P_3,P_4$ are independent choices of permutation matrices. Yup, we're going to try a lot of permutation matrices. Here is some updated code to look through all these possible permutation matrices:
 
 ```python
@@ -156,8 +170,8 @@ And here are the results.
 
 |    | P1                                                                       | P2                                                                       | P3                                                                       | P4                                                                       | cross                                                                                                                        | cross_dot_a   | cross_dot_b   |
 |---:|:-------------------------------------------------------------------------|:-------------------------------------------------------------------------|:-------------------------------------------------------------------------|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|:--------------|:--------------|
-|  0 | $\left[\begin{matrix}0 & 1 & 0\\0 & 0 & 1\\1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 0 & 1\\1 & 0 & 0\\0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 0 & 1\\1 & 0 & 0\\0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 1 & 0\\0 & 0 & 1\\1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}a_{2} b_{3} - a_{3} b_{2}\\- a_{1} b_{3} + a_{3} b_{1}\\a_{1} b_{2} - a_{2} b_{1}\end{matrix}\right]$   | $0$           | $0$           |
-|  1 | $\left[\begin{matrix}0 & 0 & 1\\1 & 0 & 0\\0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 1 & 0\\0 & 0 & 1\\1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 1 & 0\\0 & 0 & 1\\1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 0 & 1\\1 & 0 & 0\\0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}- a_{2} b_{3} + a_{3} b_{2}\\a_{1} b_{3} - a_{3} b_{1}\\- a_{1} b_{2} + a_{2} b_{1}\end{matrix}\right]$ | $0$           | $0$           |
+|  0 | $\left[\begin{matrix}0 & 1 & 0 \\ 0 & 0 & 1\\1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}a_{2} b_{3} - a_{3} b_{2} \\ - a_{1} b_{3} + a_{3} b_{1} \\ a_{1} b_{2} - a_{2} b_{1}\end{matrix}\right]$   | $0$           | $0$           |
+|  1 | $\left[\begin{matrix}0 & 0 & 1\\ 1 & 0 & 0\\ 0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 1 & 0\\ 0 & 0 & 1\\ 1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 1 & 0\\ 0 & 0 & 1\\ 1 & 0 & 0\end{matrix}\right]$ | $\left[\begin{matrix}0 & 0 & 1\\ 1 & 0 & 0\\ 0 & 1 & 0\end{matrix}\right]$ | $\left[\begin{matrix}- a_{2} b_{3} + a_{3} b_{2}\\ a_{1} b_{3} - a_{3} b_{1}\\ - a_{1} b_{2} + a_{2} b_{1}\end{matrix}\right]$ | $0$           | $0$           |
 
 That's right. Opening up to a wider pool of permutation matrices did not add any new cross products. If anything actually using only one permutation matrix (and its transpose) substantially reduces the size of the search space. And if we were smart and not lazy then we could further take advantage of the reflections by not enumerating them. There are $(4!)^4=331776$ arrangements of permutations if you have the patience to search through them. 
 
