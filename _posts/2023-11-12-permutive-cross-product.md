@@ -192,14 +192,15 @@ There are 3 rotation matrices in 3D which can be composed together as linear tra
 
 While there are [known generalizations](https://en.wikipedia.org/wiki/Cross_product#Generalizations)of the cross product, which I would like to learn more about at some point, I thought I would give it a shot on my own. Actually, the [multilinear approach](https://en.wikipedia.org/wiki/Cross_product#Multilinear_algebra)looks quite comprehensible as a sort of determinant:
 
-$$\bigwedge_{i=0}^{n-1}\vec v_i = 
-\begin{vmatrix}
+$$\bigwedge_{i=0}^{n-1}\vec v_i = \det \left(
+\begin{bmatrix}
 v_1^1 & \cdots & v_1^n \\ 
 \vdots & \ddots & \vdots \\
 v_{n-1}^1 & \cdots & v_{n-1}^n \\
 \vec e_1 & \cdots & \vec e_n
-\end{vmatrix}
+\end{bmatrix} \right)
 $$
+
 But let's not dig further than that in this post.
 
 What I came up with in this post is basically a way of getting any of the possible combinations of cross products embedded in $n \geq 3$ dimensions and their reflections. A cross product will only ever utilize up to three components in these higher dimensional cases. There others are discarded. It was also a reminder to me that the zero vector is orthogonal to all vectors including to itself. Much of what I have explored holds immediately for the [curl](https://en.wikipedia.org/wiki/Curl_(mathematics))as well.
