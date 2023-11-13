@@ -38,12 +38,14 @@ $$\text{sign} \left( \det (P_{\sigma}) \right) = \text{sgn}(\sigma)$$
 where $\text{sign}$ on the left-hand-side is the [sign function](https://en.wikipedia.org/wiki/Sign_function) and the $\text{sgn}$ on the right-hand-side (RHS) is the [permutation signature](https://en.wikipedia.org/wiki/Parity_of_a_permutation). It is regrettable that these functions have the same name so I dropped an "i" in the RHS just to make them distinct for our denotation. When $\text{sgn}(\sigma) = 1$ the permutation is even, and when $\text{sgn}(\sigma) = -1$ it is an odd permutation. The permutation matrix for the ordinary cross product is even, and we can rely on the property that 
 
 $$\det (A) = \det (A^T)$$
-for any matrix $A$ to know that the transpose is also an even permutation. So if you wanted to, you could restrict yourself to even permutations if you wanted to.
+
+for any square matrix $A$ to know that the transpose is also an even permutation. So if you wanted to, you could restrict yourself to even permutations.
 
 If you wanted to match your generalization even more closely with the original cross product, you could further restrict your permutation to have exactly two inversions. That is the permutation signature satisfies the equality
 
 $$\text{sgn}(\sigma) = (-1)^{N(\sigma)}$$
-where $N(\sigma)$ is the number of [inversions](https://en.wikipedia.org/wiki/Inversion_(discrete_mathematics))in $\sigma$. The permutation matrix for the ordinary cross product has exactly two inversions. But to me this feels too restrictive since it means we can only flip the order in two components, which is not really a restriction that I care about.
+
+where $N(\sigma)$ is the number of [inversions](https://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)) in $\sigma$. The permutation matrix for the ordinary cross product has exactly two inversions. But to me this feels too restrictive since it means we can only flip the order in two components, which is not really a restriction that I care about.
 
 ### Orthogonality
 A more interesting property, to me, is that the cross product gives a vector which is orthogonal to either of the input vectors.  Using the following Python code I searched over all permutation matrices in 3D that where orthogonal to the original vectors **and** were not the zero vector. (The zero vector is not particularly interesting here and is orthogonal to all vectors in $\mathbb{R}^n$.)
@@ -164,9 +166,9 @@ for perm1 in itertools.permutations(range(dim)):
                         )
 
 result_markdown = pd.DataFrame(
-							   results, 
-							   columns=['P1', 'P2', 'P3', 'P4', 'cross', 'cross_dot_a', 'cross_dot_b']
-							   ).to_markdown()
+                              results,
+                              columns=['P1', 'P2', 'P3', 'P4', 'cross', 'cross_dot_a', 'cross_dot_b']
+                              ).to_markdown()
 
 print(result_markdown)
 ```
@@ -211,4 +213,4 @@ $$
 
 But let's not dig further than that in this post.
 
-What I came up with in this post is basically a way of getting any of the possible combinations of cross products embedded in $n \geq 3$ dimensions and their reflections. A cross product will only ever utilize up to three components in these higher dimensional cases. There others are discarded. It was also a reminder to me that the zero vector is orthogonal to all vectors including to itself. Much of what I have explored holds immediately for the [curl](https://en.wikipedia.org/wiki/Curl_(mathematics))as well.
+What I came up with in this post is basically a way of getting any of the possible combinations of cross products embedded in $n \geq 3$ dimensions and their reflections. A cross product will only ever utilize up to three components in these higher dimensional cases. There others are discarded. It was also a reminder to me that the zero vector is orthogonal to all vectors including to itself. Much of what I have explored holds immediately for the [curl](https://en.wikipedia.org/wiki/Curl_(mathematics)) as well.
