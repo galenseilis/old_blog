@@ -71,7 +71,12 @@ for perm in itertools.permutations(range(dim)):
 
 We obtain only two non-trivial vectors:
 
-$$\left[\begin{matrix}a_{2} b_{3} - a_{3} b_{2}\\- a_{1} b_{3} + a_{3} b_{1}\\a_{1} b_{2} - a_{2} b_{1}\end{matrix}\right]$$$$\left[\begin{matrix}- a_{2} b_{3} + a_{3} b_{2}\\a_{1} b_{3} - a_{3} b_{1}\\- a_{1} b_{2} + a_{2} b_{1}\end{matrix}\right]$$
+$$\left[\begin{matrix}a_{2} b_{3} - a_{3} b_{2}\\- a_{1} b_{3} + a_{3} b_{1}\\a_{1} b_{2} - a_{2} b_{1}\end{matrix}\right]$$
+
+
+$$\left[\begin{matrix}- a_{2} b_{3} + a_{3} b_{2}\\a_{1} b_{3} - a_{3} b_{1}\\- a_{1} b_{2} + a_{2} b_{1}\end{matrix}\right]$$
+
+
 One of these is the original cross product as we introduced it, and the other is just a reflection of it obtained by multiplying by negative one. This just indicates that there are two directions an orthogonal vector could point. So nothing really new is found from our generalization when we search in 3D. Let's go to 4D.
 
 Using the same code as above, except we assign $dim=4$, we find the following vectors are non-trivial examples of the generalization:
@@ -178,12 +183,15 @@ That's right. Opening up to a wider pool of permutation matrices did not add any
 One could imagine exploring 
 
 $$O_1 \vec a \odot  O_2 \vec b - O_3 \vec a \odot O_4 \vec b$$
+
 where $O_1, O_2, O_3, O_4$ are orthogonal matrices... but that's not going to happen. A more limited case would be to look at [rotation matrices](https://en.wikipedia.org/wiki/Rotation_matrix) which are orthonormal (meaning their transpose is equal to their inverse):
 
 $$\begin{bmatrix} \cos \theta & - \sin \theta \\ \sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} \odot \begin{bmatrix} \cos \theta & - \sin \theta \\ \sin \theta & \cos \theta \end{bmatrix}^T \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} - \begin{bmatrix} \cos \theta & - \sin \theta \\ \sin \theta & \cos \theta \end{bmatrix}^T \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} \odot \begin{bmatrix} \cos \theta & - \sin \theta \\ \sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} b_1 \\ b_2 \end{bmatrix}$$
+
 Evaluating this case gives us:
 
 $$\left(a_{1} b_{2} - a_{2} b_{1}\right) \sin\left(2 t \right) \begin{bmatrix} 1 \\ 1 \end{bmatrix}$$
+
 which is not in general orthogonal to the original vectors.
 
 There are 3 rotation matrices in 3D which can be composed together as linear transformations. I'll leave it to the reader to evaluate those cases. One can further consider [$n$-dimensional rotations](https://en.wikipedia.org/wiki/N-sphere#Spherical_volume_and_area_elements) via a Jacobian matrix, but I will also leave that subject alone in this post.
