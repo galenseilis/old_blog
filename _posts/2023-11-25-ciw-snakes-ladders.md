@@ -1,6 +1,6 @@
 ---
 title: A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw
-date: 2023-11-25 01:51:15
+date: 2023-11-25 12:51:15
 categories: [simulation,discrete-event-simulation]
 tags: [simulation,discrete-event-simulation,python,ciw,queueing-network,queueing-theory,games,board-games,snakes-and-ladders,markov-chain,markov-property,computer-programming]
 math: true
