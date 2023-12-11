@@ -46,4 +46,4 @@ Although it has its own shortcomings, there is an appeal to these [summarized Un
 - Write programs to handle text streams, because that is a universal interface.
 
 
-But there doesn't seem to be a magical answer for software development. Vaguely, we need programming tools to be general enough but not too general; abstract but not too abstract. A balance must always be struck. But what is clear to me is that "we need a tool that does everything", and everything tool, is always a bad tool in practice no matter how beautiful it may be in theory.
+But there doesn't seem to be a magical answer for software development. Vaguely, we need programming tools to be general enough but not too general; abstract but not too abstract. A balance must always be struck. But what is clear to me is that "we need a tool that does everything", an everything tool, is always a bad tool in practice no matter how beautiful it may be in theory.
