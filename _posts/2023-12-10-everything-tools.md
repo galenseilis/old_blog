@@ -31,7 +31,7 @@ Sometimes performance, which might be key for certain systems. If you don't need
 
 But for me one of the major selling points is [practical expressivity](https://en.wikipedia.org/wiki/Expressive_power_(computer_science)#Information_description): the concision and ease in which an idea is expressed. Programming tools which are practically expressive often cohere with [DDD](https://en.wikipedia.org/wiki/Domain-driven_design), allowing us to easily translate business problems into code.
 
-The other notion of expressivity, the darker twin of practical expressivity, is theoretical expressivity. Theoretical expressivity can be useful for proving various results about what a system can do, but to make it a goal is a swift fall into the [Turing tarpit](https://en.wikipedia.org/wiki/Turing_tarpit):
+The other notion of expressivity, the darker twin of practical expressivity, is theoretical expressivity: whether an idea can be expressed in a formal system (esp. a formal language). Theoretical expressivity can be useful for proving various results about what a system can do, like establishing [Turing completeness](https://en.wikipedia.org/wiki/Turing_completeness), but to make it a unilateral goal is a swift fall into the [Turing tarpit](https://en.wikipedia.org/wiki/Turing_tarpit):
 
 > Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy. -- [AP](https://en.wikipedia.org/wiki/Alan_Perlis), [EoP](https://en.wikipedia.org/wiki/Epigrams_on_Programming)
 
