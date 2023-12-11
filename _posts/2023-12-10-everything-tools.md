@@ -35,7 +35,7 @@ The other notion of expressivity, the darker twin of practical expressivity, is 
 
 > Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy. -- [AP](https://en.wikipedia.org/wiki/Alan_Perlis), [EoP](https://en.wikipedia.org/wiki/Epigrams_on_Programming)
 
-The appeal of an elegant abstraction to a programmer is like the siren's calling the sailors into the ocean to be drowned.
+The appeal of maximal abstraction to a programmer is like the siren's calling the sailors into the ocean to be drowned.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/a3/Draper_Herbert_James_Ulysses_and_the_Sirens.jpg)
 
