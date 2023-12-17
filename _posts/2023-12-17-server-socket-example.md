@@ -1,7 +1,9 @@
 ---
 title: Basic Example of Using Sockets to Communicate and Process Data in Python
 date: 2023-12-17 08:49:15
-authors: [Galen Seilis, ChatGPT]
+authors: 
+  - Galen Seilis
+  - ChatGPT
 categories: [programming-and-development,programming-languages,python,python-networking,socket-communication,data-serialization,mermaid-diagrams]
 tags: [python,server,scripts,sockets,programming,python-programming,serialization,mermaid,sequence-diagram,process-communication,network-programming,client-server-architecture,socket-communication,data-serialization,mermaid-diagrams,chatgpt]
 math: true
