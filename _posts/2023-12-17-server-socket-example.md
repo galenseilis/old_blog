@@ -17,6 +17,8 @@ Accompanying our exploration, we present a visual representation of the sequence
 
 Whether you're a beginner seeking to understand the basics of socket communication or an experienced developer looking for a quick reference, this blog post aims to provide insights into the fundamental concepts of building a simple client-server interaction in Python. Let's embark on this journey into the world of sockets and data exchange!
 
+## Example
+
 ### Sequence Diagram
 **Description and Discussion of the Sequence Diagram:**
 
