@@ -21,7 +21,7 @@ A recent YouTube video made some claims that resonate with me:
 
 > I would say that building a product and having someone attempt to abstract the product to be able to fit every need possible, and as new needs and unforseen challenges arise, you more a design that was not designed with that in mind to fit it in. And you do that over years. And what ends up happening is it becomes an untenable mess.
 >
-> It's one of my big problems with reusability and abstraction. People really do attempt to make everything possible. And when I use these everything-possible abtractions you necessarily you necessarily have to shoe-horn in use cases which just often lead to really wonky items.
+> It's one of my big problems with reusability and abstraction. People really do attempt to make everything possible. And when I use these everything-possible abtractions you necessarily have to shoe-horn in use cases which just often lead to really wonky items.
 >
 > I do agree that frameworks need more specialization; less everything. 
 
