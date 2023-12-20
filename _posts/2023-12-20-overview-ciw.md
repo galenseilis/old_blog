@@ -40,10 +40,12 @@ Two optional components of Ciw are the abstractions of StateTracker and Deadlock
 Although it does not have an explicitly recreational scope, Ciw has been used for recreation in the form of simulating an asynchronous variant of snakes and ladders.[9]
 
 Ciw v3.1.0 requires Python 3.7 or greater.[10] The project has had 15-17 contributors as of December 18th, 2023.[11][12]
-Features
+
+## Features
 
 This section lists many of the features available in Ciw. While Ciw be used to implement any queueing network which can be specified in standard Kendall's notation, it can be configured to model queueing networks which deviate from that family of models.[13]
-Distributions
+
+### Distributions
 
 Distributions are an essential component in Ciw simulations. By default they influence inter-arrival times and service times, but can also be used to define the service discipline, routing, and server behaviour at a given node. Distributions can be time-dependent, state-dependent, or both.[14]
 
@@ -91,7 +93,7 @@ Ciw has three approaches to routing:
 
 A routing matrix is an n × n n\times n matrix (where n n is the number of nodes in the network) such that the ( i , j ) (i,j)th element P i j P_{ij} corresponds to the probability of transitioning to node j j after service at node i i.[27] This is similar to a Stochastic matrix in the sense that the elements are probabilities of state transitions, however the sum of a given row can be less than one. This is due to the fact that the complement of each sum is the probability of an individual leaving the network altogether from that node. This can be donated by the following equation: 
 
- $$P r [ Leave Network From Node  i ] = 1 − ∑ j n P i j {\displaystyle Pr[{\text{Leave Network From Node }}i]=1-\sum _{j}^{n}P_{ij}}$$
+ $$Pr [ Leave Network From Node  i ] = 1 − ∑ j n P i j {\displaystyle Pr[{\text{Leave Network From Node }}i]=1-\sum _{j}^{n}P_{ij}}$$
 
 When this form of routing is specified Ciw will sample which node is the next node according to the provided routing matrix, or otherwise leave the network.
 
@@ -154,7 +156,7 @@ When a simulation is run there is often some question to be answered based on th
 Ciw supports the following attributes in its visit records:
 
 |        Attribute        |                                                                                  Description                                                                                 |
-|:-----------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        `id_number`        | The unique identification number for that customer.                                                                                                                          |
 |      `customer_class`     | The number of that customer’s customer class. If dynamic customer  classes are used, this is the customer’s class that they were when they  recieved service at that node.   |
 | `original_customer_class` | The number of the customer’s class when they arrived at the node.                                                                                                            |
@@ -166,7 +168,7 @@ Ciw supports the following attributes in its visit records:
 |     `service_end_date`    | The date which the customer finished their service at that node.                                                                                                             |
 |       `time_blocked`      | The amount of time spent blocked at that node. That is the time between finishing service at exiting the node.                                                               |
 |        `exit_date`        | The date which the customer exited the node. This may be  immediatly after service if no blocking occured, or after some period of  being blocked.                           |
-|       `destination`       | The number of the customer’s destination, that is the next node  the customer will join after leaving the current node. If the customer  leaves the system, this will be -1. |
+|       `destination`       | The number of the customer’s destination, that is the next node  the customer will join after leaving the current node. If the customer  leaves the system, this will be `-1`. |
 |  `queue_size_at_arrival`  | The size of the queue at the customer’s arrival date. Does not include the individual themselves.                                                                            |
 | `queue_size_at_departure` | The size of the queue at the customer’s exit date. Does not include the individual themselves.                                                                               |
 |        `server_id`        | The unique identification number of the server that served that customer.                                                                                                    |
@@ -174,11 +176,11 @@ Ciw supports the following attributes in its visit records:
 
 The attribute `record_type` can be one of:
 
-- "service": a completed service
-- "interrupted service": an interupted service
-- "renege": the waiting time while a customer waited before reneging
-- "baulk": the record of a customer baulking
-- "rejection": the record of a customer being rejected due to the queue being full
+- `"service"`: a completed service
+- `"interrupted service"`: an interupted service
+- `"renege"`: the waiting time while a customer waited before reneging
+- `"baulk"`: the record of a customer baulking
+- `"rejection"`: the record of a customer being rejected due to the queue being full
 
 ## Miscellaneous
 
@@ -199,55 +201,55 @@ A [list of example implementations of some classic queue models in Ciw](https://
 
 ## References
 
-- [1] Palmer, Geraint I.; Knight, Vincent A.; Harper, Paul R.; Hawa, Asyl L. (2017-09-27), Ciw: An open source discrete event simulation library, doi:10.48550/arXiv.1710.03561, retrieved 2023-12-18
-- [2] "Welcome to Ciw's documentation! — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [3] "Notes on Ciw's Mechanisms — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [4] Discrete-Event Simulation with Lewis Bobbermen, retrieved 2023-12-19
-- [5] "Code Structure — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [6] "List of Implemented State Trackers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [7] Onvural, Raif O.; Perros, H. G. (1986-12-01). "On equivalencies of blocking mechanisms in queueing networks with blocking". Operations Research Letters. 5 (6): 293–297. doi:10.1016/0167-6377(86)90067-2. ISSN 0167-6377.
-- [8] "Are there other types of blocking in queueing networks beyond Type I?". Cross Validated. Retrieved 2023-12-19.
-- [9] "A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw". Galen’s Blog. 2023-11-25. Retrieved 2023-12-19.
-- [10] Ciw, CiwPython, 2023-11-29, retrieved 2023-12-19
-- [11] "Contributors to CiwPython/Ciw". GitHub. Retrieved 2023-12-19.
-- [12] "Authors — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [13] "Kendall's Notation — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [14] "How to Define Time and State Dependent Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [15] "List of Supported Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [16] "How to Set Phase-Type Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [17] "How to Set Arrival & Service Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [18] "How to Set Batch Arrivals — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [19] "Tutorial VI: Restricted Networks — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [20] "Are there other types of blocking in queueing networks beyond Type I?". Cross Validated. Retrieved 2023-12-19.
-- [21] "How to Detect Deadlock — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [22] "How to Set Dynamic Customer Classes — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [23] "How to Change Customer Class After Service — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [24] "How to Change Customer Class While Queueing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [25] "How to Simulate Baulking Customers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [26] "How to Simulate Reneging Customers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [27] "Tutorial V: A Network of Queues — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [28] "How to Define Process-Based Routing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [29] "Join Shortest Queue in Processor Sharing Systems — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [30] "State-dependent Routing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [31] "How to Change Service Discipline — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [32] "How to Set Priority Classes — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [33] "How to Simulate Processor Sharing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [34] "Variable Number of Servers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [35] "Server-dependent Services — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [36] "How to Set Server Priorities — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [37] "How to Set Server Schedules — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [38] "How to Set Slotted Services — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [39] "Tutorial I: Defining & Running a Simulation — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [40] "How to Simulate For a Certain Number of Customers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [41] "How to Pause and Restart the Simulation — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [42] "Tutorial III: Collecting Results — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [43] "How to Track the System's State — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [44] "How to Implement a Progress Bar — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [45] "How to Implement Exact Arithmetic — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [46] "DES+SD Hybrid Simulation with Ciw — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [47] "A Guide to Building Hybrid DES+SD Simulations in Ciw". www.geraintianpalmer.org.uk. Retrieved 2023-12-19.
-- [48] Palmer, Geraint I.; Tian, Yawen (2023-05-04). "Implementing hybrid simulations that integrate DES+SD in Python". Journal of Simulation. 17 (3): 240–256. doi:10.1080/17477778.2021.1992312. ISSN 1747-7778.
-- [49] "HCiw/src/hciw/waitlist.py at main · galenseilis/HCiw". GitHub. Retrieved 2023-12-19.
-- [50] "External Schedule of Ciw Simulations". Galen’s Blog. 2023-10-24. Retrieved 2023-12-19.
-- [51] "How to Parallelise Trials — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
-- [52] "HCiw/src/hciw/results.py at main · galenseilis/HCiw". GitHub. Retrieved 2023-12-19.
+- [1]: Palmer, Geraint I.; Knight, Vincent A.; Harper, Paul R.; Hawa, Asyl L. (2017-09-27), Ciw: An open source discrete event simulation library, doi:10.48550/arXiv.1710.03561, retrieved 2023-12-18
+- [2]: "Welcome to Ciw's documentation! — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [3]: "Notes on Ciw's Mechanisms — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [4]: Discrete-Event Simulation with Lewis Bobbermen, retrieved 2023-12-19
+- [5]: "Code Structure — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [6]: "List of Implemented State Trackers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [7]: Onvural, Raif O.; Perros, H. G. (1986-12-01). "On equivalencies of blocking mechanisms in queueing networks with blocking". Operations Research Letters. 5 (6): 293–297. doi:10.1016/0167-6377(86)90067-2. ISSN 0167-6377.
+- [8]: "Are there other types of blocking in queueing networks beyond Type I?". Cross Validated. Retrieved 2023-12-19.
+- [9]: "A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw". Galen’s Blog. 2023-11-25. Retrieved 2023-12-19.
+- [10]: Ciw, CiwPython, 2023-11-29, retrieved 2023-12-19
+- [11]: "Contributors to CiwPython/Ciw". GitHub. Retrieved 2023-12-19.
+- [12]: "Authors — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [13]: "Kendall's Notation — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [14]: "How to Define Time and State Dependent Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [15]: "List of Supported Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [16]: "How to Set Phase-Type Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [17]: "How to Set Arrival & Service Distributions — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [18]: "How to Set Batch Arrivals — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [19]: "Tutorial VI: Restricted Networks — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [20]: "Are there other types of blocking in queueing networks beyond Type I?". Cross Validated. Retrieved 2023-12-19.
+- [21]: "How to Detect Deadlock — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [22]: "How to Set Dynamic Customer Classes — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [23]: "How to Change Customer Class After Service — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [24]: "How to Change Customer Class While Queueing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [25]: "How to Simulate Baulking Customers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [26]: "How to Simulate Reneging Customers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [27]: "Tutorial V: A Network of Queues — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [28]: "How to Define Process-Based Routing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [29]: "Join Shortest Queue in Processor Sharing Systems — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [30]: "State-dependent Routing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [31]: "How to Change Service Discipline — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [32]: "How to Set Priority Classes — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [33]: "How to Simulate Processor Sharing — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [34]: "Variable Number of Servers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [35]: "Server-dependent Services — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [36]: "How to Set Server Priorities — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [37]: "How to Set Server Schedules — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [38]: "How to Set Slotted Services — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [39]: "Tutorial I: Defining & Running a Simulation — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [40]: "How to Simulate For a Certain Number of Customers — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [41]: "How to Pause and Restart the Simulation — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [42]: "Tutorial III: Collecting Results — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [43]: "How to Track the System's State — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [44]: "How to Implement a Progress Bar — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [45]: "How to Implement Exact Arithmetic — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [46]: "DES+SD Hybrid Simulation with Ciw — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [47]: "A Guide to Building Hybrid DES+SD Simulations in Ciw". www.geraintianpalmer.org.uk. Retrieved 2023-12-19.
+- [48]: Palmer, Geraint I.; Tian, Yawen (2023-05-04). "Implementing hybrid simulations that integrate DES+SD in Python". Journal of Simulation. 17 (3): 240–256. doi:10.1080/17477778.2021.1992312. ISSN 1747-7778.
+- [49]: "HCiw/src/hciw/waitlist.py at main · galenseilis/HCiw". GitHub. Retrieved 2023-12-19.
+- [50]: "External Schedule of Ciw Simulations". Galen’s Blog. 2023-10-24. Retrieved 2023-12-19.
+- [51]: "How to Parallelise Trials — Ciw 3.1.0 documentation". ciw.readthedocs.io. Retrieved 2023-12-19.
+- [52]: "HCiw/src/hciw/results.py at main · galenseilis/HCiw". GitHub. Retrieved 2023-12-19.
