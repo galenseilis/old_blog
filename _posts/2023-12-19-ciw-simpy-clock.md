@@ -14,7 +14,7 @@ mermaid: true
 This post looks at implementing a simple simulation described in the SImPy documentation using the Ciw Python package.
 
 ## SimPy Simulation
-On the home page of the [SimPy](https://simpy.readthedocs.io/en/latest/)documentation there is an example of a clock:
+On the home page of the [SimPy](https://simpy.readthedocs.io/en/latest/) documentation there is an example of a clock:
 
 ```python
 import simpy
@@ -154,7 +154,7 @@ class IASDeterministic(ciw.dists.Distribution):
         else:
             return self.value
 
-	def __repr__(self):
+    def __repr__(self):
         return f"IASDistribution(value={self.value}, limit={self.limit})"
 ```
 
