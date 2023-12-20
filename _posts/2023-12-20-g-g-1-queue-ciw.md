@@ -17,7 +17,7 @@ $$\begin{align} U_1 \sim & \text{Exponential}\left( \frac{1}{9} \right) \\ U_2 \
 
 The following mixture distribution for the arrival times will be used:
 
-$$T_{\text{arrivals}}} \sim \frac{1}{5} f_{U_1} + \frac{1}{10} f_{U_2} + \frac{3}{5} f_{U_3} + \frac{1}{10} f_{U_4}$$
+$$T_{\text{arrivals}} \sim \frac{1}{5} f_{U_1} + \frac{1}{10} f_{U_2} + \frac{3}{5} f_{U_3} + \frac{1}{10} f_{U_4}$$
 
 We will use a [gamma distribution](https://en.wikipedia.org/wiki/Gamma_distribution) for the sake of example. A gamma distribution is the result of a sum of [independent](https://en.wikipedia.org/wiki/Independence_(probability_theory)) [exponentially-distributed](https://en.wikipedia.org/wiki/Exponential_distribution) [random variable](https://en.wikipedia.org/wiki/Random_variable), and thus for this example we have an interpretation that the servicing is implicitly a multi-step process where each step has an exponentially-distributed completion time. 
 
