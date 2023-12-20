@@ -57,6 +57,7 @@ Let us take each clock to be a node in a queueing network. We will consider the 
 Our clocks are not self-contained like ordinary clocks. They require an input signal to tell them when to tick. We will call these discrete units of signal "packets". The clocks and the inputs/outputs act as completely separate systems, so for our two clocks we can assume the following routing matrix:
 
 $$R = \begin{bmatrix}0 & 0 \\ 0 & 0 \end{bmatrix}$$
+
 which means that packets that are used at a clock are never seen again. They leave, or are consumed, or... something. 👻 
 
 Such a routing matrix can be tersely written in Python as a nested list:
@@ -74,6 +75,7 @@ number_of_tickers = [1, 1]
 We can treat each completed tick of these clocks as the completion of a service. Each clock completes a tick at an exact deterministic rate, so the inter-arrival times of ticks are [constant random variables](https://en.wikipedia.org/wiki/Degenerate_distribution#Constant_random_variable).We can think of these service times mathematically as
 
 $$T_{\text{service}} \sim \delta \left( s \right)$$
+
 where $\delta$ is the [Dirac delta distribution](https://en.wikipedia.org/wiki/Dirac_delta_function) and $s$ the "speed parameter" for the clock's ticks. We can store our clock speeds in a list:
 
 ```python
@@ -83,11 +85,13 @@ clock_speeds = [0.5, 1]
 In order to ensure that each ticker has a correctly-timed packet we must consider the arrival times of packets onto the queue. If we provide too few packets then the clock won't keep time; ticks will be delayed. If we provide more packets than necessary then we will start to have a queue filling up with packets which is a waste of memory. Instead we should have packets arrive at the same rate that they are needed. Thus the arrival rate will also equal:
 
 $$T_{\text{arrivals}} \sim \delta \left( s \right)$$
+
 Because the order of the packets doesn't matter, the [service discipline](https://en.wikipedia.org/wiki/Network_scheduler)doesn't either. We'll allow Ciw to use its default of first-come, first-serve, but it wouldn't matter if we used something else.
 
 Just because we have the rates of change correct doesn't mean that we are starting in the correct state. The last, and trickiest, business of this exercise is to start the system with the correct number of packets. If it takes $s$ units of time for a packet to arrive and it takes another $s$ units of time for a packet to be processed into a tick, then each packet has a sojourn time of $2s$. Which means that at the start of the simulation there will be a delay before the clocks start ticking. We could chalk this up to simulation [warm-up](https://ciw.readthedocs.io/en/latest/Tutorial-I/tutorial_iv.html), but let's get this right. What we can do is have a distribution that 
 
 $$f(t; s, c, \ell) = \begin{cases} \delta \left( 0 \right) & t \leq 0 \land c < \ell \\ \delta \left( s \right) & \text{Otherwise} \end{cases}$$
+
 where $t$ is the simulation time, $c \in \mathbb{N}_0$ is a count of how many times the distribution has been used at or before $t = 0$, and $\ell \in \mathbb{N}_0$  is the maximum number of times that we will allow this distribution to be used for $t \leq 0$. Kinda weird, right? What it specifies is that we can pass packets into the system that take zero units of time to arrive and zero units of time to process. That will allow us to have a couple of packets run straight away! One implementation of Python for this looks like this:
 
 ```python
@@ -200,4 +204,4 @@ Note that node 1 corresponds to the fast clock, and node 2 corresponds to the sl
 
 # Conclusions
 
-Ciw can definitely handle this toy simulation of a pair of clocks, but it is not the most naturally suited tool for this example. It is a bit like coordinating the [BFG-10000](https://doom.fandom.com/wiki/BFG-10000)to take aim at a squirrel; more work than needed but gets the job done.
+Ciw can definitely handle this toy simulation of a pair of clocks, but it is not the most naturally suited tool for this example. It is a bit like coordinating the [BFG-10000](https://doom.fandom.com/wiki/BFG-10000) to take aim at a squirrel; more work than needed but gets the job done.
