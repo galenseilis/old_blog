@@ -7,6 +7,8 @@ math: true
 mermaid: true
 ---
 
+Here is a list of implementations of classic classes of queueing models.
+
 - [Implementing a M/M/1 Queue in Ciw](https://galenseilis.github.io/posts/m-m-1-queue-ciw/)
 - [Implementing a M/M/c Queue in Ciw](https://galenseilis.github.io/posts/m-m-c-queue-ciw/)
 - [Implementing a M/M/$\infty$ Queue in Ciw](https://galenseilis.github.io/posts/m-d-infinity-queue-ciw/)
@@ -17,4 +19,4 @@ mermaid: true
 - [Implementing a M/G/k Queue in Ciw](https://galenseilis.github.io/posts/m-g-k-queue-ciw/)
 - [Implementing a G/M/1 Queue in Ciw](https://galenseilis.github.io/posts/g-m-1-queue-ciw/)
 - [Implementing a G/G/1 Queue in Ciw](https://galenseilis.github.io/posts/g-g-1-queue-ciw/)
--[Implementing a Kelly Network in Ciw](https://galenseilis.github.io/posts/kelly-networks-ciw/)
+- [Implementing a Kelly Network in Ciw](https://galenseilis.github.io/posts/kelly-networks-ciw/)
