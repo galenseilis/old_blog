@@ -1,8 +1,8 @@
 ---
-title: D/M/1 Queue in Ciw
+title: Implementing a D/M/1 Queue in Ciw
 date: 2023-12-20 13:51:15
 categories: [simulation,discrete-event-simulation,queueing-networks,ciw]
-tags: [simulation,discrete-event-simulation,queueing-networks,ciw,Python,dm1-queue]
+tags: [dm1-queue, simulation,discrete-event-simulation,queueing-networks,ciw,python,queue,queueing-theory,exponential-distribution,statistics,operations-research,random-variable,inter-arrival-time,service-time,random-number-generator,seed,servers]
 math: true
 mermaid: true
 ---
