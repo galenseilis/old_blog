@@ -1,5 +1,5 @@
 ---
-title: Implementing a M/M/$\infty$ Queue in Ciw
+title: Implementing a M/M/infinity Queue in Ciw
 date: 2023-12-20 13:51:15
 categories: [simulation,discrete-event-simulation,queueing-networks,ciw]
 tags: [md-infinity-queue, simulation,discrete-event-simulation,queueing-networks,ciw,python,queue,queueing-theory,exponential-distribution,statistics,operations-research,random-variable,inter-arrival-time,service-time,random-number-generator,seed,servers]
