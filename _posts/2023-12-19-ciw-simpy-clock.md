@@ -165,6 +165,8 @@ arrival_dists = [IASDeterministic(speed, 2) for speed in clock_speeds]
 service_dists = [IASDeterministic(speed) for speed in clock_speeds]
 ```
 
+You may have noticed that for arrival distributions that we put the limit at two packets rather than 1. This is because we need one packet to be processed at $t=0$ but also have another ready at $t=0$ to begin service using the post-initialization rate.
+
 If you have not used Ciw before, you may be wondering how we put these pieces together. In Ciw everything about the design of the queueing network goes into the `ciw.create_network` function.
 
 ```python
@@ -202,6 +204,6 @@ print(records[['node', 'exit_date']].to_markdown(index=False))
 Note that node 1 corresponds to the fast clock, and node 2 corresponds to the slow clock. That's it. We did it. 
 
 
-# Conclusions
+## Conclusions
 
 Ciw can definitely handle this toy simulation of a pair of clocks, but it is not the most naturally suited tool for this example. It is a bit like coordinating the [BFG-10000](https://doom.fandom.com/wiki/BFG-10000) to take aim at a squirrel; more work than needed but gets the job done.
