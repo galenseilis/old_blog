@@ -10,10 +10,7 @@ mermaid: true
 In the SimPy documentation they describe a [car process](https://simpy.readthedocs.io/en/latest/simpy_intro/basic_concepts.html#our-first-process) which involves a car which transitions between parking and driving. From being parked it takes 5 units of time to change to being in a state of driving. Similarly, it takes 2 units of time to go from being in a state of driving to a state of parkerd. Here is a state diagram representing this system:
 
 ```mermaid
----
-title: Car Example
----
-stateDiagram-v2
+stateDiagram
     [*] --> Parked
     Parked --> Driving: 5
     Driving --> Parked: 2
@@ -46,6 +43,10 @@ service_dists = [ciw.dists.Deterministic(5), ciw.dists.Deterministic(2)]
 We don't need to, but let's add some fluff so that we get a similar printout. To do that let's write a wrapper distribution.
 
 ```python
+from typing import NoReturn
+
+import ciw
+
 class PrintDistWrapper(ciw.dists.Distribution):
     """
     A wrapper class for a probability distribution that adds a print statement
@@ -77,7 +78,7 @@ class PrintDistWrapper(ciw.dists.Distribution):
         self.dist = dist
         self.message = message
             
-    def sample(self, t=None, ind=None):
+    def sample(self, t: float = None, ind ciw.Individual = None) -> float:
         """
         Generate a sample from the underlying distribution, printing a custom message.
 
