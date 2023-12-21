@@ -115,7 +115,7 @@ num_servers = [1, 1]
 
 Since we have two nodes, we need to specifying the routing behaviour. It is simple in this case, and stationary. Whenever the car is leaving node one, go to node to. Whenever the car is leaving node two, go to node one. We can specify this as the following routing matrix:
 
-$$\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$$$
+$$\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$$
 
 In Ciw we can take our routing matrix to be:
 
