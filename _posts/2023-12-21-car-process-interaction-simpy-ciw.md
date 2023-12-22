@@ -1,5 +1,5 @@
 ---
-title: A Ciw Implementation of SimPy's Car Example
+title: A Ciw Implementation of SimPy's Car Example With a Process Interaction
 date: 2023-12-20 14:51:15
 categories: [mathematics,symmetry]
 tags: [simpy,discrete-event-simulation,simulation,processes,environment,python,python-generator,ciw,queueing-network,queueing-theory,routing,process-based-simulation,random-variables,constant-random-variable,arrival-distributions,service-distributions,timing,initialization]
