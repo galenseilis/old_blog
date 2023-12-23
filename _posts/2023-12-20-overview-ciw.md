@@ -230,7 +230,7 @@ The following is a plot of the number of Github stars on the [Ciw repository](ht
 [6]: https://ciw.readthedocs.io/en/latest/Reference/state_trackers.html "List of Implemented State Trackers — Ciw 3.1.0 documentation"
 [7]: https://www.sciencedirect.com/science/article/abs/pii/0167637786900672 "On equivalencies of blocking mechanisms in queueing networks with blocking"
 [8]: https://stats.stackexchange.com/a/632255/69508 "Are there other types of blocking in queueing networks beyond Type I?"
-[9]: https://galenseilis.github.io/posts/ciw-snakes-ladders/ "A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw"[![Star History Chart](https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date)](https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date)
+[9]: https://galenseilis.github.io/posts/ciw-snakes-ladders/ "A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw"
 [10]: https://github.com/CiwPython/Ciw "Ciw, CiwPython"
 [11]: https://github.com/CiwPython/Ciw/graphs/contributors "Contributors to CiwPython/Ciw"
 [12]: https://ciw.readthedocs.io/en/latest/Reference/authors.html "Authors — Ciw 3.1.0 documentation"
