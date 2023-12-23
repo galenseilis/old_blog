@@ -215,11 +215,19 @@ The blog post [Queueing Simulations](https://www.programmingopiethehokie.com/202
 
 ## Adoption
 
-At the time writing Ciw has an extremely small community of users.
+At the time writing I expect that Ciw has an extremely small community of users.
 
+### Star History
 The following is a plot of the number of Github stars on the [Ciw repository](https://github.com/CiwPython/Ciw){:target="_blank"} for Ciw and its closest counterpart, [Queuing-tool](https://queueing-tool.readthedocs.io/en/latest/){:target="_blank"}.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date)](https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date)
+<a href="https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date" />
+  </picture>
+</a>
+
 
 [1]: https://arxiv.org/abs/1710.03561 "Ciw: An open source discrete event simulation library"
 [2]: https://ciw.readthedocs.io/en/latest/ "Welcome to Ciw's documentation! — Ciw 3.1.0 documentation"
