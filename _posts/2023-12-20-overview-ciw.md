@@ -220,13 +220,8 @@ At the time writing I expect that Ciw has an extremely small community of users.
 ### Star History
 The following is a plot of the number of Github stars on the [Ciw repository](https://github.com/CiwPython/Ciw){:target="_blank"} for Ciw and its closest counterpart, [Queuing-tool](https://queueing-tool.readthedocs.io/en/latest/){:target="_blank"}.
 
-<a href="https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date" />
-  </picture>
-</a>
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date)](https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date)
 
 
 [1]: https://arxiv.org/abs/1710.03561 "Ciw: An open source discrete event simulation library"
