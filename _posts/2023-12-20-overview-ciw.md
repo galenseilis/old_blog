@@ -201,13 +201,13 @@ There is some additional behaviour that can be obtained from Ciw that are not of
     
 ## Examples
 
-[*Anscombe's quartet, variability and studying queues with Python](https://vknight.org/unpeudemath/mathematics/2016/10/29/anscombes-quartet-variability-and-ciw.html) is a post on Vincent Knight's blog which uses Ciw.
+[*Anscombe's quartet, variability and studying queues with Python](https://vknight.org/unpeudemath/mathematics/2016/10/29/anscombes-quartet-variability-and-ciw.html){:target="_blank"} is a post on Vincent Knight's blog which uses Ciw.
 
-A [list of example implementations of some classic queue models in Ciw](https://galenseilis.github.io/posts/list-of-queues-ciw/) is available.
+A [list of example implementations of some classic queue models in Ciw](https://galenseilis.github.io/posts/list-of-queues-ciw/){target="_blank"} is available.
 
-The blog post [Queueing Simulations](https://www.programmingopiethehokie.com/2023/01/queueing-simulations.html) on the *programming opiethehokie* illustrates using Ciw to simulation a restricted M/M/c queueing model.
+The blog post [Queueing Simulations](https://www.programmingopiethehokie.com/2023/01/queueing-simulations.html){target="_blank"} on the *programming opiethehokie* illustrates using Ciw to simulation a restricted M/M/c queueing model.
 
-[Monks & Harper 2023](https://pubmed.ncbi.nlm.nih.gov/37881450/) use Ciw to simulate an urgent care calling centre.
+[Monks & Harper 2023](https://pubmed.ncbi.nlm.nih.gov/37881450/){target="_blank"} use Ciw to simulate an urgent care calling centre.
 
 
 [1]: https://arxiv.org/abs/1710.03561 "Ciw: An open source discrete event simulation library"
