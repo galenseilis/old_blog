@@ -213,6 +213,14 @@ The blog post [Queueing Simulations](https://www.programmingopiethehokie.com/202
 
 [Monks & Harper 2023](https://pubmed.ncbi.nlm.nih.gov/37881450/){:target="_blank"} use Ciw to simulate an urgent care calling centre.
 
+## Adoption
+
+At the time writing Ciw has an extremely small community of users.
+
+The following is a plot of the number of Github stars on the [Ciw repository](https://github.com/CiwPython/Ciw) for Ciw and its closest counterpart, [Queuing-tool](https://queueing-tool.readthedocs.io/en/latest/).
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date)](https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date)
+
 
 [1]: https://arxiv.org/abs/1710.03561 "Ciw: An open source discrete event simulation library"
 [2]: https://ciw.readthedocs.io/en/latest/ "Welcome to Ciw's documentation! — Ciw 3.1.0 documentation"
@@ -222,7 +230,7 @@ The blog post [Queueing Simulations](https://www.programmingopiethehokie.com/202
 [6]: https://ciw.readthedocs.io/en/latest/Reference/state_trackers.html "List of Implemented State Trackers — Ciw 3.1.0 documentation"
 [7]: https://www.sciencedirect.com/science/article/abs/pii/0167637786900672 "On equivalencies of blocking mechanisms in queueing networks with blocking"
 [8]: https://stats.stackexchange.com/a/632255/69508 "Are there other types of blocking in queueing networks beyond Type I?"
-[9]: https://galenseilis.github.io/posts/ciw-snakes-ladders/ "A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw"
+[9]: https://galenseilis.github.io/posts/ciw-snakes-ladders/ "A Discrete Event Simulation Generalization of Snakes and Ladders Using Ciw"[![Star History Chart](https://api.star-history.com/svg?repos=CiwPython/Ciw,djordon/queueing-tool&type=Date)](https://star-history.com/#CiwPython/Ciw&djordon/queueing-tool&Date)
 [10]: https://github.com/CiwPython/Ciw "Ciw, CiwPython"
 [11]: https://github.com/CiwPython/Ciw/graphs/contributors "Contributors to CiwPython/Ciw"
 [12]: https://ciw.readthedocs.io/en/latest/Reference/authors.html "Authors — Ciw 3.1.0 documentation"
