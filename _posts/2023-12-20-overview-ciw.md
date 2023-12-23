@@ -25,6 +25,10 @@ Ciw is a three-phase approach discrete-event simulation framework specialized in
 
 "Ciw" is Welsh for "queue".<sup>[2][2]{:target="_blank"}</sup> 
 
+Here is Geraint Palmer back in 2016 introducing the package at Pycon UK 2016:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0_sIus0mPSM?si=ifG6m0hSm9cezrZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Overview
 
 Ciw uses an event scheduling approach composed of three types of events: A, B, and C. A-type events move the system's clock forward in time. B-type events have been per-scheduled. C-type events are events triggered by B-type events.<sup>[3][3]{:target="_blank"}</sup> 
@@ -196,6 +200,8 @@ There is some additional behaviour that can be obtained from Ciw that are not of
 - While Ciw collects complete records, it does not automatically report incomplete records (i.e. those that are still in a node at the end of the simulation). It is possible to further extract that information.<sup>[52][52]{:target="_blank"}</sup>
     
 ## Examples
+
+[*Anscombe's quartet, variability and studying queues with Python](https://vknight.org/unpeudemath/mathematics/2016/10/29/anscombes-quartet-variability-and-ciw.html) is a post on Vincent Knight's blog which uses Ciw.
 
 A [list of example implementations of some classic queue models in Ciw](https://galenseilis.github.io/posts/list-of-queues-ciw/) is available.
 
