@@ -201,9 +201,13 @@ There is some additional behaviour that can be obtained from Ciw that are not of
     
 ## Examples
 
+The video quality is not great, but the talk *PyDiff 18th October - 'Queues Queueing and Ciw - Superpowers for Animators!'* illustrates 3D animations in Blender of a Ciw simulation of a road intersection.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P5oij-lidKg?si=HufY_DgrMMnz7iXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 [*Anscombe's quartet, variability and studying queues with Python](https://vknight.org/unpeudemath/mathematics/2016/10/29/anscombes-quartet-variability-and-ciw.html){:target="_blank"} is a post on Vincent Knight's blog which uses Ciw.
 
-A [list of example implementations of some classic queue models in Ciw](https://galenseilis.github.io/posts/list-of-queues-ciw/){target="_blank"} is available.
+A [list of example implementations of some classic queue models in Ciw](https://galenseilis.github.io/posts/list-of-queues-ciw/){:target="_blank"} is available.
 
 The blog post [Queueing Simulations](https://www.programmingopiethehokie.com/2023/01/queueing-simulations.html){:target="_blank"} on the *programming opiethehokie* illustrates using Ciw to simulation a restricted M/M/c queueing model.
 
