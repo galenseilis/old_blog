@@ -142,8 +142,8 @@ class IASDeterministic(ciw.dists.Distribution):
         Generates a sample from the distribution.
 
         Parameters:
-            t (float, optional): Time parameter.
-            ind (int, optional): Index parameter.
+            t (float, optional): Time parameter, not used in this distribution.
+            ind (int, optional): Index parameter, not used in this distribution.
 
         Returns:
             float: The fixed value if conditions are met; otherwise, returns None.
