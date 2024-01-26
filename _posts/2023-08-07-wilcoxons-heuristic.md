@@ -7,9 +7,11 @@ math: true
 mermaid: true
 ---
 
-This post was prompted by a quote which I have put below the following video I got it from.
+This post was prompted by a statement given in the following video.
 
 {% include embed/youtube.html id='qee6b7vl2O0' %}
+
+Here is the specific statement that this post is a response to:
 
 > **Quotation** (Dustin Fife)
 >
