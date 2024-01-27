@@ -58,7 +58,7 @@ flowchart TD
 > The above diagram is quite misleading in multiple respects, not all of which will I cover here. Do **not** use this diagram to guide your analysis.
 {: .prompt-danger }
 
-This itself is a problematic practice as such charts rarely cover the myriad of considerations required in a real analysis. Furthermore, in such charts a list of so-called "parametric assumptions" are given. Exactly what constitutes this list of assumptions can vary, but four commonly-given assumptions are as follows:
+Following such diagrams thoughtlessly is a problematic practice as such charts rarely cover the myriad of considerations required in a real analysis. Furthermore, in such charts a list of so-called "parametric assumptions" are given. Exactly what constitutes this list of assumptions can vary, but four commonly-given assumptions are as follows:
 
 - normality of error
 - homoskedasticity
