@@ -1,5 +1,5 @@
 ---
-title: The Curvature of the Graph of the Expectation of a Random Scalar
+title: The Memoryless Gap
 date: 2024-01-28 06:30:15
 categories: [mathematics,mathematical-statistics]
 tags: [mathematics,statistics,mathematical-statistcs,calculus,functions,random-variable,random-element,random-scalar,exponential-distribution,memorylessness,memoryless-gap]
@@ -20,9 +20,11 @@ for all $s,t \geq 0$.
 What I would suggest calling the "memoryless gap" is simply the difference:
 
 $$\mathcal{R}_T(s,t) = Pr[T > t + s \mid T > s] - Pr[T > t]$$
+
 Note that in general $\mathcal{R}_{T}(s,t)$ is a function both of the variable $t$ and the added translation parameter $s$, so the memoryless gap is a surface. For the case of the exponential it is a plane over $\mathbb{R}^2$ with elevation of zero.
 
 As it is defined in terms of the excedence probabilites, one primarily needs to know a cumulative distribution function for the variable of interest.
+
 $$
 \begin{align}
 	\mathcal{R}_{X}(s,x) \triangleq &  \frac{1 - F_{X}(x + s)}{1 - F_{X}(x)} - (1 - F_X(x)) \\
