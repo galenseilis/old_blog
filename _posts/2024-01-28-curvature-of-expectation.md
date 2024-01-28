@@ -32,5 +32,5 @@ Let us take the exponential distribution as an example. Assuming a random variab
 then $$f_X(x) = \lambda \exp \left( -\lambda x \right).$$
 Plugging these variables into our curvature of the expectation formula we have
 
-$$k(x) = \lambda \frac{\exp \left( -\lambda x \right) + x \exp \left( -\lambda x \right)}{\left( 1 + x^2 \lambda^2 \exp \left( -2 \lambda x \right) \right)^{\frac{3}{2}}}$$
+$$k(x) = \lambda \exp \left( -\lambda x \right) \frac{1 + x}{\left( 1 + x^2 \lambda^2 \exp \left( -2 \lambda x \right) \right)^{\frac{3}{2}}}$$
 
