@@ -36,6 +36,18 @@ Without further analysis it is *prima facie* possible to have either positive or
 
 Even though a distribution may not be memoryless everywhere does not mean that it has memory for all points $x$ and translations $s$. Perhaps there are choices of $s$ and $x$ that can be found for a given distribution such that memorylessness holds.
 
-Even though a distribution may not be memoryless everywhere (or almost everywhere) doesn't mean that the amount of memory is the same. The optima of $\mathcal{R}(s,x)$ are a set of points where the memory is the strongest or the weakest in its signed value, and further finding the minima of functions like $|\mathcal{R}(s,x) |$ or $\mathcal{R}(s,x)^2$ could help us find where the distribution has the least memory regardless of sign.
+Even though a distribution may not be memoryless everywhere (or almost everywhere) doesn't mean that the amount of memory is the same. The optima of 
+
+$$\mathcal{R}(s,x)$$
+
+ are a set of points where the memory is the strongest or the weakest in its signed value, and further finding the minima of functions like 
+
+$$|\mathcal{R}(s,x) |$$
+
+ or 
+
+$$\mathcal{R}(s,x)^2$$
+
+could help us find where the distribution has the least memory regardless of sign.
 
 A property like this makes me wonder about optimization objectives. Could there be any modelling benefit to finding a least-memory parametrization of a distribution? Or using the memoryless gap as a regularization term analogous to lasso/ridge?
