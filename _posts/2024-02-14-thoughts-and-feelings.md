@@ -10,7 +10,11 @@ image:
     alt: On Thoughts and Feelings Along With Their Meanings
 ---
 
+## Background
 Some years ago a person I care about wrote me a poem about thougts and feelings, and of their meanings. I've put down some words in response below.
+
+
+## On Thoughts and Feelings Along With Their Meanings
 
 In realms of thought, I find my dwelling,
 Intelligence my beacon, compelling.
