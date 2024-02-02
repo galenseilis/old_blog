@@ -2,7 +2,7 @@
 title: How Expressive Are Simple Neural Networks?
 date: 2023-03-05 20:52:00
 categories: [machine-learning,deep-learning]
-tags: [neural-networks,python,tensorflow,keras,multilayer-perceptron,artificial-neural-networks,elementary-functions,learnability,machine-learning,elementary-functions,sine,cosine,tangent,exponential,linear,quadratic,cubic,quartic,absolution-value]
+tags: [neural-networks,python,tensorflow,keras,multilayer-perceptron,artificial-neural-networks,elementary-functions,learnability,machine-learning,elementary-functions,sine,cosine,tangent,exponential,linear,quadratic,cubic,quartic,absolute-value]
 math: true
 ---
 
