@@ -48,9 +48,10 @@ $$\lambda = \frac{-\frac{1}{3} \pm \sqrt{\left( \frac{1}{3} \right)^2 + 4}}{2}$$
 This gives two candidate solutions:
 
 $$\lambda_- \approx -1.18046042171637$$
+
 $$\lambda_+ \approx 0.8471270883830365$$
 
-Like with the lower bound, we can only take the upper bound. But unlike the lower bound, we can only say that the median is strictly less than $\lambda_+$ even if it is really really close.
+Like with the lower bound, we can only take the upper bound to be $\lambda_+$. But unlike the lower bound, we can only say that the median is strictly less than $\lambda_+$ even if it is really really close.
 
 ## Question 2
 
