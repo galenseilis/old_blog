@@ -2,7 +2,7 @@
 title: A Ciw Implementation of SimPy's Bank Renege Example
 date: 2024-02-02 06:30:15
 categories: [simulation,discrete-event-simulation,python,ciw]
-tags: [simpy,dicrete-event-simulation,simulation,processes,environment,python,python-generator,ciw,queueing-network,queueing-theory,reneging,process-based-simulation,event-based-simulation,random-variables]
+tags: [simpy,discrete-event-simulation,simulation,processes,environment,python,python-generator,ciw,queueing-network,queueing-theory,reneging,process-based-simulation,event-based-simulation,random-variables]
 math: true
 mermaid: true
 ---
