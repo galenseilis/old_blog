@@ -15,7 +15,7 @@ $$T_{\text{Arrivals}} \sim \text{Exponential} \left( \frac{1}{10}  \right)$$
 
 but since this will only be true for the first 5 customer we need a more customized distribution. Specifically
 
-$$T_{\text{Arrivals}} \sim \begin{cases}  \delta(\infty) & \text{\#Customers} \geq 5 \\ \text{Exponential} \left( \frac{1}{10}  \right) & \text{\#Customers} < 5  \end{cases}$$
+$$T_{\text{Arrivals}} \sim \begin{cases}  \delta(\infty) & \text{\\#Customers} \geq 5 \\ \text{Exponential} \left( \frac{1}{10}  \right) & \text{\\#Customers} < 5  \end{cases}$$
 
 where $\delta(\infty)$ denotes a [Dirac delta distribution](https://en.wikipedia.org/wiki/Dirac_delta_function) centered at infinity. You can consider this an abuse of notation that simply indicates that arrivals stop after 5 customers, or you could take a couple of distinct approaches: one defining this concept in terms of limits or the other in terms of the [extended real numbers](https://en.wikipedia.org/wiki/Extended_real_number_line). We'll just stick to it being an informal abuse of notation here. In Python we'll define this as `MaxArrivalDist`:
 
