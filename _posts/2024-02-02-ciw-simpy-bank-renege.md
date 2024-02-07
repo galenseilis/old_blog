@@ -60,8 +60,7 @@ class MaxArrivalDist(ciw.dists.Distribution):
         if self.arrival_count < self.max_arrivals:
             self.arrival_count += 1
             return self.dist.sample()
-        else:
-            return float('inf')
+        return float('inf')
 ```
 
 Just so we don't simulate for too much or too little time, we can also set the termination condition of our simulation to be the number of customers that have left the system (i.e. have received service and left). Following the Ciw guide [*How to Simulate For a Certain Number of Customers*](https://ciw.readthedocs.io/en/latest/Guides/sim_numcusts.html) we can call the `simulate_until_max_customers(5, method='Finish')` method on an instance of `Simulation` to achieve this result. This way the `current_time` at the end of the simulation will be the amount of time for all five customers to sojourn.
@@ -127,8 +126,7 @@ class MaxArrivalDist(ciw.dists.Distribution):
         if self.arrival_count < self.max_arrivals:
             self.arrival_count += 1
             return self.dist.sample()
-        else:
-            return float('inf')
+        return float('inf')
 
 
 network = ciw.create_network(
