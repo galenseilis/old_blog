@@ -16,6 +16,9 @@ A "factorial number" is any element of the image of the [factorial function](htt
 
 At the request of my friend I have posted a table with three columns. The first is simply non-negative integers 0-to-1000, labelled `n`. The second column `last_200_is_pandigital` is an indicator variable for whether the last 200 digits contain at least one of each digit. The third column, `last_200`, is the last 200 digits of the factorial number (regardless of whether the entire number is pandigital). Maybe this will reveal some interesting patterns.
 
+> The table is wide enough that scrolling left-to-right will be necessary... Sorry!
+{: .prompt-info }
+
 
 |    n | last_200_is_pandigital   |                                                                                                                                                                                                 last_200 |
 |-----:|:-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
