@@ -1,5 +1,5 @@
 ---
-title: Reaching the Last Pandigital Factorial Number
+title: Reaching for the Last Pandigital Factorial Number
 date: 2024-02-06 06:30:15
 categories: [mathematics,number-theory]
 tags: [mathematics,number-theory,factorial-function,factorial-number,pandigital-number, recreational-mathematics]
