@@ -27,7 +27,7 @@ $$\phi_{\{X_1 \odot X_2 \odot \cdots \odot X_n \}}(t) = \prod_{j=1}^n \phi_{X_{j
 This has a familiarity to it. Like how Fourier transforms are related to independent sums independent random variables or Mellin transforms under certain assumptions are related to products of independent random variables.
 
 ## Copula Theory
-Also, I wonder how subindependence relates to copula theory. Sklar's theorem gives us general conditions for mapping the marginal probabilities to their joint probabilities via a copula. So in a sense copulae specify *how* collections of random variables are dependent (or independent, in the case of the independence copula).
+Also, I wonder how subindependence relates to copula theory. Sklar's theorem gives us general conditions for mapping the marginal probabilities to their joint probabilities via a copula. So in a sense copulae specify *how* collections of random variables are dependent (or independent, in the case of the independence copula). Anyway, I intuit that there is a connection here.
 
 ## Conclusions
 
