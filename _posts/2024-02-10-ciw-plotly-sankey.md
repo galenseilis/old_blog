@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-In this post we'll run the [caffe example](https://ciw.readthedocs.io/en/latest/Tutorial-II/tutorial_v.html) from the Ciw documentation, collect the results, and display them as a [Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram).
+In this post we'll run the [café example](https://ciw.readthedocs.io/en/latest/Tutorial-II/tutorial_v.html) from the Ciw documentation, collect the results, and display them as a [Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram).
 
 First, we can run the example:
 

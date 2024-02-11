@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-While looking into programmatically generating Sankey diagrams based on the results of discrete event simulations I made up a somewhat absurd programming exercise. Using [`matplotlib.sankey.Sankey`](https://matplotlib.org/stable/api/sankey_api.html#matplotlib.sankey.Sankey) you can draw a [random walk](https://en.wikipedia.org/wiki/Random_walk) as follows:
+While looking into programmatically generating [Sankey diagrams](https://en.wikipedia.org/wiki/Sankey_diagram) based on the results of [discrete event simulations](https://en.wikipedia.org/wiki/Discrete-event_simulation) I made up a somewhat absurd programming exercise. Using [`matplotlib.sankey.Sankey`](https://matplotlib.org/stable/api/sankey_api.html#matplotlib.sankey.Sankey) you can draw a [random walk](https://en.wikipedia.org/wiki/Random_walk) as follows:
 
 ```python
 import matplotlib.pyplot as plt
