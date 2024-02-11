@@ -1,5 +1,5 @@
 ---
-title: Plotting Ciw's Records As A Sankey Diagram Using Plotly
+title: Plotting Ciw's Café Example As A Sankey Diagram Using Plotly
 date: 2024-02-10 02:09:34
 categories: [simulation,discrete-event-simulation,python,ciw]
 tags: [discrete-event-simulation,python,ciw,plotly,sankey-diagram,statistics,queueing-theory,arrival-distributions,exponential-distribution,routing,service-network,modelling,simulation,visualization,service-distributions]
