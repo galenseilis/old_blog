@@ -1,5 +1,5 @@
 ---
-title: Rust Implementation of a Simple Clock DES
+title: A Rust Implementation of a Simple Clock DES
 date: 2024-01-26 14:51:15
 categories: [simulation,discrete-event-simulation,rust]
 tags: [discrete-event-simulation,simulation,processes,environment,event-based-simulation,constant-random-variable,timing]
