@@ -1,6 +1,6 @@
 ---
 title: On Thoughts and Feelings Along With Their Meanings
-date: 2024-02-14 05:30:15
+date: 2024-02-14 10:30:15
 categories: [valentines-day,poetry]
 tags: [poetry,thoughts,feelings,intelligence,mind,heart,emotions,sentiments,intellect,values,theory,love,soul,freedom,metaphor,valentines-day]
 math: true
