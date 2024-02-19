@@ -21,7 +21,7 @@ I recently read [False Equivalence: The Problem with Unreasonable Comparisons](h
 
 I cannot carefully consider this point about equivalence without clarification on what Dustin meant by "equivalent". It is true that at least some of the popularizers of rank-based non-parametric tests explicitly had the intention of using them as a heuristic in lieu of parametric tests such of t-tests or ANOVA.
 
-The idea that rank-based statistics are merely proxies of certain parametric statistics is inaccurate. But before we unpack that, let us consider why many people, possibly Dustin included think this way. After all, there is an inexhaustible supply of  textbooks, tutorials, and internet posts express this point of view.
+The idea that rank-based statistics are merely proxies of certain parametric statistics is inaccurate. But before we unpack that, let us consider why many people, possibly Dustin, think this way. After all, there is an inexhaustible supply of textbooks, tutorials, and internet posts express this point of view.
 
 According to some sources, you can simply consult a flow chart to determine which statistical procedure can be used. Here is such a diagram which I adapated from Richard McElreath's *Statistical Rethinking* lectures.
 
@@ -65,13 +65,13 @@ Following such diagrams thoughtlessly is a problematic practice as such charts r
 - statistical independence of observations
 - no outliers.
 
-Ironically, to me at least, is that none of these four assumptions are actually required to be doing a parametric statistical procedure. 
+Ironically, to me at least, is that none of these four assumptions are actually required for doing a parametric statistical procedure. 
 
 You can have non-normal errors, which is the case when you use some like a [generalized linear model](https://en.wikipedia.org/wiki/Generalized_linear_model) with a log link function. 
 
 You can model heteroskedasticity, often by making the variance or a related parameter a function of the predictors. Here is a simple example where a sequence of random variables depends continuously on a (non-statistical) parameter $t$:
 
-$$X_t \sim \mathcal{N}\left(0, \sigma \left( \sin t \right)^2 \right)$$
+$$X_t \sim \mathcal{N}\left(0, \sigma \left( \sin t \right)^2 + 1 \right)$$
 
 And you can model statistical dependence among observations. Perhaps the simplest examples come from [mixed effects models](https://en.wikipedia.org/wiki/Mixed_model) which can be included in most models with parameters including in the form of [generalized linear mixed models](https://en.wikipedia.org/wiki/Generalized_linear_mixed_model) and [nonlinear mixed-effects models](https://en.wikipedia.org/wiki/Nonlinear_mixed-effects_model). The basic trick to this approach is to make a substitution for one of your parameters $\theta := \theta_{\text{fixed}} + \sum_{r=1}^k \mathbb{I}_r \theta_r$. While mixed effects are discrete, continuous variation in non-independence among observations can be acheived with certain stochastic processes such as [Gaussian processes](https://en.wikipedia.org/wiki/Gaussian_process) and [Dirichlet processes](https://en.wikipedia.org/wiki/Dirichlet_process). In the case of Gaussian processes this can be acheived by choosing a kernel function for the covariance matrix in such way that events which have greater proximity in time (or space or some other parameter) are more correlated.
 
