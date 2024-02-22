@@ -2,8 +2,8 @@
 title: Pareto World
 date: 2024-02-21 08:49:15
 authors: [galen, chatgpt]
-categories: []
-tags: [python,server,scripts,sockets,programming,python-programming,serialization,mermaid,sequence-diagram,process-communication,network-programming,client-server-architecture,socket-communication,data-serialization,mermaid-diagrams,chatgpt]
+categories: [art, music, lyrics]
+tags: [pareto-front, pareto-efficiency, trade-offs, symmetry, allocation]
 math: true
 mermaid: true
 ---
