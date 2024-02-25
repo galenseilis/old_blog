@@ -2,8 +2,8 @@
 title: Notes On Laszlo Sragner's PyData Talk On Code Smells 
 date: 2024-02-25 04:49:15
 authors: [galen]
-categories: [data-science]
-tags: [data-science,code-smells,computer-programming,communication]
+categories: [python,data-science]
+tags: [data-science,code-smells,computer-programming,communication,clean-code,productivity,code-rot,code-deletion,code-comments,variables,python-comprehensions,for-loops,code-review,code-refactoring]
 math: true
 mermaid: true
 ---
