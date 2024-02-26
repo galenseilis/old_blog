@@ -1,7 +1,7 @@
 ---
 title: WTF Moment Reading Chapter 2 of Learning Python by Mark Lutz
 date: 2023-11-09 05:51:15
-categories: [computer-programmg,python-programming]
+categories: [computer-programming,python-programming]
 tags: [computer-programmg,python-programming,python,learning-python-book,mark-lutz,pypy,jit,just-in-time-compiler,order-of-magnitude,compiler,mark-lutz,integrated-tracing-jit-compiler]
 math: true
 mermaid: true

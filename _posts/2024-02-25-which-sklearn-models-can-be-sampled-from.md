@@ -1,9 +1,9 @@
 ---
-title: Which Scikit-Learn Models Have Built-In Uncertainty Quantification
+title: Which Scikit-Learn Models Have Built-In Uncertainty Quantification?
 date: 2024-02-25 04:49:15
 authors: [galen]
 categories: [data-science,machine-learning,python,scikit-learn]
-tags: [data-science,machine-learning,python,scikit-learn,probability,sampling,distribution,prediction,mixture-distribution,gaussian-mixture-model,bayesian-gaussian-mixture,gaussian-process,adaboost,bagging,bernoulli-distribution,negative-binomial-distribution,categorical-distribution,decision-trees,naive-bayes,kernel-density-estimation,multilayer-perceptron,logistic-regression,support-vector-machine,uncertainty-quantification]
+tags: [data-science,machine-learning,python,scikit-learn,probability,sampling,distribution,prediction,mixture-distribution,gaussian-mixture-model,bayesian-gaussian-mixture,gaussian-process,adaboost,bagging,bernoulli-distribution,negative-binomial-distribution,categorical-distribution,decision-trees,naive-bayes,kernel-density-estimation,multilayer-perceptron,logistic-regression,support-vector-machine,uncertainty-quantification,statistics]
 math: true
 mermaid: true
 ---
