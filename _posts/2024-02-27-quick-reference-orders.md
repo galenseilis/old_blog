@@ -1,6 +1,6 @@
 ---
 title: A Quick Reference to Some Common Orders
-date: 2024-02-25 04:49:15
+date: 2024-02-27 04:49:15
 authors: [galen]
 categories: [math,order-theory]
 tags: [math,mathematics,order,order-theory,reflexive,antisymmetric,transitive,irreflextive,asymmetric,strongly-connected,connected,product-order,pareto-order,lexicographic-order,function-induced-order,consensus-order,magnitude,proximity-order,hausdorff-distance]
@@ -15,24 +15,24 @@ This post is just dumping a short list of notions of order from my MSc thesis da
 
 There are four common classes of orders.
 
-## Non-Strict Partial Order
+### Non-Strict Partial Order
 - Reflexive
 - Antisymmetric
 - Transitive
 
 
-## Strict Partial Order
+### Strict Partial Order
 - Irreflexive
 - Asymmetric
 - Transitive
 
-## Non-Strict Total Order
+### Non-Strict Total Order
 - Reflexive
 - Transitive
 - Antisymmetric
 - Strongly-connected
 
-## Strict Total Order
+### Strict Total Order
 - Irreflexive
 - Transitive
 - Connected
