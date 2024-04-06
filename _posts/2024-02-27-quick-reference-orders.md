@@ -6,6 +6,9 @@ categories: [math,order-theory]
 tags: [math,mathematics,order,order-theory,reflexive,antisymmetric,transitive,irreflextive,asymmetric,strongly-connected,connected,product-order,pareto-order,lexicographic-order,function-induced-order,consensus-order,magnitude,proximity-order,hausdorff-distance]
 math: true
 mermaid: true
+image:
+	path: /assets/images/ce6b698c-e299-4bf5-b9e2-e0e9df66c6d9.jpg
+	alt: A Quick Reference to Some Common Orders
 ---
 
 ## Introduction

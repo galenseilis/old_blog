@@ -4,6 +4,9 @@ date: 2024-03-11 13:29:02
 categories: [art,poetry]
 tags: [art,poetry,poem,causality,shannon-entropy,divergence]
 math: true
+image:
+    path: /assets/images/f5f34876-d564-4f24-8606-fbf4e783e304.jpg
+    alt: A Poem of Causality
 ---
 
 A black distortion on a yellow puff,
