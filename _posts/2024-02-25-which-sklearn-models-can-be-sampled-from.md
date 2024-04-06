@@ -6,6 +6,9 @@ categories: [data-science,machine-learning,python,scikit-learn]
 tags: [data-science,machine-learning,python,scikit-learn,probability,sampling,distribution,prediction,mixture-distribution,gaussian-mixture-model,bayesian-gaussian-mixture,gaussian-process,adaboost,bagging,bernoulli-distribution,negative-binomial-distribution,categorical-distribution,decision-trees,naive-bayes,kernel-density-estimation,multilayer-perceptron,logistic-regression,support-vector-machine,uncertainty-quantification,statistics]
 math: true
 mermaid: true
+image:
+	path: /assets/images/32a319ff-8dfb-447d-a840-cd81e169ca67.jpg
+	alt: Machine Learning with Scikit-Learn
 ---
 
 Uncertainty quantification is a valuable thing to have when modelling noisy data. We need to make decisions and it can make a huge difference having estimates of the worst probable outcome for our planning.  Many of the machine learning methodologies have ignored probabilistic inferences and have rather focused on the conditional expectation. But there are a growing number of exceptions. While there are dedicated modules for predicting probabilities, I wanted to see what was available in Scikit-Learn as "low hanging fruit".
