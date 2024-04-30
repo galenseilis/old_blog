@@ -7,8 +7,8 @@ tags: [math,mathematics,order,order-theory,reflexive,antisymmetric,transitive,ir
 math: true
 mermaid: true
 image:
-	path: /assets/images/ce6b698c-e299-4bf5-b9e2-e0e9df66c6d9.jpg
-	alt: A Quick Reference to Some Common Orders
+    path: /assets/images/ce6b698c-e299-4bf5-b9e2-e0e9df66c6d9.jpg
+    alt: A Quick Reference to Some Common Orders
 ---
 
 ## Introduction
