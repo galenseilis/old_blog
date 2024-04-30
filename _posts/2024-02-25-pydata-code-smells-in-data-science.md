@@ -6,6 +6,9 @@ categories: [python,data-science]
 tags: [data-science,code-smells,computer-programming,communication,clean-code,productivity,code-rot,code-deletion,code-comments,variables,python-comprehensions,for-loops,code-review,code-refactoring]
 math: true
 mermaid: true
+image:
+	path: /assets/images/d17f546d-210f-49ef-90b8-dad890f098f1.jpg
+	alt: Woman Working on a Computer
 ---
 
 ## Introduction
