@@ -5,6 +5,9 @@ categories: [simulation,discrete-event-simulation,rust]
 tags: [discrete-event-simulation,simulation,processes,environment,event-based-simulation,constant-random-variable,timing,rust,computer-programming,simpy]
 math: true
 mermaid: true
+image:
+    img: 03b8d264-0ddc-4839-9471-469f0fc7be05.jpg
+    alt: Simulated Cars
 ---
 
 This post gives an implementation of [this example](https://simpy.readthedocs.io/en/latest/simpy_intro/basic_concepts.html) from the SimPy documentation:
