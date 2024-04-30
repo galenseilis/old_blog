@@ -6,7 +6,7 @@ tags: [discrete-event-simulation,simulation,processes,environment,event-based-si
 math: true
 mermaid: true
 image:
-    path: 03b8d264-0ddc-4839-9471-469f0fc7be05.jpg
+    path: /assets/images/03b8d264-0ddc-4839-9471-469f0fc7be05.jpg
     alt: Simulated Cars
 ---
 
