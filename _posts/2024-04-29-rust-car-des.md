@@ -226,6 +226,6 @@ with open("results.md", "w") as f:
 
 Here are the results:
 
-![](./assets/images/run_time_hist_car_rust_vs_simpy.png)
+![Run Time of Rust vs SimPy Implementation](/assets/images/run_time_hist_car_rust_vs_simpy.png)
 
 Clearly the Rust implementation is faster. I would naïvely attribute that to Rust being a compiled (and statically typed) language that also doesn't have a garbage collector. Interestly the PyPy3 interpreter was actually slower than the CPython interpreter in this case.
