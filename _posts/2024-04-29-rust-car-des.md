@@ -271,5 +271,4 @@ Here are the results:
 | max   |             0.2       |              0.05       |                                   0 |                                     0 |                             0 |                             0 |                            19704     |                                    0 |                                   0 |                               3414       |                            1 |                       111      |       0 |                    0 |                     0 |                      0 |                          0 |                   0 |                4096 |             0 |
 
 
-
-Clearly the Rust implementation is faster. I would naïvely attribute that to Rust being a compiled (and statically typed) language that also doesn't have a garbage collector. Interestly the PyPy3 interpreter was actually slower than the CPython interpreter in this case.
+Clearly the Rust implementation is faster, although the limited numerical precision makes it impossible to pin down by exactly how much faster it is. I would naïvely attribute that to Rust being a compiled (and statically typed) language that also doesn't have a garbage collector. Interestingly the PyPy3 interpreter was actually slower than the CPython interpreter in this case.

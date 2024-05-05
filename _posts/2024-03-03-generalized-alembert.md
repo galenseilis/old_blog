@@ -6,7 +6,7 @@ tags: [math,operators,differential-operators,dalembert,generalized-dalembert]
 math: true
 image:
     path: /assets/images/b7499f96-f809-4fa9-b298-e208f70f55d7.jpg
-    alt: A Generalization of the d'Alembert Operator
+    alt: A Generalization of the d'Alembert operator could be a lemon
 ---
 
 According to one of my old notebooks, I came up with a generalization of the d'Alembert operator between 2022-03-27 and 2022-05-20. I can't say that it was well-motivated by a particular mathematical or physical problem. It was just some low-hanging fruit in terms of mathematical generalization.
