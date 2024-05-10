@@ -1,6 +1,6 @@
 ---
 title: A Ciw Implementation of SimPy's Movie Renege Example
-date: 2024-02-20 04:51:15
+date: 2024-05-09 04:51:15
 categories: [simulation,discrete-event-simulation,python,ciw]
 tags: [simulation,discrete-event-simulation,python,ciw,simpy,processes,environment,python,queueing-network,queueing-theory,event-based-simulation,random-variables,exponential-distribution]
 math: true
