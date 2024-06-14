@@ -1,8 +1,8 @@
 ---
-title: Paul Grogan's DES
+title: Paul Grogan's DES Example
 date: 2024-06-13 04:51:15
 categories: [simulation,discrete-event-simulation,python,ciw]
-tags: [simulation,discrete-event-simulation,pythonp,rocesses,environment,python,queueing-network,queueing-theory,event-based-simulation,random-variables,exponential-distribution,youtube]
+tags: [simulation,discrete-event-simulation,pythonp,processes,environment,python,queueing-network,queueing-theory,event-based-simulation,random-variables,exponential-distribution,youtube]
 math: true
 mermaid: true
 ---
