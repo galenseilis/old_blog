@@ -40,4 +40,4 @@ print(agnesian1)
 
 This trivially gives the result:
 
-$$\mathcal{A}_t^1 \vec (t) = \sigma \left(\left(- \frac{d}{d t} y{\left(t \right)} - \frac{d}{d t} z{\left(t \right)}\right) x{\left(t \right)} + \left(\rho - y{\left(t \right)} - z{\left(t \right)}\right) \frac{d}{d t} x{\left(t \right)}\right) \left(- \frac{d}{d t} x{\left(t \right)} + \frac{d}{d t} y{\left(t \right)}\right) \left(- \beta \frac{d}{d t} z{\left(t \right)} + x{\left(t \right)} \frac{d}{d t} y{\left(t \right)} + y{\left(t \right)} \frac{d}{d t} x{\left(t \right)}\right)$$
+$$\mathcal{A}_t^1 \vec v (t) = \sigma \left(\left(- \frac{d}{d t} y{\left(t \right)} - \frac{d}{d t} z{\left(t \right)}\right) x{\left(t \right)} + \left(\rho - y{\left(t \right)} - z{\left(t \right)}\right) \frac{d}{d t} x{\left(t \right)}\right) \left(- \frac{d}{d t} x{\left(t \right)} + \frac{d}{d t} y{\left(t \right)}\right) \left(- \beta \frac{d}{d t} z{\left(t \right)} + x{\left(t \right)} \frac{d}{d t} y{\left(t \right)} + y{\left(t \right)} \frac{d}{d t} x{\left(t \right)}\right)$$
