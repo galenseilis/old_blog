@@ -17,7 +17,7 @@ $$X \sim \text{Normal}(2, 4)$$
 
 $$L \sim \text{Exponential}(100)$$
 
-$$N \sim \text{NormalDistribution}$$
+$$N \sim \text{Normal}$$
 
 In SymPy we can represent this model as follows:
 
