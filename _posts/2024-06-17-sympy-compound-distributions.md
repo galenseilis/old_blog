@@ -32,4 +32,4 @@ N = NormalDistribution(X, L)
 C = CompoundDistribution(N)
 ```
 
-I'm looking forward to seeing more advancements in SymPy for statistics. Mathematical statistics can get particularly difficult when performed by hand. Having specialized classes with handy methods for distributions or random variables could be a huge benefit to bringing in reproducible mathematical derivations of [moments](https://en.wikipedia.org/wiki/Moment_(mathematics)) (e.g. [expectations](https://en.wikipedia.org/wiki/Expected_value)) and [distributions](https://en.wikipedia.org/wiki/Probability_distribution).
+I'm looking forward to seeing more advancements in SymPy for statistics. Mathematical statistics can get particularly difficult when performed by hand. Having specialized classes with handy methods for distributions or [random variables](https://en.wikipedia.org/wiki/Random_variable) could be a huge benefit to bringing in reproducible mathematical derivations of [moments](https://en.wikipedia.org/wiki/Moment_(mathematics)) (e.g. [expectations](https://en.wikipedia.org/wiki/Expected_value)) and [distributions](https://en.wikipedia.org/wiki/Probability_distribution).
