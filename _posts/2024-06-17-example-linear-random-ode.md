@@ -2,7 +2,7 @@
 title: An Example of a Linear System of Random Ordinary Differential Equations
 date: 2024-06-17 05:00:15
 categories: [python,statistics]
-tags: [statistics,random-variable,linear-differential-equations,random-differential-equations,ordinary-differential-equations,math,maths,uniform-distribution,continuous-uniform-distribution,python,ode,odeint,matplotlib,rde,sde,Itô-integral,Stratonovich-integrals,numpy,scipy,matplotlib]
+tags: [statistics,random-variable,linear-differential-equations,random-differential-equations,ordinary-differential-equations,math,maths,uniform-distribution,continuous-uniform-distribution,python,ode,odeint,matplotlib,rde,sde,Ito-integral,Stratonovich-integrals,numpy,scipy,matplotlib]
 math: true
 mermaid: true
 ---
