@@ -87,4 +87,4 @@ plt.close()
 
 Here is the resulting plot. Since we chose the coefficient distributions somewhat haphazardly, it is should not be surprising that no particular direction was preferred for this system.
 
-![](assets/images/2024-06-17-example-linear-random-ode.png)
+![](/assets/images/2024-06-17-example-linear-random-ode.png)
