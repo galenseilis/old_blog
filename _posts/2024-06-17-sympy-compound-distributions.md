@@ -15,7 +15,7 @@ Here is an example. Suppose
 
 $$X \sim \text{Normal}(2, 4)$$
 
-$$L \sim text{Exponential}(100)$$
+$$L \sim \text{Exponential}(100)$$
 
 $$N \sim \text{NormalDistribution}$$
 
