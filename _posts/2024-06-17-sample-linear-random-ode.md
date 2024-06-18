@@ -11,11 +11,11 @@ Random differential equations result when some combination of parameters in the 
 
 In this post we'll consider the linear system:
 
-$$\vec Y_0 \sim \mathcal{U}(-10, 110)$$
+$$\vec Y(0) \sim \mathcal{U}(-10, 110)$$
 
 $$\mathbf{A}_{ij} \sim \mathcal{U}(-1, 1)$$
 
-$$\frac{dY(t)}{dt} = \mathbf{A} \vec Y_0$$
+$$\frac{dY(t)}{dt} = \mathbf{A} \vec Y(t)$$
 
 > [Random differential equations are not the same as stochastic differential equations](https://math.stackexchange.com/questions/72208/whats-the-difference-between-rde-and-sde). The latter allows for added variation from a (not necessarily stationary) stochastic process which require techniques such as [Itô integrals](https://en.wikipedia.org/wiki/It%C3%B4_calculus) or [Stratonovich integrals](https://en.wikipedia.org/wiki/Stratonovich_integral).
 {: .prompt-warning }
