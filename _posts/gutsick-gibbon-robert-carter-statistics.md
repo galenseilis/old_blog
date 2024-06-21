@@ -104,6 +104,8 @@ So provided that the true distribution eventually overlaps with the biased distr
 
 #### Are weighted averages about non-normality?
 
+<a href="https://imgflip.com/i/8uj6bw"><img src="https://i.imgflip.com/8uj6bw.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
 Given a sample of real numbers $x_1, \ldots, x_n$ and (non-negative) weights $w_1, \ldots, w_n$ the quantity is always defined. It doesn't matter if we're talking about normal distributions, Poisson distributions, or some other distribution whose support is a subset of the real numbers.
 
 Such a quantity may not be defined in the population for similar reasons that the ordinary average may not exist in the population: lack of convergence. The [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) and [Pareto distribution](https://en.wikipedia.org/wiki/Pareto_distribution) are examples of distributions where the average does not exist in the population, and I suspect that under mild assumptions that a weighted mean would not either.
