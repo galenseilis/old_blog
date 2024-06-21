@@ -78,7 +78,7 @@ Dr. Carter suggests that we can weight as much as we like and we will not get th
 
 Even if I have a [unbiased estimator](https://en.wikipedia.org/wiki/Bias_of_an_estimator) of the expected value of a [continuous random variable](https://en.wikipedia.org/wiki/Random_variable#Continuous_random_variable), it will still [almost-never](https://en.wikipedia.org/wiki/Almost_surely) equal the population parameter exactly. This is due to sampling variation, and that will be lurking in real applications whether you use weighted averages or not.
 
-Remember I mentioned that weighted averages can be represented as scalar projections? Well, we can ask what range of values we can obtain for $\bar x_{\vec w}$ assuming that $\vec x$ is fixed and we can choose any $\vec w$ we like as long as $\vec 1 \cdot \vec w = 1$.
+Remember I mentioned that weighted averages can be represented as scalar projections? Well, we can ask what range of values we can obtain for $\bar x_{\vec w}$ assuming that $\vec x$ is fixed and we can choose any $\vec w$ we like as long as $\vec 1 \cdot \vec w = 1$. In terms of scaling the componets of $\vec x$ this is equivalent to asking a special case of [linear span](https://en.wikipedia.org/wiki/Linear_span#Definition) where we are limited to convex combinations (recall that all convex combinations are linear combinations). Such a "convex span" will reach any point in the [convex hull](https://en.wikipedia.org/wiki/Convex_hull) of $\vec x$.
 
 #### Are weighted averages about non-normality?
 
