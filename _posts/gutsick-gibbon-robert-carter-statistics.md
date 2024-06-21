@@ -82,7 +82,7 @@ Remember I mentioned that weighted averages can be represented as scalar project
 
 We know that the minimum and maximum of a collection of [exchangeable random variables](https://en.wikipedia.org/wiki/Exchangeable_random_variables#Definition) $S = \{ X_1, \ldots, X_n \}$ grows in size because the prediction interval for some random variables $Y$, also exchangeable with the elements of $S$, satisfies 
 
-$$\Pr \left[ Y \in  \right] = \frac{n-1}{n+1}$$
+$$\Pr \left[ Y \in  \right [\min S, \max S]] = \frac{n-1}{n+1}$$
 
 where $n$ is the sample size. 
 
