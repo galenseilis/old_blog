@@ -70,7 +70,7 @@ $$\mathbb{E} \left[ \frac{Y}{X} \right] \neq \frac{\mathbb{E}[Y]}{\mathbb{E}[X]}
 
 Neither of this expectations are always defined in the population, but there are also many cases where they will be. It depends on what we're willing to assume about the joint distribution of $(X,Y)$.
 
-Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[f(X)] \neq f(\mathbb{E}[X]).$$
+Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[g(X)] \neq g(\mathbb{E}[X]).$$ For convex functions in particular we have [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality).
 
 ### Can you take an average when distributions are non-normal?
 
