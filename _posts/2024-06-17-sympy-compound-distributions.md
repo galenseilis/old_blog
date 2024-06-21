@@ -25,7 +25,7 @@ In SymPy we can represent this model as follows:
 from sympy.stats.compound_rv import CompoundDistribution
 from sympy.stats.crv_types import NormalDistribution
 from sympy.stats import Exponential, Normal
-from sympy.abc import x
+
 X = Normal('X', 2, 4)
 L = Exponential('L', 100)
 N = NormalDistribution(X, L)
