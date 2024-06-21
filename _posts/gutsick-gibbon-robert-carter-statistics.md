@@ -76,6 +76,8 @@ Given a sample of real numbers $x_1, \ldots, x_n$ and (non-negative) weights $w_
 
 Such a quantity may not be defined in the population for similar reasons that the ordinary average may not exist in the population: lack of convergence. The [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) and [Pareto distribution](https://en.wikipedia.org/wiki/Pareto_distribution) are examples of distributions where the average does not exist in the population, and I suspect that under mild assumptions that a weighted mean would not either.
 
+Beyond the edge/corner cases, weighted averages are often well-defined. In general they are not about non-normality. In fact, due to normal distributions being [Lévy alpha-stable](https://en.wikipedia.org/wiki/Stable_distribution), weighted averages of independent normal variables has a change of variables that gives us a new normal variable (e.g. see [The Book of Statistical Proofs](https://statproofbook.github.io/P/norm-lincomb.html)).
+
 #### What are weighted averages good for?
 
 The primary reason I would use a weighted average is to produce a [shrunk estimate](https://en.wikipedia.org/wiki/Shrinkage_(statistics)) of the parameter of interest. Wikipedia gives a nice informal description:
