@@ -4,9 +4,9 @@ icon: fas fa-info-circle
 order: 5
 ---
 
-- Research and Knowledge Translation Newsletter: The Importance of Partial Pooling with Northern Health Data
+- (2023) Research and Knowledge Translation Newsletter: The Importance of Partial Pooling with Northern Health Data
 
-- Research and Knowledge Translation Newsletter: [Project: Advanced Analytics](https://www.northernhealth.ca/sites/northern_health/files/health-professionals/research/documents/knowledge-translation-newsletter-seven.pdf){:target="_blank"}
+- (2023) Research and Knowledge Translation Newsletter: [Project: Advanced Analytics](https://www.northernhealth.ca/sites/northern_health/files/health-professionals/research/documents/knowledge-translation-newsletter-seven.pdf){:target="_blank"}
 
 
 ```latex
