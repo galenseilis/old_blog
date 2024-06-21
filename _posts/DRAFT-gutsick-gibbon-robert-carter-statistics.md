@@ -156,6 +156,8 @@ $$f(x) = \int_{\Omega} w(a) p(x;a) da$$
 
 ## Similarity Measures
 
+<a href="https://imgflip.com/i/8ulodv"><img src="https://i.imgflip.com/8ulodv.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
 ### What are similarity measures?
 
 ### What makes a good similarity measure?
