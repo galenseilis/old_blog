@@ -100,7 +100,7 @@ $$\Pr \left[ Y \in  \right [\min S, \max S]] = \frac{n-1}{n+1}$$
 
 where $n$ is the sample size. This is clearly an increasing function in $n$, so the interval will get wider with sample size.
 
-So provided that the true distribution eventually overlaps with the biased distribution, and our samples from the biased distribution are exchangeable, then with a sufficiently large sample there will exist a weighting function which corrects for the bias.
+So provided that the true distribution eventually overlaps with the biased distribution, and our samples from the biased distribution are exchangeable, then with a sufficiently large sample there will exist a weighting function which corrects for the bias. However, if you are just starting with a sample then you will magically know whether you have enough data. Nor will you always have the experimental standards (e.g. [chemical standards](https://www.chemicool.com/definition/standards.html)). So while Dr. Carter's claim is technically false, there is a lot of truth to it in practice.
 
 #### Are weighted averages about non-normality?
 
