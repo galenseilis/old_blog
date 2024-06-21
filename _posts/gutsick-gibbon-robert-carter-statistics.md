@@ -130,6 +130,24 @@ Additionally, special cases of weighted averaging can formulated as the [law of 
 
 #### Are weighted averages sufficient for controlling for sequence length?
 
+#### Are weighted averages only applied to data?
+
+No. There are also theoretical constructs that we can take weighted averages of. A special case of [mixture models](https://en.wikipedia.org/wiki/Mixture_model) are [mixture distributions](https://en.wikipedia.org/wiki/Mixture_distribution). These types of probability models are valuable for modelling certain structures like multimodality even when we do not have explicit labels for subpopulations to condition on. 
+
+A finite mixture distribution is a convex combination of probability mass functions and/or probability density functions:
+
+$$F(x) = \vec w \cdot \vec \Pr(x)$$
+
+$$f(x) = \vec w \cdot \vec p(x)$$
+
+An infinite, but countable, mixture is a similar series expansion in form:
+
+$$F(x) = \sum_{i=1}^{\infty} w_i \Pr_i(x)$$
+
+$$f(x) = \sum_{i=1}^{\infty} w_i p_i(x)$$
+
+
+
 ## Similarity Measures
 
 ### What are similarity measures?
