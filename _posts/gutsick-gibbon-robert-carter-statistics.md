@@ -72,6 +72,14 @@ $$\bar x_{\vec w} \triangleq \frac{\vec w \cdot \vec x}{\Vert \vec w \Vert_1} = 
 
 where I have used a [1-norm](https://en.wikipedia.org/wiki/Norm_(mathematics)#Taxicab_norm_or_Manhattan_norm) to collapse the weights vector in the denominator into a scalar. Indeed, we can recognize this as being a [scalar projection](https://en.wikipedia.org/wiki/Scalar_projection#Definition_in_terms_of_a_and_b). We'll return to that point soon.
 
+#### Can we weight six ways to sunday to get the right answer?
+
+Dr. Carter suggests that we can weight as much as we like and we will not get the right answer.
+
+Even if I have a [unbiased estimator](https://en.wikipedia.org/wiki/Bias_of_an_estimator) of the expected value of a [continuous random variable](https://en.wikipedia.org/wiki/Random_variable#Continuous_random_variable), it will still [almost-never](https://en.wikipedia.org/wiki/Almost_surely) equal the population parameter exactly. This is due to sampling variation, and that will be lurking in real applications whether you use weighted averages or not.
+
+Remember I mentioned that weighted averages can be represented as scalar projections? Well, we can ask what range of values we can obtain for $\bar x_{\vec w}$ assuming that $\vec x$ is fixed and we can choose any $\vec w$ we like as long as $\vec \cdot \vec w = 1$.
+
 #### Are weighted averages about non-normality?
 
 Given a sample of real numbers $x_1, \ldots, x_n$ and (non-negative) weights $w_1, \ldots, w_n$ the quantity is always defined. It doesn't matter if we're talking about normal distributions, Poisson distributions, or some other distribution whose support is a subset of the real numbers.
