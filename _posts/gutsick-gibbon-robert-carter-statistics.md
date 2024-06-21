@@ -1,5 +1,5 @@
 ---
-title: Gutsick Gibbon and Dr. Carter on Normality and Weighted Averages
+title: DRAFT - Gutsick Gibbon and Dr. Carter on Normality and Weighted Averages
 date: 2024-06-20 04:51:15
 categories: [statistics]
 tags: [statistics,probability,normal-distribution,mathematical-statistics,math,maths,moments,expectation,expected-value,average,weighted-average,weighted-arithmetic-mean,arithmetic-mean]
@@ -129,3 +129,9 @@ The primary reason I would use a weighted average is to produce a [shrunk estima
 Additionally, special cases of weighted averaging can formulated as the [law of total expectation](https://en.wikipedia.org/wiki/Law_of_total_expectation), which is sometimes useful.
 
 #### Are weighted averages sufficient for controlling for sequence length?
+
+## Similarity Measures
+
+### What are similarity measures?
+
+### What makes a good similarity measure?
