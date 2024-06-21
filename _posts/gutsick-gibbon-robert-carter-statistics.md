@@ -64,13 +64,19 @@ A part of the what was discussed in the video linked by Gutsick Gibbon was about
 
 ### Is the average of a ratio the same as the ratio of the averages?
 
-In short, no, the average of a ratio is not the same as the ratio of the averages in general. The expectation operator is linear, so it distributions over linear combinations. A ratio of two random variables is not a linear combination.
+In short, no, the average of a ratio is not the same as the ratio of the averages in general. The [expectation operator is linear](https://en.wikipedia.org/wiki/Expected_value#Properties), so it distributions over [linear combinations](https://en.wikipedia.org/wiki/Linear_combination). A ratio of two random variables is not a linear combination.
 
 $$\mathbb{E} \left[ \frac{Y}{X} \right] \neq \frac{\mathbb{E}[Y]}{\mathbb{E}[X]}$$
 
 Both of these quantities are mathematically valid as long as the expectations are defined and we do not divide by zero.
 
-Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[f(X)] \neq f(\mathbb{E}[X]).$$ 
+Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[f(X)] \neq f(\mathbb{E}[X]).$$
+
+### Can you take an average when distributions are non-normal?
+
+First, you can always take an average of a finite set of numbers. So whenever you have a sample of a random variable suitably-equipped with summation and scale, and notwithstanding other issues like missing data, you can take an average.
+
+When it comes to the population the answer is "usually, but not always". The average 
 
 ### Weighted Average
 
