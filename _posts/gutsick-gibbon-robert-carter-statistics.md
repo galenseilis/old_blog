@@ -64,7 +64,7 @@ Even more generally, if $g$ is a non-linear measurable function of the outcome s
 
 A [weighted (arithmetic) mean](https://en.wikipedia.org/wiki/Weighted_arithmetic_mean#Mathematical_definition) is a [convex combination](https://en.wikipedia.org/wiki/Convex_combination) which we can write in vector form as 
 
-$$\bar x_{\vec w} \triangleq \frac{\vec w \cdot \vec x}{\left| \vec w \right|}$$
+$$\bar x_{\vec w} \triangleq \frac{\vec w \cdot \vec x}{\left\| \vec w \right\|}$$
 
 where I have used a [1-norm](https://en.wikipedia.org/wiki/Norm_(mathematics)#Taxicab_norm_or_Manhattan_norm) to collapse the weights vector in the denominator into a scalar. Indeed, we can recognize this as being a [scalar projection](https://en.wikipedia.org/wiki/Scalar_projection#Definition_in_terms_of_a_and_b).
 
