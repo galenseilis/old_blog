@@ -146,7 +146,11 @@ $$F(x) = \sum_{i=1}^{\infty} w_i \Pr_i(x)$$
 
 $$f(x) = \sum_{i=1}^{\infty} w_i p_i(x)$$
 
+We can also have [uncountable mixtures](https://en.wikipedia.org/wiki/Mixture_distribution#Uncountable_mixtures):
 
+$$f(x) = \int_{\Omega} w(a) p(x;a) da$$
+
+[Marginal distributions](https://en.wikipedia.org/wiki/Marginal_distribution#Definition) can be understood as mixtures.
 
 ## Similarity Measures
 
