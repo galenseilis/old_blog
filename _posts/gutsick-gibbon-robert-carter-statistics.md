@@ -82,7 +82,9 @@ $$\bar x_{\vec w} \triangleq \frac{\vec w \cdot \vec x}{\Vert \vec w \Vert_1} = 
 
 where I have used a [1-norm](https://en.wikipedia.org/wiki/Norm_(mathematics)#Taxicab_norm_or_Manhattan_norm) to collapse the weights vector in the denominator into a scalar. Indeed, we can recognize this as being a [scalar projection](https://en.wikipedia.org/wiki/Scalar_projection#Definition_in_terms_of_a_and_b). We'll return to that point soon.
 
-#### Can we weight six ways to sunday to get the right answer from a biased sample?
+#### Can we weight six ways to Sunday to get the right answer from a biased sample?
+
+<a href="https://imgflip.com/i/8uj64n"><img src="https://i.imgflip.com/8uj64n.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
 
 Dr. Carter suggests that we can weight as much as we like and we will not get the right answer from a biased sample. That's right, especially in practice, but I want to shine some light a couple of nuances.
 
