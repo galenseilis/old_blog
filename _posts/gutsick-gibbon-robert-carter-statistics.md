@@ -128,4 +128,4 @@ The primary reason I would use a weighted average is to produce a [shrunk estima
 
 Additionally, special cases of weighted averaging can formulated as the [law of total expectation](https://en.wikipedia.org/wiki/Law_of_total_expectation), which is sometimes useful.
 
-#### Are weighted averages sufficient for control
+#### Are weighted averages sufficient for controlling for sequence length?
