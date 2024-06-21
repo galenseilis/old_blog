@@ -74,7 +74,7 @@ Even more generally, if $g$ is a non-linear measurable function of the outcome s
 
 ### Can you take an average when distributions are non-normal?
 
-First, you can always take an average of a finite set of numbers. So whenever you have a sample of a random variable suitably-equipped with summation and scale, and notwithstanding other issues like missing data, you can take an average. This comprises a description of the sample.
+First, you can always take an average of a finite set of numbers equipped with the basic arithmetic typical of grade school. So whenever you have a sample of a random variable suitably-equipped with summation and scale, and notwithstanding other issues like missing data, you can take an average. This comprises a description of the sample.
 
 When it comes to the population the answer is "usually, but not always". The expected value exists for many, but not all distributions. A counterexample is the [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) whose expectations do not exist. Sometimes there are mathematical techniques available that give us something as close as possible to an expected value as we can even though the expected value itself does not exist. For example, the [odd momments](https://stats.stackexchange.com/a/569486/69508) of a standard Cauchy distribution are zero.
 
