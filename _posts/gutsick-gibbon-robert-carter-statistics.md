@@ -68,15 +68,15 @@ In short, no, the average of a ratio is not the same as the ratio of the average
 
 $$\mathbb{E} \left[ \frac{Y}{X} \right] \neq \frac{\mathbb{E}[Y]}{\mathbb{E}[X]}$$
 
-Both of these quantities are mathematically valid as long as the expectations are defined and we do not divide by zero.
+Neither of this expectations are always defined in the population, but there are also many cases where they will be. It depends on what we're willing to assume about the joint distribution of $(X,Y)$.
 
 Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[f(X)] \neq f(\mathbb{E}[X]).$$
 
 ### Can you take an average when distributions are non-normal?
 
-First, you can always take an average of a finite set of numbers. So whenever you have a sample of a random variable suitably-equipped with summation and scale, and notwithstanding other issues like missing data, you can take an average.
+First, you can always take an average of a finite set of numbers. So whenever you have a sample of a random variable suitably-equipped with summation and scale, and notwithstanding other issues like missing data, you can take an average. This comprises a description of the sample.
 
-When it comes to the population the answer is "usually, but not always". The average 
+When it comes to the population the answer is "usually, but not always". The expected value exists for many, but not all distributions. A counterexample is the [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) whose expectations do not exist. Sometimes there are mathematical techniques available that give us something as close as possible to an expected value as we can even though the expected value itself does not exist. For example, the [odd momments](https://stats.stackexchange.com/a/569486/69508) of a standard Cauchy distribution are zero.
 
 ### Weighted Average
 
