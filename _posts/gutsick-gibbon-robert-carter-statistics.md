@@ -7,14 +7,23 @@ math: true
 mermaid: true
 ---
 
-## How good is a sample size of 18000?
+This post was prompted by the following video by the YouTube channel Gutsick Gibbon:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zzkYmKJ6Sk8?si=WJL1G98hEJaMhzZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## How good was the sample?
+
+I won't try to cover every aspect of the sample that was under discussion, but both Roohif (embedded below) and Gutsick Gibbon (embedded above) give extensive critiques of various aspects of the studies by Tomkins.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j9XbeckuzwY?si=KKtSOg9vFC6V_rNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I will just echo that it is imperative that the right statistical population has been sampled from (or at least close enough) in order for the accurate inferences to be made.
+
+### Statistical Precision
 
 According to the univariate [DKW(M) inequality](https://en.wikipedia.org/wiki/Dvoretzky%E2%80%93Kiefer%E2%80%93Wolfowitz_inequality), an [IID](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables) sample of size $n$ has a bounded probability of exceeding a given absolute difference between the [empirical cumulative distribution](https://en.wikipedia.org/wiki/Empirical_distribution_function) and the (population) [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function).
 
 $$\Pr \left( \sup_{x \in \mathbb{R}} \left| F_n(x) - F(x) \right| > \epsilon \right) \leq 2 e^{-2n\epsilon^2}$$
-
-
-$$\Pr \left( \sup_{x \in \mathbb{R}} \left| F_n(x) - F(x) \right| > \epsilon \right) \leq \underbrace{2 e^{-2(18000)\left(\frac{1}{100}\right)^2}}_{\approx 0.055}$$
 
 We can convert from this [survival function](https://en.wikipedia.org/wiki/Survival_function) (i.e. the probability of exceedance) to the cumulative probability that the error will not exceed $\epsilon$ by simply taking the complement. This complement rule is a logical consequence of [Kolmogorov's axioms of probability](https://en.wikipedia.org/wiki/Probability_axioms#Kolmogorov_axioms).
 
@@ -37,7 +46,21 @@ So when the univariate DKW(M) inequality holds, we can say that a sample size of
 However, the key assumption that may not hold here is the sample variables being [IID](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables).
 
 
-## Are weighted averages about non-normality?
+## Averages
+
+A part of the what was discussed in the video linked by Gutsick Gibbon was about averages.
+
+### Is the average of a ratio the same as the ratio of the averages?
+
+In short, no, the average of a ratio is not the same as the ratio of an average in general.
+
+$$\mathbb{E} \left[ \frac{Y}{X} \right] \neq \frac{\mathbb{E}[Y]}{\mathbb{E}[X]}$$
+
+Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[f(X)] \neq f(\mathbb{E}[X]).$$ 
+
+### Weighted Average
+
+#### Are weighted averages about non-normality?
 
 A [weighted (arithmetic) mean](https://en.wikipedia.org/wiki/Weighted_arithmetic_mean#Mathematical_definition) is a [convex combination](https://en.wikipedia.org/wiki/Convex_combination) which we can write in vector form as 
 
@@ -49,7 +72,7 @@ Given a sample of real numbers $x_1, \ldots, x_n$ and (non-negative) weights $w_
 
 Such a quantity may not be defined in the population for similar reasons that the ordinary average may not exist in the population: lack of convergence. The [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) and [Pareto distribution](https://en.wikipedia.org/wiki/Pareto_distribution) are examples of distributions where the average does not exist in the population, and I suspect that under mild assumptions that a weighted mean would not either.
 
-## What are weighted averages good for?
+#### What are weighted averages good for?
 
 The primary reason I would use a weighted average is to produce a [shrunk estimate](https://en.wikipedia.org/wiki/Shrinkage_(statistics)) of the parameter of interest. Wikipedia gives a nice informal description:
 
