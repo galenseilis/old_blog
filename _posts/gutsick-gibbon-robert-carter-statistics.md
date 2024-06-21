@@ -56,17 +56,21 @@ In short, no, the average of a ratio is not the same as the ratio of an average 
 
 $$\mathbb{E} \left[ \frac{Y}{X} \right] \neq \frac{\mathbb{E}[Y]}{\mathbb{E}[X]}$$
 
+Both of these quantities are mathematically valid as long as the expectations are defined and we do not divide by zero.
+
 Even more generally, if $g$ is a non-linear measurable function of the outcome space, then $$\mathbb{E}[f(X)] \neq f(\mathbb{E}[X]).$$ 
 
 ### Weighted Average
 
-#### Are weighted averages about non-normality?
+#### What are weighted averages?
 
 A [weighted (arithmetic) mean](https://en.wikipedia.org/wiki/Weighted_arithmetic_mean#Mathematical_definition) is a [convex combination](https://en.wikipedia.org/wiki/Convex_combination) which we can write in vector form as 
 
 $$\bar x_{\vec w} \triangleq \frac{\vec w \cdot \vec x}{\Vert \vec w \Vert_1}$$
 
 where I have used a [1-norm](https://en.wikipedia.org/wiki/Norm_(mathematics)#Taxicab_norm_or_Manhattan_norm) to collapse the weights vector in the denominator into a scalar. Indeed, we can recognize this as being a [scalar projection](https://en.wikipedia.org/wiki/Scalar_projection#Definition_in_terms_of_a_and_b).
+
+#### Are weighted averages about non-normality?
 
 Given a sample of real numbers $x_1, \ldots, x_n$ and (non-negative) weights $w_1, \ldots, w_n$ the quantity is always defined. It doesn't matter if we're talking about normal distributions, Poisson distributions, or some other distribution whose support is a subset of the real numbers.
 
