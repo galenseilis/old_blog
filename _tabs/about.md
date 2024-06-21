@@ -58,6 +58,10 @@ Saskatchewan Institute of Applied Science and Technology (2012--2014)
 
 Northern Health (Nov 2022 - present)
 
+- (2024) Bayesian probabilistic forecast of ultrasound completion volume.
+- (2024) Initiated and led the development of software testing standards for the Northern Health Data Science Team.
+- (2024) Bayesian probabilistic forecast of computed tomography completion volume.
+- (2024) Bayesian probabilistic forecast of magnetic resonance imaging (MRI) completion volume.
 - (2023) Used Bayesian interrupted time series analysis to estimate the cumulative causal impact of COVID-19 on surgery completion in Northern Health.
 - (2023 - present) Developing Mjölnir, a highly interpretable machine learning model enhanced with causal assumptions and conformal prediction.
 - (2023) Developed a prototype for using Fréchet bound analysis to answer stakeholder questions in low-data situations.
@@ -85,9 +89,9 @@ You can contact me on [Fiverr](https://www.fiverr.com/galenseilis){:target="_bla
 
 Northern Health (June 2022 - Aug 2022)
 
-I developed a process to forecast and monitor unplanned surgeries in northern British Columbia. This included an automated model refresh pipeline that delivered automated forecasts to a Tableau dashboard I developed.
+I developed a process to forecast and monitor unplanned surgeries in northern British Columbia. This included an automated model refresh pipeline that delivered forecasts to a Tableau dashboard I developed.
 
-Performed preliminary exploratory data analysis and modelling of estimated length of stay.
+I performed an exploratory data analysis of facility length of stay, and trained some basedline models including a support vector machine and random forest regressor to predict average length of stay.
 
 ## Planting Quality Assurance Checker
 
@@ -139,7 +143,7 @@ Instrumentation:
 
 Bioinformatics:
   - Quality screening DNA sequencing data
-- Reconstruction of 16S sequences using Christopher Miller's expectation-maximization iterative reconstruction of genes from the environment (www.ncbi.nlm.nih.gov/pmc/articles/PMC3219967/ )
+  - Reconstruction of 16S sequences using Christopher Miller's expectation-maximization iterative reconstruction of genes from the environment (www.ncbi.nlm.nih.gov/pmc/articles/PMC3219967/ )
   - Fasta-formatted database curation from voucher sequences
   - Running and developing pipelines to determine microbial and plant community structure
   - Coding a Python library of small tools for everyday handling of sequencing data
