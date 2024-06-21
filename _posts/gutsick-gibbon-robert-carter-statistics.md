@@ -84,7 +84,7 @@ We know that the minimum and maximum of a collection of [exchangeable random var
 
 $$\Pr \left[ Y \in  \right [\min S, \max S]] = \frac{n-1}{n+1}$$
 
-where $n$ is the sample size. 
+where $n$ is the sample size. This is clearly an increasing function in $n$, so the interval will get wider with sample size.
 
 So provided that the true distribution eventually overlaps with the biased distribution, and our samples from the biased distribution are exchangeable, then with a sufficiently large sample there will exist a weighting function which corrects for the bias.
 
