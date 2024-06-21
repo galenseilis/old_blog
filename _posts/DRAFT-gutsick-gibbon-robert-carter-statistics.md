@@ -132,6 +132,8 @@ Additionally, special cases of weighted averaging can formulated as the [law of 
 
 #### Are weighted averages only applied to data?
 
+<a href="https://imgflip.com/i/8ulnag"><img src="https://i.imgflip.com/8ulnag.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
 No. There are also theoretical constructs that we can take weighted averages of. A special case of [mixture models](https://en.wikipedia.org/wiki/Mixture_model) are [mixture distributions](https://en.wikipedia.org/wiki/Mixture_distribution). These types of probability models are valuable for modelling certain structures like multimodality even when we do not have explicit labels for subpopulations to condition on. 
 
 A finite mixture distribution is a convex combination of probability mass functions and/or probability density functions:
