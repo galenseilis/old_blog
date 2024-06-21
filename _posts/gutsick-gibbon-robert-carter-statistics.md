@@ -17,6 +17,8 @@ I won't try to cover every aspect of the sample that was under discussion, but b
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j9XbeckuzwY?si=KKtSOg9vFC6V_rNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<a href="https://imgflip.com/i/8uj598"><img src="https://i.imgflip.com/8uj598.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
 I will just echo that it is imperative that the right statistical population has been sampled from (or at least close enough) in order for the accurate inferences to be made.
 
 ### Accuracy in Distribution
