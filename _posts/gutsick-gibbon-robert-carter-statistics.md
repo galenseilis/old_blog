@@ -21,6 +21,8 @@ I will just echo that it is imperative that the right statistical population has
 
 ### Accuracy in Distribution
 
+All statistical properties of a statistical population are captured in its [joint cumulative distribution function](https://en.wikipedia.org/wiki/Joint_probability_distribution#Joint_cumulative_distribution_function), including for categorical variables up to a choice of ordering. 
+
 According to the univariate [DKW(M) inequality](https://en.wikipedia.org/wiki/Dvoretzky%E2%80%93Kiefer%E2%80%93Wolfowitz_inequality), an [IID](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables) sample of size $n$ has a bounded probability of exceeding a given absolute difference between the [empirical cumulative distribution](https://en.wikipedia.org/wiki/Empirical_distribution_function) and the (population) [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function).
 
 $$\Pr \left( \sup_{x \in \mathbb{R}} \left| F_n(x) - F(x) \right| > \epsilon \right) \leq 2 e^{-2n\epsilon^2}$$
