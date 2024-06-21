@@ -11,6 +11,12 @@ This post was prompted by the following video by the YouTube channel Gutsick Gib
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zzkYmKJ6Sk8?si=WJL1G98hEJaMhzZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Some of the topics that were discussed in that video were about data analysis, a subject that I'm passionate about. I'll give some commentary around that topic in this post, but I'm going to try to avoid diving into the full context of what Gutsick Gibbon is talking about. There are just too many tangents.
+
+
+<a href="https://imgflip.com/i/8uj5re"><img src="https://i.imgflip.com/8uj5re.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
+
 ## How good was the sample?
 
 I won't try to cover every aspect of the sample that was under discussion, but both Roohif (embedded below) and Gutsick Gibbon (embedded above) give extensive critiques of various aspects of the studies by Tomkins.
