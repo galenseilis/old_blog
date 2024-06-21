@@ -64,7 +64,7 @@ A part of the what was discussed in the video linked by Gutsick Gibbon was about
 
 ### Is the average of a ratio the same as the ratio of the averages?
 
-In short, no, the average of a ratio is not the same as the ratio of the averages in general. The [expectation operator is linear](https://en.wikipedia.org/wiki/Expected_value#Properties), so it distributions over [linear combinations](https://en.wikipedia.org/wiki/Linear_combination). A ratio of two random variables is not a linear combination.
+In short, no, the average of a ratio is not the same as the ratio of the averages in general. The [expectation operator is linear](https://en.wikipedia.org/wiki/Expected_value#Properties), so it distributes over [linear combinations](https://en.wikipedia.org/wiki/Linear_combination). A ratio of two random variables is not a linear combination.
 
 $$\mathbb{E} \left[ \frac{Y}{X} \right] \neq \frac{\mathbb{E}[Y]}{\mathbb{E}[X]}$$
 
