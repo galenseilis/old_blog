@@ -72,17 +72,21 @@ $$\bar x_{\vec w} \triangleq \frac{\vec w \cdot \vec x}{\Vert \vec w \Vert_1} = 
 
 where I have used a [1-norm](https://en.wikipedia.org/wiki/Norm_(mathematics)#Taxicab_norm_or_Manhattan_norm) to collapse the weights vector in the denominator into a scalar. Indeed, we can recognize this as being a [scalar projection](https://en.wikipedia.org/wiki/Scalar_projection#Definition_in_terms_of_a_and_b). We'll return to that point soon.
 
-#### Can we weight six ways to sunday to get the right answer?
+#### Can we weight six ways to sunday to get the right answer from a biased sample?
 
-Dr. Carter suggests that we can weight as much as we like and we will not get the right answer.
+Dr. Carter suggests that we can weight as much as we like and we will not get the right answer from a biased sample. That's right, especially in practice, but I want to shine some light a couple of nuances.
 
-Even if I have a [unbiased estimator](https://en.wikipedia.org/wiki/Bias_of_an_estimator) of the expected value of a [continuous random variable](https://en.wikipedia.org/wiki/Random_variable#Continuous_random_variable), it will still [almost-never](https://en.wikipedia.org/wiki/Almost_surely) equal the population parameter exactly. This is due to sampling variation, and that will be lurking in real applications whether you use weighted averages or not.
+Even if I have a [unbiased estimator](https://en.wikipedia.org/wiki/Bias_of_an_estimator) for the [expected value](https://en.wikipedia.org/wiki/Expected_value) of a [continuous random variable](https://en.wikipedia.org/wiki/Random_variable#Continuous_random_variable), it will still [almost-never](https://en.wikipedia.org/wiki/Almost_surely) equal the population parameter exactly. This is due to sampling variation, and that will be lurking in real applications whether you use weighted averages or not.
 
 Remember I mentioned that weighted averages can be represented as scalar projections? Well, we can ask what range of values we can obtain for $\bar x_{\vec w}$ assuming that $\vec x$ is fixed and we can choose any $\vec w$ we like as long as $\vec 1 \cdot \vec w = 1$. In terms of scaling the componets of $\vec x$ this is equivalent to asking a special case of [linear span](https://en.wikipedia.org/wiki/Linear_span#Definition) where we are limited to convex combinations (recall that all convex combinations are linear combinations). Such a "convex span" will reach any point in the [convex hull](https://en.wikipedia.org/wiki/Convex_hull) of $\vec x$, but since we would subsequently [lineraly project](https://en.wikipedia.org/wiki/Projection_(linear_algebra)) down onto the real number line there will be some *interval* of reachable points. These extreme points turn out to simply be the [minimum and maximum](https://en.wikipedia.org/wiki/Sample_maximum_and_minimum) of $\vec x$.
 
 We know that the minimum and maximum of a collection of [exchangeable random variables](https://en.wikipedia.org/wiki/Exchangeable_random_variables#Definition) $S = \{ X_1, \ldots, X_n \}$ grows in size because the prediction interval for some random variables $Y$, also exchangeable with the elements of $S$, satisfies 
 
 $$\Pr \left[ Y \in  \right] = \frac{n-1}{n+1}$$
+
+where $n$ is the sample size. 
+
+So provided that the true distribution eventually overlaps with the biased distribution, and our samples from the biased distribution are exchangeable, then with a sufficiently large sample there will exist a weighting function which corrects for the bias.
 
 #### Are weighted averages about non-normality?
 
