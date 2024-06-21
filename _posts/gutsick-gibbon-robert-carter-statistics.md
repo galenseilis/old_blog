@@ -55,7 +55,7 @@ Here is the calculation, taking $\epsilon := \frac{1}{100}$ for the sake of exam
 
 So when the univariate DKW(M) inequality holds, we can say that a sample size of 18 000 would tells us the probability of our estimate of the cumulative distribution function anywhere being within 1% absolute difference from the population cumulative distribution function is no less than 94.54%.
 
-However, the key assumption that may not hold here is the sample variables being [IID](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables).
+However, the key assumption that may not hold here is the sample variables being [IID](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables). Some of the other concerns that Roohif and Gutsick Gibbon had with Tomkin's work may substantially invalidate this assumption.
 
 
 ## Averages
