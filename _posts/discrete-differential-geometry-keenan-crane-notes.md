@@ -196,7 +196,7 @@ We need to think about when a discrete definition is "good".
 - The key idea here is to use these different notions of curvature in the smooth setting as starting ponts for defining quantities in the discrete setting.
 - In general we cannot guarantee that all such starting points will be interesting/useful/coherent, but in this case all four of the notions listed above will lead to workable definitions of discrete curvature.
 
-#### Turning angle
+#### Turning angle as a discrete curvature
 
 - Our initial definition of curvature as the *rate of change of the tangent in the noraml direction*.
   - $\kappa (s) = \langle N(s), \frac{d}{ds} \gamma (s) \rangle$
@@ -209,4 +209,40 @@ We need to think about when a discrete definition is "good".
     - This result is a consequence of the fundamental theorem of calculus.
 - While we cannot compute derivatives in the discrete setting, we can compute differences in angles!
 - Note that we get translation symmetries. If we translate two angles by the same amount, then their difference will be the same as if we had not translated them.
-  - $(\phi_2 + \alpha ) - (\phi_2 + \alpha) = \phi_2 - \phi_1$ 
+  - $(\phi_2 + \alpha ) - (\phi_2 + \alpha) = \phi_2 - \phi_1$
+
+For three sequentially adjacent vertices in the discrete curve, their turning angle can be written as
+
+$$\theta_i := \text{angle}(\gamma_i - \gamma_{i-1}, \gamma_{i+1} - \gamma_i).$$
+
+Our turning angle defintion of discrete curvature at vertice $i$ is simply:
+
+$$\kappa^A_i \triangleq \theta_i$$
+
+Note that it is a common theme for discrete quantities to be integrated from the curve rather than pointwise values. Here we were considering the total change in the angle, rather than the derivative of the angle.
+
+#### Length variation as a discrete curvature
+
+The motivation for using the length variation as a starting pont for defining a discrete curvature is the following fact from the smooth setting:
+
+The fastest way to decrease the length of a curve is to move it in the normal direction, with speed proportional to curvature.
+
+To build intuition for this, consider a flat region of a curve. The normal motion is not changing with the length of the curve within this region. If you instead consider a curved region, like a circle, there is a change in length.
+
+Formally, let us consider an mostly arbitrary change to the curve $\gamma$, which is given by the function 
+
+$$\nu : [0,l] \mapsto \mathbb{R}^2$$
+
+with
+
+$$\nu(0) = \nu(l) = 0$$
+
+as a constraint on change function. This is kind of like a [bump function](https://en.wikipedia.org/wiki/Bump_function), but we have not imposed the additional criteria of a bump function (such as smoothness).
+
+We can write our changed curve like this
+
+$$\gamma + \epsilon \nu$$
+
+where $\epsilon \in \mathbb{R}_{>0}$. The parameter $\epsilon$ allows us to arbitrarily control how much $\nu$ is changing the arc length of the resulting curve in a smooth way:
+
+$$\frac{d}{d \epsilon} \text{length}(\gamma + \epsilon \nu)$$
