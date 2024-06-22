@@ -97,4 +97,50 @@ An informal description is that the tangent of a curve on the plane is a vector 
 
 More formally, a unit tangent (or just tangent) of a parametrized curve is a map obtained by normalizing its first derivative in the following way:
 
-$$T_{\gamma}(s) = \frac{\frac{d}{ds} \gamma}{\left\lvert \frac{d}{ds} \gamma (s) \right\rvert}$$
+$$T_{\gamma}(s) = \frac{\frac{d}{ds} \gamma}{\Vert \frac{d}{ds} \gamma (s) \Vert}$$
+
+Notice that the derivative cannot be zero for the unit tangent vector to be defined. This is sometimes called a "regularity condition", and of curves it is called a "regular curve".
+
+A common assumption to make is to take the curve to be arc-length parametrized, which simplifies the above to
+
+$$T(s) := \frac{d}{ds} \gamma (s).$$
+
+This does mean that if you are starting with a parametric curve that is not arc-length parametrized, then you'll need to arc-length parametrize it.
+
+#### Example of computing the unit tangent of a circle
+
+Suppose we have this parametrization of a circle:
+
+$$\gamma : [0, 2 \pi ) \mapsto \mathbb{R}^2$$
+
+$$s \mapsto (\cos s, \sin s).$$
+
+First, we compute the derivative of the curve with respect to its parameter:
+
+$$\frac{d}{ds} \gamma (s) = (- \sin s, \cos s)$$
+
+Second, we will normalize the derivative of the curve. The normalization is just the norm (usually 2-norm) of the derivative itself:
+
+$$\Vert \frac{d}{ds} \gamma (s) \Vert = \sqrt{\cos^2 s + \sin^2 s} = \sqrt{1} = 1.$$
+
+Since 
+
+$$T_{\gamma}(s) = \frac{1}{1} (- \sin s, \cos s) = (- \sin s, \cos s)$$
+
+we have learned that our parametrization is already arc-length parametrized.
+
+### What is a normal vector to a curve?
+
+A vector is normal to a curve if it "sticks straight out" from the curve.
+
+More formally, the unit normal (or just normal) can be expressed as a quarter-rotation $\mathcal{J}$ of the unit tangent in the counter-clockwise direction. This is denoted by:
+
+$$N(s) := \mathcal{J}T(s)$$
+
+where we can reprsent $\mathcal{J}$ as a [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix).
+
+This definition is almost the same as saying that the unit normal is any vector which is orthonogal to the tangent, but it actually specifies a specific vector rather than just any vector. Recall that for a planar curve there will be two opposite vectors that are orthogonal to the tangent vector at a point in a curve.
+
+In coordinate form, this can be written:
+
+$$(x,y) \overset{\mathcal{J}}{\mapsto} (-y, x)$$
