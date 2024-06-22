@@ -139,8 +139,34 @@ $$N(s) := \mathcal{J}T(s)$$
 
 where we can reprsent $\mathcal{J}$ as a [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix).
 
-This definition is almost the same as saying that the unit normal is any vector which is orthonogal to the tangent, but it actually specifies a specific vector rather than just any vector. Recall that for a planar curve there will be two opposite vectors that are orthogonal to the tangent vector at a point in a curve.
+This definition is almost the same as saying that the unit normal is any vector which is orthonogal to the tangent, but it actually specifies a specific vector rather than just any vector. Recall that for a planar curve there will be two opposite vectors that are orthogonal to the tangent vector at a point in a curve. If you go up into 3-dimensional ambient space, or higher, you will typically have an infinite number of normal vectors to a curve.
 
 In coordinate form, this can be written:
 
 $$(x,y) \overset{\mathcal{J}}{\mapsto} (-y, x)$$
+
+#### Example: Computing the unit normal of a circle
+
+Supposing our parametrization of a circle from earlier, and the unit tanget vector from both, we can write the unit tangent vector as:
+
+$$N(s) = \mathcal{J}T(s) = (- \cos s, - \sin s).$$
+
+The image of $N$ comprises a set of vectors that all point toward the center of the circle. Does this apply to [n-spheres](https://en.wikipedia.org/wiki/Sphere)?
+
+Notice that would have been logically-consistent to adopt a different definition $N  = \mathcal{J}T$ which would have chosen the opposite set of vectors that point away from the center of the circle. What's more important is to pick one definition, or the other, of the unit tangent and apply it consistently.
+
+### What is the curvature of a plane curve?
+
+The curvature is an arc-length parametrized curve that can be expressed as the rate of change of the unit tangent. More explicitly we write this as
+
+$$\kappa (s) \triangleq \langle N(s), \frac{d}{ds} T(s) \rangle$$
+
+where $\langle\bullet,\bullet\rangle$ is an [inner product](https://en.wikipedia.org/wiki/Inner_product_space), which in this setting is the [dot product](https://en.wikipedia.org/wiki/Dot_product).
+
+Knowing that the unit tangent vector is itself the first derivative of the curve, we can also write the curvature like this:
+
+$$\kappa (s) \triangleq \langle N(s), \frac{d^2}{ds^2} \gamma (s) \rangle .$$
+
+This leads to a key concept that curvature is closely-related to the second derivative.
+
+The reason we take this second derivative and multiply it by the unit normal vector is to preserve the sign of the derivative. If we instead took the norm of the second derivative we would lose this sign. What does the sign tell us? It tells us about orientation, especially in the sense of what direction the curve is turning toward.
