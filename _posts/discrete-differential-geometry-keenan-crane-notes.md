@@ -65,6 +65,14 @@ When we have multiple notions with tradeoffs, we will have to choose which ones 
 ### Why do we care about curvature?
 Let's take a step back for a moment. Why would we want to talk about curvature? Curvature describes how ordinary objects like rulers, textiles, and biological tissues bend. In image processing curvature can help with segmentation. In physical biochemistry we might be interested in supercoiling of macromolecules.
 
-### What is a param
+### What is a parametric curve?
 
-In the smooth setting, a **parametrized curve** is a map taking each point in an interval $[0,l]$ of the real line to some point in the plane $\mathbb{R^2}$.
+In the smooth setting, a **parametrized curve** is a "nice" map $\gamma$ taking each point in an interval $[0,l]$ of the real line to some point in the plane $\mathbb{R^2}$, which is often denoted $\gamma : [0, l] \mapsto \mathbb{R}^2$. What "nice" usually means is that sufficient conditions on the type of [continuity](https://en.wikipedia.org/wiki/Continuous_function) and [smoothness](https://en.wikipedia.org/wiki/Smoothness) allow for what we're trying to accomplish. I won't delve into these cases unless their discussion is needed.
+
+### Example: Parametrization of a circle
+
+A circle can be represented with a parametrization
+
+$$\gamma : [0, 2 \pi ) \mapsto \mathbb{R}^2$$
+
+$$s \mapsto (\cos (s), \sin (s) )$$
