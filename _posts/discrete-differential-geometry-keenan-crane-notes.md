@@ -174,5 +174,39 @@ $$\kappa (s) = \langle \mathcal{J}\frac{d}{ds} \gamma (s), \frac{d^2}{ds^2} \gam
 
 The reason we take this second derivative and multiply it by the unit normal vector is to preserve the sign of the derivative. If we instead took the norm of the second derivative we would lose this sign. What does the sign tell us? It tells us about orientation, especially in the sense of what direction the curve is turning toward.
 
-### Translating the curvature of a planar curve to the discrete setting
+### Directly translating the curvature of a planar curve to the discrete setting
 
+We run into a couple of immediate issues if we try to directly apply the definition of curvature as we have developer it to a discrete curve. At the vertices of the discrete curve we find that the curvature is undefined (naively, we might say infinite), and between the vertices it is zero (which is not wrong but it also isn't interesting). Maybe further work at the vertices could lead to something useful in terms of [Dirac delta distributions](https://en.wikipedia.org/wiki/Dirac_delta_function), but in some sense that still wouldn't solve what we want to know. We want some description of curvature that is finite and interesting.
+
+We need to think about when a discrete definition is "good".
+
+### What makes a discrete definition "good"?
+
+- It should satisfy at least some of the key properties or theorems that we have in the smooth setting.
+  - e.g. $\int_{\partial U} k ds = 2 \pi (n+1)$
+- There should be some convergence criteria so that the discrete case gets arbitrarily close to the smooth definition in its properties when we have finely-detailed discrete structures.
+- Calculations with the discrete defintiion should be efficient to compute and/or helpful in solving equations.
+
+### Playing the game of developing discrete curvature
+- In the smooth setting there are several equivalent definitions of curvature.
+  - Turning angle
+  - Length variation
+  - Steiner formula
+  - Osculating circle
+- The key idea here is to use these different notions of curvature in the smooth setting as starting ponts for defining quantities in the discrete setting.
+- In general we cannot guarantee that all such starting points will be interesting/useful/coherent, but in this case all four of the notions listed above will lead to workable definitions of discrete curvature.
+
+#### Turning angle
+
+- Our initial definition of curvature as the *rate of change of the tangent in the noraml direction*.
+  - $\kappa (s) = \langle N(s), \frac{d}{ds} \gamma (s) \rangle$
+- We can equivalently measure the rate of change of the angle the tangent makes with the horizonal:
+  - $\kappa (s) = \frac{d}{ds} \phi (s)$, where $\phi (s)$ is the angle from the horizontal (i.e. in ambient space) to the tangent vector.
+  - This angle is not itself coordinate-free.
+- This definition still requires a first derivative, so we still cannot directly calculate curvature from a discrete curve.
+- We can consider the integral of the curvature along a line segment of a curve:
+  - $\int_{a}^{b} \kappa (s) ds = \int_{a}^{b} \frac{d}{ds} \phi (s) ds = \phi (b) - \phi (a)$
+    - This result is a consequence of the fundamental theorem of calculus.
+- While we cannot compute derivatives in the discrete setting, we can compute differences in angles!
+- Note that we get translation symmetries. If we translate two angles by the same amount, then their difference will be the same as if we had not translated them.
+  - $(\phi_2 + \alpha ) - (\phi_2 + \alpha) = \phi_2 - \phi_1$ 
