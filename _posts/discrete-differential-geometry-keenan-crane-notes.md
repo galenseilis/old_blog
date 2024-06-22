@@ -229,7 +229,7 @@ The fastest way to decrease the length of a curve is to move it in the normal di
 
 To build intuition for this, consider a flat region of a curve. The normal motion is not changing with the length of the curve within this region. If you instead consider a curved region, like a circle, there is a change in length.
 
-Formally, let us consider an mostly arbitrary change to the curve $\gamma$, which is given by the function 
+Formally, let us consider a mostly arbitrary change called the *variation* to the curve $\gamma$, which is given by the function 
 
 $$\eta : [0,l] \mapsto \mathbb{R}^2$$
 
@@ -249,4 +249,18 @@ $$\frac{d}{d \epsilon} \ell(\gamma + \epsilon \eta)$$
 
 This derivative, assuming the usual norm/inner product structure for inducing distances, gives:
 
-$$\frac{d}{d \epsilon} \ell(\gamma + \epsilon \nu) = - \int_{0}^{l} \langle \eta (s), \kappa (s) N(s) \rangle ds$$
+$$\frac{d}{d \epsilon}\Bigr|_{\epsilon=0} \ell(\gamma + \epsilon \nu) = - \int_{0}^{l} \langle \eta (s), \kappa (s) N(s) \rangle ds$$
+
+We can then deduce that the choice of variation $\eta$ that maximizes this rate of change is given by
+
+$$\eta = \kappa N .$$
+
+Applying this to the discrete setting is simly taking the gradient of the length with respect to the vertex positions.
+
+For example, consider a single line segment whose endpoints are $a$ and $b$. The length $\ell$ is defined as $\ell := \Vert b - a \Vert$. What direction should I move $b$ if I want to maximize the rate of change of the length of the curve? 
+
+This is given by the gradient, 
+
+$$\nabla_b \ell = \frac{b-a}{\ell},$$ 
+
+which will point in the exact same direction as the direction of the vector from a to b.
