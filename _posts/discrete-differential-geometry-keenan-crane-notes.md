@@ -165,8 +165,14 @@ where $\langle\bullet,\bullet\rangle$ is an [inner product](https://en.wikipedia
 
 Knowing that the unit tangent vector is itself the first derivative of the curve, we can also write the curvature like this:
 
-$$\kappa (s) \triangleq \langle N(s), \frac{d^2}{ds^2} \gamma (s) \rangle .$$
+$$\kappa (s) = \langle N(s), \frac{d^2}{ds^2} \gamma (s) \rangle .$$
 
-This leads to a key concept that curvature is closely-related to the second derivative.
+This leads to a key concept that curvature is closely-related to the second derivative. We can further, based on what we've defined so far, write the curvature like this:
+
+$$\kappa (s) = \langle \mathcal{J}\frac{d}{ds} \gamma (s), \frac{d^2}{ds^2} \gamma (s) \rangle .$$
+
 
 The reason we take this second derivative and multiply it by the unit normal vector is to preserve the sign of the derivative. If we instead took the norm of the second derivative we would lose this sign. What does the sign tell us? It tells us about orientation, especially in the sense of what direction the curve is turning toward.
+
+### Translating the curvature of a planar curve to the discrete setting
+
