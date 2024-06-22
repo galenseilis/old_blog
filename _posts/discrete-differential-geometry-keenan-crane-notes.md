@@ -231,18 +231,22 @@ To build intuition for this, consider a flat region of a curve. The normal motio
 
 Formally, let us consider an mostly arbitrary change to the curve $\gamma$, which is given by the function 
 
-$$\nu : [0,l] \mapsto \mathbb{R}^2$$
+$$\eta : [0,l] \mapsto \mathbb{R}^2$$
 
 with
 
-$$\nu(0) = \nu(l) = 0$$
+$$\eta(0) = \eta(l) = 0$$
 
 as a constraint on change function. This is kind of like a [bump function](https://en.wikipedia.org/wiki/Bump_function), but we have not imposed the additional criteria of a bump function (such as smoothness).
 
 We can write our changed curve like this
 
-$$\gamma + \epsilon \nu$$
+$$\gamma + \epsilon \eta$$
 
-where $\epsilon \in \mathbb{R}_{>0}$. The parameter $\epsilon$ allows us to arbitrarily control how much $\nu$ is changing the arc length of the resulting curve in a smooth way:
+where $\epsilon \in \mathbb{R}_{>0}$. The parameter $\epsilon$ allows us to arbitrarily control how much $\nu$ is changing the length $\ell$ of the resulting curve in a smooth way:
 
-$$\frac{d}{d \epsilon} \text{length}(\gamma + \epsilon \nu)$$
+$$\frac{d}{d \epsilon} \ell(\gamma + \epsilon \eta)$$
+
+This derivative, assuming the usual norm/inner product structure for inducing distances, gives:
+
+$$\frac{d}{d \epsilon} \ell(\gamma + \epsilon \nu) = - \int_{0}^{l} \langle \eta (s), \kappa (s) N(s) \rangle ds$$
