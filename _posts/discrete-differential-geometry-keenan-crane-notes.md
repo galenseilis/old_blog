@@ -69,10 +69,32 @@ Let's take a step back for a moment. Why would we want to talk about curvature? 
 
 In the smooth setting, a **parametrized curve** is a "nice" map $\gamma$ taking each point in an interval $[0,l]$ of the real line to some point in the plane $\mathbb{R^2}$, which is often denoted $\gamma : [0, l] \mapsto \mathbb{R}^2$. What "nice" usually means is that sufficient conditions on the type of [continuity](https://en.wikipedia.org/wiki/Continuous_function) and [smoothness](https://en.wikipedia.org/wiki/Smoothness) allow for what we're trying to accomplish. I won't delve into these cases unless their discussion is needed.
 
-### Example: Parametrization of a circle
+#### Example: Parametrization of a circle
 
 A circle can be represented with a parametrization
 
 $$\gamma : [0, 2 \pi ) \mapsto \mathbb{R}^2$$
 
 $$s \mapsto (\cos (s), \sin (s) )$$
+
+which has symmetric points such as $$\gamma (0) = \gamma (2 \pi) .$$
+
+### What is a discrete curve?
+
+A discrete curve is a [*piecewise linear* parametrized curve](https://en.wikipedia.org/wiki/Polygonal_chain). It is a sequence of vertices connected by straight line segments embedded in some ambient space.
+
+Further it means that if the discrete curve is parametrized over an interval $[0, l]$ then there is an [interval partition](https://en.wikipedia.org/wiki/Partition_of_an_interval) where the boundaries of the subintervals are defined by the preimage of the discrete curve where there exists vertices.
+
+#### Example of a discrete curve on the plane
+
+Here is a simple example of a discrete curve on the plane parametrized over the interval $[0, 2]$:
+
+$$\gamma (s) := \begin{cases} (s, 0) & 0 \leq s \leq 1 \\ 1 < s \leq 2 \end{cases}$$
+
+### What is the tangent of a curve on the plane?
+
+An informal description is that the tangent of a curve on the plane is a vector that just barely grazes the curve.
+
+More formally, a unit tangent (or just tangent) of a parametrized curve is a map obtained by normalizing its first derivative in the following way:
+
+$$T_{\gamma}(s) = \frac{\frac{d}{ds} \gamma}{\left\lvert \frac{d}{ds} \gamma (s) \right\rvert}$$
