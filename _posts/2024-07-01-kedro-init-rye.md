@@ -16,7 +16,7 @@ I recently [asked on the Kedro Slack channel](https://kedro-org.slack.com/archiv
 
 ## Example
 
-First, lets initialize a Rye-managed proeject called `try-kedro-init`.
+First, lets initialize a Rye-managed project called `try-kedro-init`.
 
 ```bash
 $ rye init try-kedro-init
