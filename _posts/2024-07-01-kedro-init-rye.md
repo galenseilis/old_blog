@@ -1,6 +1,6 @@
 ---
 title: Combining Kedro with Rye
-date: 2024-07-01 01:51:15
+date: 2024-07-01 10:00:00
 categories: [python,package-management]
 tags: [python,package-management,rye,kedro,kedro-init]
 math: true
