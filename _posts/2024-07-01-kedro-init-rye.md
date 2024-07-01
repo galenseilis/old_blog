@@ -8,7 +8,7 @@ mermaid: true
 ---
 
 
-I recently [asked on the Kedro Slack channel](https://kedro-org.slack.com/archives/C03RKP2LW64/p1719762547621889) about what experience people have had with combining Kedro with package management tools in Python such as PDM, Poetry, Hatch or Rye. [`juanlu` gave a couple of options](https://kedro-org.slack.com/archives/C03RKP2LW64/p1719787364960379?thread_ts=1719762547.621889&cid=C03RKP2LW64). You can either initialize a Kedro project first and then add the package manager, or add the package manager first and use [`kedro-init`](https://github.com/astrojuanlu/kedro-init) to fill in a Kedro project. Which one is more appropriate will depend on what already exists in your project.
+I recently [asked on the Kedro Slack channel](https://kedro-org.slack.com/archives/C03RKP2LW64/p1719762547621889) about what experience people have had with combining Kedro with package management tools in Python such as PDM, Poetry, Hatch or Rye. [`juanlu` gave a couple of options](https://kedro-org.slack.com/archives/C03RKP2LW64/p1719787364960379?thread_ts=1719762547.621889&cid=C03RKP2LW64). You can either initialize a Kedro project first and then add the package manager, or add the package manager first and use [`kedro-init`](https://github.com/astrojuanlu/kedro-init) to fill in a Kedro project. Which one is more appropriate will depend on what already exists in your project. Kedro should be compatible with PEP-compliant packages (see discussion [here](https://github.com/kedro-org/kedro/issues/3974)) and also Poetry. I'm not sure about Rye.
 
 `kedro-init` is in its infancy (e.g. still needing documentation), but I figured I would try it out with [Rye](https://rye.astral.sh/) since that is what I am currently using on my personal machine.
 
@@ -270,13 +270,21 @@ $ rye run kedro run
                     INFO     Pipeline execution completed successfully.                                                                                                                                                        runner.py:119
 ```
 
-# Versions
+My provisional conclusion is that Kedro and Rye are compatible.
 
-Python (managed by Rye)
+## Versions
+
+Rye configuration:
 
 ```bash
-$ python --version
-Python 3.12.3
+$ rye --version
+rye 0.35.0
+commit: 0.35.0 (a1dbc56d4 2024-06-24)
+platform: linux (x86_64)
+self-python: cpython@3.12.3
+symlink support: true
+uv enabled: true
+
 ```
 
 My operating system:
