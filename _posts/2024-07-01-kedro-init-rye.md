@@ -8,9 +8,13 @@ mermaid: true
 ---
 
 
+## Introduction
 I recently [asked on the Kedro Slack channel](https://kedro-org.slack.com/archives/C03RKP2LW64/p1719762547621889) about what experience people have had with combining Kedro with package management tools in Python such as PDM, Poetry, Hatch or Rye. [`juanlu` gave a couple of options](https://kedro-org.slack.com/archives/C03RKP2LW64/p1719787364960379?thread_ts=1719762547.621889&cid=C03RKP2LW64). You can either initialize a Kedro project first and then add the package manager, or add the package manager first and use [`kedro-init`](https://github.com/astrojuanlu/kedro-init) to fill in a Kedro project. Which one is more appropriate will depend on what already exists in your project. Kedro should be compatible with PEP-compliant packages (see discussion [here](https://github.com/kedro-org/kedro/issues/3974)) and also Poetry. I'm not sure about Rye.
 
 `kedro-init` is in its infancy (e.g. still needing documentation), but I figured I would try it out with [Rye](https://rye.astral.sh/) since that is what I am currently using on my personal machine.
+
+
+## Example
 
 First, lets initialize a Rye-managed proeject called `try-kedro-init`.
 
